@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.bloc {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    padding: 20%;
+    margin: 25% 0;
+}
