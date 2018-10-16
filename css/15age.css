@@ -26,3 +26,14 @@ button {
     padding: 20%;
     margin: 25% 0;
 }
+
+img[alt=logo] {
+    width: 10%;
+}
+
+img[alt=avatar] {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    border: solid 2px #000;
+}
