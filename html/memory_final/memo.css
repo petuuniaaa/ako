@@ -4,19 +4,48 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 body {
   height: 100vh;
+  background: #FFF;
+}
+
+header {
   display: flex;
-  background: black;
+  justify-content: space-between;
+  margin: 3%;
+}
+
+img[alt=logo] {
+  height: 10%;
+  width: 10%;
+}
+
+img[alt=piece] {
+  height: 10%;
+  width: 10%;
+}
+
+img[alt=avatar] {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  border: solid 2px #000;
 }
 
 .memory-game {
+  display: flex;
+}
+
+.plateau {
   width: 400px;
   height: 400px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
+
 }
 
 .memory-card {
@@ -28,7 +57,7 @@ body {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+
 }
 
 .memory-card:active {
@@ -44,7 +73,6 @@ body {
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
   position: absolute;
   border-radius: 5px;
   background: #43bbbb;
@@ -56,26 +84,31 @@ body {
 }
 
 h1 {
-  position: absolute;
-  top: 75%;
-  right: 15%;
   color: #FFF;
   z-index: 99;
-  font-size: 20px;
-  font-family: 'Comic Sans MS';
+  font-size: 95%;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  position: relative;
+  top: 80%;
 }
-.pays{
+
+/* .pays {
   position: absolute;
   top: 75%;
   left: 15%;
   color: #FFF;
-  font-size: 20px;
+  font-size: 1.125em;
   z-index: 99;
-  font-family: 'Comic Sans MS';
+  font-family: 'PT Sans', sans-serif;
 }
 
-.norvege{
+.norvege {
   left: 10%;
+} */
+
+.back-face {
+  padding: 20px;
 }
 
 div .front-face img {
@@ -84,4 +117,11 @@ div .front-face img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
