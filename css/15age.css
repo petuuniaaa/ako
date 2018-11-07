@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Bubbler One';
+    src: url(/fonts/BubblerOne-Regular.ttf);
+    /* A convertir en woff */
+}
+
 header {
     display: flex;
     justify-content: space-between;
+    margin: 7% 5%;
+    ;
 }
 
 section {
@@ -14,16 +22,28 @@ section {
 }
 
 .bloc {
-    width: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 10%;
 }
 
 button {
-    padding: 20%;
-    margin: 25% 0;
+    padding: 20% 40%;
+    margin: 20% 0;
+    border-radius: 20%;
+    background-color: #9373ab;
+    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Bubbler One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
 }
 
 img[alt=logo] {
@@ -31,11 +51,15 @@ img[alt=logo] {
     height: 10%;
 }
 
+img[alt=piece] {
+    height: 10%;
+    width: 10%;
+}
+
 img[alt=avatar] {
     border-radius: 50%;
     width: 15%;
     height: 15%;
-    border: solid 2px #000;
 }
 
 @media screen and (min-width: 600px) {
