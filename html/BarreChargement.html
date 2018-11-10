@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chargement</title>
+</head>
+
+<style>
+* {
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+img{
+            margin-top: 15%;
+            margin-left: 40%;
+            width: 20%;
+            border-radius: 50%;
+        }
+.percent-count {
+    width: 450px;
+    height: 50px;
+    margin: 100px auto;
+    font-size: 50px;
+    text-align: center;
+    color: purple;
+
+}
+.progress-bar{
+    width: 506px;
+    height: 26px;
+    background-color: #52BFC7;
+    border-radius: 13px;
+    padding: 3px;
+    margin: 50px auto;
+    
+    
+    }   
+ .progress {
+     
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color:#9874AD;
+    }
+
+
+</style>
+
+<body id="body">
+        <img src="/pictures/AAAKO_1_1.gif" alt="pieuvre chargement">
+    
+    <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+</div>
+<script>
+        
+  
+        function progress(){
+            var prg = document.getElementById('progress');
+            var percent = document.getElementById('percentCount');
+            var counter = 5;
+            var progress = 25; 
+            var id = setInterval(frame, 50);
+        
+        
+            function frame() {
+                if (progress == 500 && counter == 100) {
+                    clearInterval(id);
+        
+        
+                }
+                else{
+                    progress += 5;
+                    counter += 1;
+                    prg.style.width = progress + 'px';
+                    percent.innerHTML = counter + '%';
+                }
+            }
+           
+        
+        }
+        progress();
+        
+        setTimeout(function(){ clearTimeout('#body');}, 8000);
+
+
+        
+        
+        </script>
+    
+</body>
+
+
+</html>
