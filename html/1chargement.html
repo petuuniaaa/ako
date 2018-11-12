@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <title>Chargement</title>
 
 
@@ -23,6 +23,28 @@
             transform: translate(-50%, -50%);
         }
 
+        #progress-bar {
+            position: absolute;
+            height: 20px;
+            background: repeating-linear-gradient(-45deg, #9874AD, #9874AD 20px, rgb(186, 158, 202) 20px, rgb(186, 158, 202) 40px);
+            border-radius: 0.8em;
+            animation: roll 5s linear infinite;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes roll {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 50%;
+            }
+        }
+
+
         @media screen and (min-width: 600px) {
             body {
                 max-width: 50%;
@@ -32,18 +54,44 @@
             img {
                 width: 60%;
             }
+
+            @keyframes roll {
+                0% {
+                    width: 0;
+                }
+
+                100% {
+                    width: 35%;
+                }
+            }
         }
 
         @media screen and (min-width: 750px) {
             img {
                 width: 40%;
             }
+
+            #progress-bar {
+                top: 80%;
+            }
+
+            @keyframes roll {
+                0% {
+                    width: 0;
+                }
+
+                100% {
+                    width: 20%;
+                }
+            }
+
         }
     </style>
 </head>
 
 <body>
     <img src="/pictures/AAAKO_1_1.gif" alt="pieuvre chargement">
+    <div id="progress-bar"></div>
 </body>
 
 </html>
