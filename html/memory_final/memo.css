@@ -125,6 +125,17 @@ section h1 {
   padding: 20px;
 }
 
+.memory-card .front-face img[alt="cheval"],
+.memory-card .front-face img[alt="girafe"],
+.memory-card .front-face img[alt="TourdePise"] {
+  height: 60%;
+}
+
+.memory-card .front-face img[alt="BigBen"],
+.memory-card .front-face img[alt="tourEiffel"] {
+  height: 65%;
+}
+
 div .front-face img {
   width: 80%;
   position: absolute;
