@@ -1,65 +1,61 @@
-
-header {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 30%;
-    left: 63%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    
+body {
+    background-color: #41BABE;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 65%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    padding-bottom: 5%;
+header img {
+    width: 10%;
+}
 
+img[alt="avatar"] {
+    width: 45%;
+    border-radius: 100%;
+}
+
+.head {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #FFF;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+.head a {
+    text-decoration: none;
+}
+
+img[alt="modifier"] {
+    width: 3%;
+    transform: rotate(-150deg);
 }
 
 .bloc {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
-button {
-    padding: 2% 2%;
-    
-    border-radius: 20%;
+.bloc button {
     background-color: #9373ab;
-    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
     border: none;
+    padding: 5% 15%;
+    margin: 5%;
+    cursor: pointer;
+    border-radius: 20px 20px;
 }
 
-a button {
+
+.bloc button a {
     text-decoration: none;
     color: #FFF;
-    font-family: 'Bubbler One', sans-serif;
     text-transform: uppercase;
-    font-size: 1em;
-    margin-bottom:2%;
-}
-a button:hover{
-    cursor: pointer;
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 1.125rem;
 }
 
-
-img[alt=avatar] {
-    border-radius: 50%;
-    width: 15%;
-    height: 15%;
+.timer::before {
+    content: url(../pictures/svg/001-locked.svg);
 }
-img[alt=modifier]{
-    transform: rotate(-200deg);
-    width: 1%;
-    height: 1%;
+
+.deconnexion::before {
+    content: url(../pictures/svg/002-unlocked.svg);
 }
