@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/normalize.css">
     <title>Chargement</title>
 
 
@@ -45,7 +44,7 @@
         }
 
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 515px) {
             body {
                 max-width: 50%;
                 margin: 0 auto;
@@ -87,9 +86,15 @@
 
         }
     </style>
+
+    <script type="text/javascript">
+        function RedirectionJavascript() {
+            document.location.href = "2msgpremiereco.html";
+        }
+    </script>
 </head>
 
-<body>
+<body onLoad="setTimeout('RedirectionJavascript()', 4000)">
     <img src="/pictures/AAAKO_1_1.gif" alt="pieuvre chargement">
     <div id="progress-bar"></div>
 </body>

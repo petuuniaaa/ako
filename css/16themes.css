@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Bubbler One';
+    src: url(/fonts/BubblerOne-Regular.ttf);
+    /* A convertir en woff */
+}
+
+body {
+    background-color: #41BABE;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5%;
+}
+
+img[alt=logo] {
+    width: 10%;
+    height: 10%;
+}
+
+img[alt=piece] {
+    height: 10%;
+    width: 10%;
+}
+
+img[alt=avatar] {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+section {
+    margin-top: 15%;
+}
+
+.main {
+    position: relative;
+}
+
+a button:hover {
+    cursor: pointer;
+}
+
+.monuments {
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.animaux {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+
+.mythes {
+    position: absolute;
+    top: 140%;
+    left: 10%;
+}
+
+.drapeaux {
+    position: absolute;
+    top: 230%;
+    left: 40%;
+}
+
+
+button {
+    background-color: #9373ab;
+    box-shadow: 0px 0px 41px -7px rgba(0, 0, 0, 0.75);
+    border: none;
+    color: #FFF;
+    font-family: 'Bubbler One';
+    font-size: 1.125em;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) {
+    section {
+        margin-top: 5%;
+    }
+
+    .monuments {
+        left: 30%;
+    }
+
+    .mythes {
+        left: 20%;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-top: 0;
+    }
+
+    button {
+        font-size: 1.400em;
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+    }
+
+}

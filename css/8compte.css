@@ -41,6 +41,8 @@ img[alt="modifier"] {
     margin: 5%;
     cursor: pointer;
     border-radius: 20px 20px;
+    width: 90%;
+    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
 }
 
 
@@ -52,10 +54,100 @@ img[alt="modifier"] {
     font-size: 1.125rem;
 }
 
-.timer::before {
-    content: url(../pictures/svg/001-locked.svg);
+@media (min-width: 380px) {
+    img[alt="avatar"] {
+        width: 30%;
+    }
+
+    .bloc button {
+        width: 65%;
+        margin: 3%;
+        padding: 3% 15%;
+    }
 }
 
-.deconnexion::before {
-    content: url(../pictures/svg/002-unlocked.svg);
+@media (min-width: 525px) {
+    body {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-top: 5%;
+    }
+
+    img[alt="logo"] {
+        width: 15%;
+    }
+
+    img[alt="avatar"] {
+        width: 45%;
+    }
+
+    .head {
+        font-size: 1.250rem;
+    }
+
+    .bloc button {
+        width: 90%;
+        padding: 5% 15%;
+        margin: 5%;
+    }
+
+}
+
+@media (min-width: 680px) {
+    img[alt="avatar"] {
+        width: 35%;
+    }
+
+    .bloc button {
+        width: 90%;
+        padding: 5% 15%;
+        margin: 3%;
+    }
+}
+
+@media (min-width: 800px) {
+    header {
+        margin-top: 3%;
+    }
+
+    img[alt="logo"] {
+        width: 10%;
+    }
+
+    img[alt="avatar"] {
+        width: 30%;
+    }
+
+    .bloc button {
+        width: 70%;
+        padding: 4% 5%;
+        margin: 3%;
+    }
+}
+
+@media (min-width:950px) {
+    .bloc button {
+        width: 60%;
+        padding: 3% 5%;
+        margin: 2%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        margin-top: 1%;
+    }
+
+    img[alt="avatar"] {
+        width: 25%;
+    }
+
+    .bloc button {
+        width: 50%;
+        padding: 2% 5%;
+        margin: 2%;
+    }
 }
