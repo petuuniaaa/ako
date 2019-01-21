@@ -10,16 +10,16 @@
 
 @font-face {
   font-family: 'Bubbler One';
-  src: url(/fonts/BubblerOne-Regular.ttf);
+  src: url(fonts/BubblerOne-Regular.ttf);
   /* A convertir en woff */
 }
 
 body {
   height: 100vh;
-  background: #FFF;
+  background: #41BABE;
 }
 
-.navigation {
+nav {
   display: flex;
   justify-content: space-between;
   margin-top: 3%;
@@ -44,7 +44,7 @@ img[alt=avatar] {
 header h1 {
   font-family: 'Bubbler One';
   /* Ne pas oublier de mettre d'autre police */
-  color: #000;
+  color: #9373ab;
   text-align: center;
   margin-bottom: 2%;
 }
@@ -90,7 +90,7 @@ header h1 {
   height: 100%;
   position: absolute;
   border-radius: 5px;
-  background: #4ad8d8;
+  background: #9373ab;
   backface-visibility: hidden;
 }
 
@@ -145,8 +145,10 @@ div .front-face img {
 }
 
 @media screen and (min-width: 600px) {
-  body {
+
+  header {
     max-width: 50%;
     margin: 0 auto;
   }
+
 }
