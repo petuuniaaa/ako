@@ -8,45 +8,49 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Bubbler+One'); */
 
-@font-face {
+/* @font-face {
   font-family: 'Bubbler One';
   src: url(fonts/BubblerOne-Regular.ttf);
-  /* A convertir en woff */
-}
+} */
 
 body {
-  height: 100vh;
   background: #41BABE;
 }
 
-nav {
+header nav {
   display: flex;
+  justify-items: center;
   justify-content: space-between;
-  margin-top: 3%;
+  text-align: center;
+  margin: 2%;
+}
+
+header nav a {
+  width: 50%;
 }
 
 img[alt=logo] {
-  height: 10%;
-  width: 10%;
+  width: 25%;
 }
 
 img[alt=piece] {
-  height: 10%;
-  width: 10%;
+  width: 40%;
 }
 
 img[alt=avatar] {
   border-radius: 50%;
-  width: 15%;
-  height: 15%;
+  width: 40%;
 }
 
 header h1 {
   font-family: 'Bubbler One';
   /* Ne pas oublier de mettre d'autre police */
-  color: #9373ab;
+  /* color: #9373ab; */
+  /* color: #4B365E; */
+  color: #FFF;
   text-align: center;
-  margin-bottom: 2%;
+  margin: 2% 0;
+  text-transform: uppercase;
 }
 
 .memory-game {
@@ -54,20 +58,21 @@ header h1 {
 }
 
 .plateau {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
-
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .memory-card {
   width: calc(25% - 10px);
   /* Changer la forme de la carte pour adaptation */
-  height: calc(33.333% - 10px);
-  margin: 5px;
+  height: calc(33% - 10px);
+  margin: 2px;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
@@ -102,7 +107,8 @@ section h1 {
   color: #FFF;
   z-index: 99;
   font-size: 95%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Bubbler One';
+  /* font-family: 'PT Sans', sans-serif; */
   text-align: center;
   position: relative;
   top: 80%;
@@ -144,6 +150,60 @@ div .front-face img {
   transform: translate(-50%, -50%);
 }
 
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+}
+
+.footer .son {
+  background-image: url(../../pictures/svg/speaker.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #9373ab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer img {
+  width: 40%;
+}
+
+.footer p {
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.footer .return {
+  width: 60px;
+  background-color: #9373ab;
+  border-radius: 100%;
+  height: 60px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* .footer .notactived {
+  display: none;
+} */
+
+@media screen and (min-width: 450px) {
+  .plateau {
+    margin-bottom: 10px;
+  }
+}
+
+
 @media screen and (min-width: 600px) {
 
   header {
@@ -151,4 +211,20 @@ div .front-face img {
     margin: 0 auto;
   }
 
+}
+
+@media screen and (min-width: 970px) {
+
+  img[alt=piece],
+  img[alt=avatar] {
+    width: 30%;
+  }
+
+  header nav {
+    margin-bottom: 0;
+  }
+
+  header h1 {
+    margin: 0;
+  }
 }
