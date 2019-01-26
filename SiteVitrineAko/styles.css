@@ -1,52 +1,67 @@
-body{
+body {
     background-color: #d5e8d4;
     position: relative;
-    padding-top: 10%;
-     overflow-x: hidden;
-     
-     user-select: none;
-
+    overflow-x: hidden;
+    user-select: none;
+    height: 100vh;
 }
 
+<<<<<<< HEAD
 
 
 #manav{
+=======
+#manav {
+>>>>>>> db50b509f4f7892b5835886f9228148253a89cbd
     margin-top: 3%;
     font-size: 2em;
 }
-.navbar-light .navbar-nav .nav-link.active{
 
-    background-image: url('img/ako.svg');
-    background-repeat: no-repeat;
-      background-position: center;
-    color: white;
-   
-}
-a.nav-item.nav-link{
-    margin-left: 10%;
-}
-.navbar-light .navbar-nav .nav-link{
-    color:white;
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
     opacity: 0.5;
-  }
-  .navbar-light .navbar-nav .nav-link:hover{
-      color: white;
-      opacity: 1;
-      background: url('img/ako.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-  }
-  div.navbar-nav{
-     margin-right: 35%;
-     
-  }
-  .fb{
-      width: 15%;
-      z-index: 999;
-  }
+}
+
+.navbar-light {
+    background-color: #41BABE;
+}
+
+a.nav-item.nav-link {
+    margin: 0 2%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FFF;
+    opacity: 1;
+    background: url('img/ako.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* div.navbar-nav {
+    margin-right: 35%;
+} */
+
+nav a {
+    font-family: 'Bubbler One', sans-serif;
+    text-transform: uppercase;
+}
+
+nav a svg {
+    fill: #FFF;
+    width: 50px;
+}
+
+nav a svg:hover {
+    fill: #FFF;
+}
+
 /* Accueil*/
 
 
+<<<<<<< HEAD
 #accueil{
  
     display: table;
@@ -82,7 +97,42 @@ a.nav-item.nav-link{
           transform: translateY(0px);
       }
       to{
+=======
+.ballon {
+    width: 15%;
+    margin-top: 5%;
+    margin-left: 40%;
+    animation: ballon 1s forwards infinite alternate;
+}
+
+@keyframes ballon {
+    from {
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+
+    to {
+>>>>>>> db50b509f4f7892b5835886f9228148253a89cbd
         transform: translateX(20px);
         transform: translateY(20px);
-      }
-  }
+    }
+}
+
+.mockup img {
+    width: 85%;
+}
+
+.mobil {
+    position: absolute;
+    left: 25%;
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+}
+
+.text {
+    top: 50%;
+    transform: translateY(25%);
+}

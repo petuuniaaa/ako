@@ -9,27 +9,32 @@ body {
     margin: 0;
 }
 
-
 header {
     display: flex;
+    justify-items: center;
     justify-content: space-between;
-    margin: 5% 5%;
+    text-align: center;
+    margin: 2%;
+}
+
+header a,
+header img {
+    width: 40%;
 }
 
 img[alt=logo] {
-    width: 10%;
-    height: 10%;
+    width: 30%;
 }
 
 img[alt=piece] {
-    height: 10%;
-    width: 10%;
+    width: 15%;
+    height: 15%;
+    ;
 }
 
 img[alt=avatar] {
     border-radius: 50%;
-    width: 15%;
-    height: 15%;
+    width: 40%;
 }
 
 section {
