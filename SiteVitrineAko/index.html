@@ -24,14 +24,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#accueil">Accueil</a>
+                    <a class="nav-item nav-link active" href="#accueil">Accueil</a>
                     <a class="nav-item nav-link" href="#equipe">Equipe</a>
                     <a class="nav-item nav-link" href="#projet">Projet</a>
-                    <img src="" alt="">
+                    <img src="/SiteVitrineAko/img/tamaticorplogo.svg" alt="">
                     <a class="nav-item nav-link" href="#jouer">Jouer</a>
                     <a class="nav-item nav-link" href="#coloriages">Coloriages</a>
                     <a class="nav-item nav-link" href="https://www.facebook.com/tamaiticorp/" target="_blank">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        <svg version="1.1" xmlns="http://www.w3.org/1800/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 1000 1000" xml:space="
                             preserve">
                             <path d="M500,50.2C251.6,50.2,50.2,251.6,50.2,500S251.6,949.8,500,949.8c6.5,0,12.9-0.1,19.3-0.4V622.2h-69.4V507.7
@@ -40,7 +40,7 @@
                         </svg>
                     </a>
                     <a class="nav-item nav-link" href="https://www.instagram.com/tamaiticorp" target="_blank">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        <svg version="1.1" xmlns="http://www.w3.org/1800/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 1000 1000" xml:space="preserve">
                             <g>
                                 <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -186.6847 497.3399)" cx="507"
@@ -59,20 +59,20 @@
         </nav>
     </header>
 
-    <section>
-        <div id="accueil" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col mockup">
-                        <img src="/SiteVitrineAko/img/mockup2.png" alt="">
-                        <img src="/SiteVitrineAko/img/mockup1.png" alt="" class="mobil">
-                    </div>
-                    <div class="col text">
-                        <h1 class="text-center"><strong>Tamaïti Corp</strong><br>développe<strong><br>Ako</strong><br>pour
-                            vos enfants</h1>
-                    </div>
+    <section id="accueil">
+        <div class="container accueil">
+            <div class="row">
+                <div class="col mockup">
+                    <img src="/SiteVitrineAko/img/mockup2.png" alt="" class="horizon">
+                    <img src="/SiteVitrineAko/img/mockup1.png" alt="" class="mobil">
                 </div>
-                <svg class="ballon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <div class="col text">
+                    <h1 class="text-center text_accueil"><strong>Tamaïti Corp</strong><br>développe<strong class="text_rose"><br>Ako</strong><br>pour
+                        vos enfants</h1>
+                </div>
+            </div>
+            <a href="#equipe">
+                <svg class="ballon" version="1.1" xmlns="http://www.w3.org/1800/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 1000 1000" xml:space="preserve">
                     <style type="text/css">
                         .st0 {
@@ -137,11 +137,70 @@
                     <path d="M514.7,881.2L514.7,881.2c2.2-1.7,2.6-4.8,0.9-7l-22.2-29c-1.7-2.2-4.8-2.6-7-0.9l0,0c-2.2,1.7-2.6,4.8-0.9,7l22.2,29
 	C509.4,882.4,512.5,882.8,514.7,881.2z" />
                 </svg>
-            </div>
+            </a>
         </div>
-
     </section>
 
+    <section id="equipe">
+        <div class="container equipe">
+            <div class="row">
+                <div class="col">
+                    <img src="/SiteVitrineAko/img/tamaiticorp.jpg" alt="">
+                </div>
+                <div class="col">
+                    <p class="text-center">L'équipe <strong class="text_equipe">Tamaïti Corp</strong> est née au
+                        sein du DUT MMI (Métiers
+                        du Multimédia et de
+                        l'Internet) de Champs-sur-Marne, une petite ville entre Paris et Disneyland. <br>Combiner
+                        technique et créativité est notre objectif, pour répondre à la demande des jeux éducatifs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="presentation">
+        <p class="text-center text_videos">Découvrez les différents profils de l'équipe à travers de petites vidéos
+            faites
+            maison</p>
+        <div class="justify-content-center align-items-center">
+            <video src="/SiteVitrineAko/video/Présentation Philippe.mp4" poster="/SiteVitrineAko/video/Philippepre.PNG"
+                width="180" height="180" type="video/mp4" controls></video>
+            <video src="/SiteVitrineAko/video/Présentation Céline.mp4" poster="/SiteVitrineAko/video/Celinepre.PNG"
+                width="180" height="180" type="video/mp4" controls></video>
+            <video src="/SiteVitrineAko/video/Présentation Aurélien.mp4" poster="/SiteVitrineAko/video/Aurélienpre.PNG"
+                width="180" height="180" type="video/mp4" controls></video>
+            <video src="/SiteVitrineAko/video/Présentation Héléna.mp4" poster="/SiteVitrineAko/video/Hélénapre.PNG"
+                width="180" height="180" type="video/mp4" controls></video>
+            <video src="/SiteVitrineAko/video/Présentation Julien.mp4" poster="/SiteVitrineAko/video/Julienpre.PNG"
+                width="180" height="180" type="video/mp4" controls></video>
+            <video src="/SiteVitrineAko/video/Présentation Eloise.mp4" poster="/SiteVitrineAko/video/eloisepre.PNG"
+                width="180" height="180" type="video/mp4" controls></video>
+        </div>
+    </section>
+
+    <section id="projet">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1 class="text_projet">Apprendre avec Ako</h1>
+                    <p>L'application <strong>Ako</strong> met la culture générale au centre de ses priorités ! <br>A
+                        travers 5 mini-jeux, notre petite pieuvre violette aidera vos enfants à parcourir les
+                        différents niveaux. <br>Mythologies, monuments ou encore drapeayx, autant de thèmes à découvrir
+                        en images.</p>
+                </div>
+                <div class="col-sm-7">
+                    <video src="" poster="" controls width="450" height="250"></video>
+                </div>
+            </div>
+        </div>
+        <div class="infos">
+            <h2>Apprendre avec Ako, c'est facile ! Il suffit de télécharger l'application</h2>
+            <a href=""><img src="/SiteVitrineAko/img/googleplay.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section id="jouer">
+
+    </section>
 
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -150,6 +209,19 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
+        $('a[href^="#"]').click(function () {
+            var the_id = $(this).attr("href");
+            if (the_id === '#') {
+                return;
+            }
+            $('html, body').animate({
+                scrollTop: $(the_id).offset().top
+            }, 'slow');
+            return false;
+        });
+    </script>
 </body>
 
 </html>
