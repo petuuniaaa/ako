@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* @import url('https://fonts.googleapis.com/css?family=Bubbler+One'); */
+
+@font-face {
+  font-family: 'Bubbler One';
+  src: url(fonts/BubblerOne-Regular.ttf);
+  /* A convertir en woff */
+}
+
+body {
+  height: 100vh;
+  background: #41BABE;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+img[alt=logo] {
+  height: 10%;
+  width: 10%;
+}
+
+img[alt=piece] {
+  height: 10%;
+  width: 10%;
+}
+
+img[alt=avatar] {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+}
+
+header h1 {
+  font-family: 'Bubbler One';
+  /* Ne pas oublier de mettre d'autre police */
+  color: #9373ab;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.memory-game {
+  display: flex;
+}
+
+.plateau {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  /* Changer la forme de la carte pour adaptation */
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background: #9373ab;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+section h1 {
+  color: #FFF;
+  z-index: 99;
+  font-size: 95%;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  position: relative;
+  top: 80%;
+}
+
+/* .pays {
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  color: #FFF;
+  font-size: 1.125em;
+  z-index: 99;
+  font-family: 'PT Sans', sans-serif;
+}
+.norvege {
+  left: 10%;
+} */
+
+.back-face {
+  padding: 20px;
+}
+
+.memory-card .front-face img[alt="cheval"],
+.memory-card .front-face img[alt="girafe"],
+.memory-card .front-face img[alt="TourdePise"] {
+  height: 60%;
+}
+
+.memory-card .front-face img[alt="BigBen"],
+.memory-card .front-face img[alt="tourEiffel"] {
+  height: 65%;
+}
+
+div .front-face img {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 600px) {
+
+  header {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+}
