@@ -1,61 +1,12 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
-/* @import url('https://fonts.googleapis.com/css?family=Bubbler+One'); */
-
-@font-face {
-  font-family: 'Bubbler One';
-  src: url(fonts/BubblerOne-Regular.ttf);
-  /* A convertir en woff */
-}
-
-body {
-  height: 100vh;
-  background: #41BABE;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3%;
-}
-
-img[alt=logo] {
-  height: 10%;
-  width: 10%;
-}
-
-img[alt=piece] {
-  height: 10%;
-  width: 10%;
-}
-
-img[alt=avatar] {
-  border-radius: 50%;
-  width: 15%;
-  height: 15%;
-}
-
-header h1 {
-  font-family: 'Bubbler One';
-  /* Ne pas oublier de mettre d'autre police */
-  color: #9373ab;
-  text-align: center;
-  margin-bottom: 2%;
-}
 
 .memory-game {
   display: flex;
 }
 
 .plateau {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +49,7 @@ header h1 {
   transform: rotateY(180deg);
 }
 
-section h1 {
+.plateau h2 {
   color: #FFF;
   z-index: 99;
   font-size: 95%;
@@ -142,13 +93,4 @@ div .front-face img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width: 600px) {
-
-  header {
-    max-width: 50%;
-    margin: 0 auto;
-  }
-
 }

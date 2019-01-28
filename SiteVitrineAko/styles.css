@@ -21,6 +21,7 @@ body {
 
 .navbar-light {
     background-color: #41BABE;
+    padding-top: 2%;
 }
 
 a.nav-item.nav-link {
@@ -51,6 +52,7 @@ a.nav-item.nav-link:nth-last-child(-n+2) {
     margin-right: 35%;
 } */
 
+
 nav a {
     text-transform: uppercase;
 }
@@ -58,7 +60,7 @@ nav a {
 .navbar-nav img {
     width: 10%;
     height: 10%;
-    /* box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.68); */
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.68);
 }
 
 nav a svg {
@@ -207,6 +209,7 @@ strong {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 70%;
 }
 
 .infos {
@@ -224,5 +227,42 @@ strong {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
 
+/* JOUER */
+#jouer {
+    height: 100vh;
+    display: block;
+}
+
+#jouer h1 {
+    color: #D73F77;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+#jouer p {
+    font-size: 1.2rem;
+}
+
+#jouer img[alt="Google Play"] {
+    position: relative;
+    width: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* COLORIAGES */
+#coloriages {
+    height: 100vh;
+    padding-top: 10%;
+}
+
+#carouselExampleIndicators {
+    width: 50%;
+
+}
+
+.w-100 {
+    width: 50% !important;
 }

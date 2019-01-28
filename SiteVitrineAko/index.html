@@ -9,14 +9,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="memory.css">
+    <link rel="stylesheet" href="styles.css">
+
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 
     <title>Tamaïti Corp</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="90" data-target="#manav">
     <header>
         <nav id="manav" class="navbar navbar-expand-lg navbar-light fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -28,7 +29,7 @@
                     <a class="nav-item nav-link active" href="#accueil">Accueil</a>
                     <a class="nav-item nav-link" href="#equipe">Equipe</a>
                     <a class="nav-item nav-link" href="#projet">Projet</a>
-                    <img src="/SiteVitrineAko/img/tamaticorplogo.svg" alt="">
+                    <!-- <img src="/SiteVitrineAko/img/tamaticorplogo.svg" alt=""> -->
                     <a class="nav-item nav-link" href="#jouer">Jouer</a>
                     <a class="nav-item nav-link" href="#coloriages">Coloriages</a>
                     <a class="nav-item nav-link" href="https://www.facebook.com/tamaiticorp/" target="_blank">
@@ -189,126 +190,154 @@
                         en images.</p>
                 </div>
                 <div class="col-sm-7">
-                    <video src="" poster="" controls width="450" height="250"></video>
+                    <video src="" poster="" controls></video>
                 </div>
             </div>
         </div>
         <div class="infos">
             <h2>Apprendre avec Ako, c'est facile ! Il suffit de télécharger l'application</h2>
-            <a href=""><img src="/SiteVitrineAko/img/googleplay.svg" alt=""></a>
+            <a href=""><img src="/SiteVitrineAko/img/googleplay.svg" alt="Google Play"></a>
         </div>
     </section>
-    <section>
-        <div>
-            <section class="memory-game">
-                <div class="plateau">
-                    <div class="memory-card" data-framework="chat">
-                        <div class="front-face">
 
-                            <img src="pictures/animaux/chat.svg" alt="chat">
-                            <h1>Chat</h1>
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="chat">
-                        <div class="front-face">
-                            <h1>Chat</h1>
-                            <img src="pictures/animaux/chat.svg" alt="chat">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="cheval">
-                        <div class="front-face">
-                            <h1>Cheval</h1>
-                            <img src="pictures/animaux/cheval.svg" alt="cheval">
-
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="cheval">
-                        <div class="front-face">
-                            <h1>Cheval</h1>
-                            <img src="pictures/animaux/cheval.svg" alt="cheval">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="chien">
-                        <div class="front-face">
-                            <h1>Chien</h1>
-                            <img src="pictures/animaux/chien.svg" alt="chien">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="chien">
-                        <div class="front-face">
-                            <h1>Chien</h1>
-                            <img src="pictures/animaux/chien.svg" alt="chien">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="elephant">
-                        <div class="front-face">
-                            <h1>Eléphant</h1>
-                            <img src="pictures/animaux/elephant.svg" alt="elephant">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="elephant">
-                        <div class="front-face">
-                            <h1>Eléphant</h1>
-                            <img src="pictures/animaux/elephant.svg" alt="elephant">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="panda">
-                        <div class="front-face">
-                            <h1>Panda</h1>
-                            <img src="pictures/animaux/panda.svg" alt="panda">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="panda">
-                        <div class="front-face">
-                            <h1>Panda</h1>
-                            <img src="pictures/animaux/panda.svg" alt="panda">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="girafe">
-                        <div class="front-face">
-                            <h1>Girafe</h1>
-                            <img src="pictures/animaux/girafe.svg" alt="girafe">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
-
-                    <div class="memory-card" data-framework="girafe">
-                        <div class="front-face">
-                            <h1>Girafe</h1>
-                            <img src="pictures/animaux/girafe.svg" alt="girafe">
-                        </div>
-                        <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
-                    </div>
+    <section class="memory-game" id="jouer">
+        <h1 class="memory text-center">Memory</h1>
+        <p class="text-center">Petit chanceux que vous êtes, Tamaïti Corp vous permet de jouer en exclusivité à un de
+            ses jeux !</p>
+        <div class="plateau">
+            <div class="memory-card" data-framework="chat">
+                <div class="front-face">
+                    <img src="pictures/animaux/chat.svg" alt="chat">
+                    <h2>Chat</h2>
                 </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
 
-            </section>
+            <div class="memory-card" data-framework="chat">
+                <div class="front-face">
+                    <h2>Chat</h2>
+                    <img src="pictures/animaux/chat.svg" alt="chat">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="cheval">
+                <div class="front-face">
+                    <h2>Cheval</h2>
+                    <img src="pictures/animaux/cheval.svg" alt="cheval">
+
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="cheval">
+                <div class="front-face">
+                    <h2>Cheval</h2>
+                    <img src="pictures/animaux/cheval.svg" alt="cheval">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="chien">
+                <div class="front-face">
+                    <h2>Chien</h2>
+                    <img src="pictures/animaux/chien.svg" alt="chien">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="chien">
+                <div class="front-face">
+                    <h2>Chien</h2>
+                    <img src="pictures/animaux/chien.svg" alt="chien">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="elephant">
+                <div class="front-face">
+                    <h2>Eléphant</h2>
+                    <img src="pictures/animaux/elephant.svg" alt="elephant">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="elephant">
+                <div class="front-face">
+                    <h2>Eléphant</h2>
+                    <img src="pictures/animaux/elephant.svg" alt="elephant">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="panda">
+                <div class="front-face">
+                    <h2>Panda</h2>
+                    <img src="pictures/animaux/panda.svg" alt="panda">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="panda">
+                <div class="front-face">
+                    <h2>Panda</h2>
+                    <img src="pictures/animaux/panda.svg" alt="panda">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="girafe">
+                <div class="front-face">
+                    <h2>Girafe</h2>
+                    <img src="pictures/animaux/girafe.svg" alt="girafe">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
+
+            <div class="memory-card" data-framework="girafe">
+                <div class="front-face">
+                    <h2>Girafe</h2>
+                    <img src="pictures/animaux/girafe.svg" alt="girafe">
+                </div>
+                <img class="back-face" src="pictures/svg/akobleu.svg" alt="Memory Card">
+            </div>
         </div>
+        <a href=""><img src="/SiteVitrineAko/img/googleplay.svg" alt="Google Play"></a>
     </section>
 
-    <section id="jouer">
-
+    <section id="coloriages">
+        <p class="text-center">Passez du digital au réel en téléchargeant nos coloriages !</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/SiteVitrineAko/img/tamaiticorp.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/SiteVitrineAko/img/mockup2.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/SiteVitrineAko/img/mockup2.png" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <p class="text-center">Imprimez les et laissez vos enfants les colorier ! <br>Postez les sur nos réseaux
+            sociaux avec le #Ako</p>
     </section>
 
+    <!-- SCRIPTS -->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -328,6 +357,10 @@
             }, 'slow');
             return false;
         });
+
+        $('.carousel').carousel({
+            interval: 1000
+        })
     </script>
     <script src="memory.js"></script>
 </body>
