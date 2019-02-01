@@ -7,6 +7,7 @@
 body {
     background-color: #41BABE;
     margin: 0;
+    font-family: 'Bubbler One';
 }
 
 header {
@@ -41,8 +42,60 @@ section {
     margin-top: 15%;
 }
 
-.main {
+section img[alt=pieuvre] {
     position: relative;
+    width: 40%;
+    left: -30px;
+}
+
+.circular-sb {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #9373ab;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+.circular-sb p {
+    position: relative;
+    top: 50%;
+    color: #FFF;
+    transform: translateY(-50%);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.circle3 {
+    border: 2px solid #FFF;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: 20%;
+    top: 50%;
+    background-color: #9373ab;
+}
+
+.circle4 {
+    border: 2px solid #FFF;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 40%;
+    left: 10%;
+}
+
+.conversation {
+    display: flex;
+}
+
+.main {
+    margin: 0;
 }
 
 a button:hover {
@@ -50,27 +103,27 @@ a button:hover {
 }
 
 .monuments {
-    position: relative;
-    top: 20%;
-    left: 20%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
 }
 
 .animaux {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 50%;
+    left: 15%;
 }
 
 .mythes {
     position: absolute;
-    top: 140%;
-    left: 10%;
+    top: 60%;
+    left: 55%;
 }
 
 .drapeaux {
     position: absolute;
-    top: 230%;
-    left: 40%;
+    top: 75%;
+    left: 20%;
 }
 
 
@@ -79,12 +132,12 @@ button {
     box-shadow: 0px 0px 41px -7px rgba(0, 0, 0, 0.75);
     border: none;
     color: #FFF;
-    font-family: 'Bubbler One';
     font-size: 1.125em;
     border-radius: 100px;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     text-transform: uppercase;
+    font-family: 'Bubbler One';
 }
 
 @media screen and (min-width: 500px) {
@@ -92,14 +145,22 @@ button {
         margin-top: 5%;
     }
 
-    .monuments {
+    .animaux {
         left: 30%;
     }
 
-    .mythes {
-        left: 20%;
+    .monuments {
+        left: 60%;
     }
 
+    .mythes {
+        left: 60%;
+        top: 70%;
+    }
+
+    .drapeaux {
+        left: 10%;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -119,4 +180,74 @@ button {
         height: 120px;
     }
 
+    .animaux {
+        left: 35%;
+    }
+
+    .drapeaux {
+        left: 30%;
+    }
+
+    .conversation {
+        padding-top: 10%;
+    }
+
+    .circular-sb {
+        left: 40%;
+        top: 15%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .circular-sb {
+        top: 15%;
+    }
+
+    .monuments {
+        left: 55%;
+    }
+
+    .mythes {
+        left: 55%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .circular-sb {
+        top: 20%;
+    }
+
+    .animaux {
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .conversation {
+        padding-top: 0;
+    }
+
+    section img[alt=pieuvre] {
+        left: 1%;
+    }
+
+    .circular-sb {
+        top: 10%;
+    }
+
+    .drapeaux {
+        left: 35%;
+    }
+
+    .mythes {
+        left: 50%;
+    }
+
+    img[alt="logo"] {
+        width: 20%;
+    }
+
+    img[alt="avatar"] {
+        width: 20%;
+    }
 }

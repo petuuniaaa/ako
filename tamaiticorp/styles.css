@@ -1,0 +1,571 @@
+body {
+    background-color: #d5e8d4;
+    user-select: none;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+#accueil {
+    height: 100vh;
+}
+
+#manav {
+    font-size: 2em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+    opacity: 0.5;
+    padding: 0;
+}
+
+.navbar-light {
+    background-color: #41BABE;
+    padding-top: 2%;
+}
+
+a.nav-item.nav-link {
+    margin: 0 2%;
+}
+
+a.nav-item.nav-link:nth-last-child(-n+2) {
+    margin: 1%;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background: url('img/ako.svg');
+    opacity: 1;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+.navbar-nav img {
+    width: 10%;
+    height: 10%;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.68);
+}
+
+nav a svg {
+    fill: #FFF;
+    width: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link:nth-last-child(-n+2) {
+    background: none;
+    position: relative;
+    top: -10px;
+}
+
+.navbar-light .navbar-nav .nav-link:nth-last-child(-n+2):hover {
+    opacity: 1;
+}
+
+nav a svg:hover {
+    fill: #FFF;
+}
+
+/* Accueil*/
+.accueil {
+    position: absolute;
+    top: 5%;
+}
+
+.mockup img {
+    width: 60%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.mockup .mobil {
+    width: 25%;
+    position: relative;
+    z-index: 99;
+}
+
+.mockup .horizon {
+    position: relative;
+    left: 40%;
+}
+
+.text {
+    padding-top: 35%;
+}
+
+.text_accueil {
+    font-size: 1.5rem;
+}
+
+strong {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+}
+
+.text_rose {
+    color: #D73F77;
+}
+
+.ballon {
+    width: 10%;
+    position: relative;
+    left: 47%;
+    transform: translateX(-47%);
+    animation: ballon 1s forwards infinite alternate;
+}
+
+@keyframes ballon {
+    from {
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateX(20px);
+        transform: translateY(20px);
+    }
+}
+
+/* EQUIPE */
+
+#equipe {
+    height: 100vh;
+}
+
+.equipe {
+    position: relative;
+    top: 56%;
+    transform: translateY(-50%);
+}
+
+.equipe img {
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.text_equipe {
+    font-size: inherit;
+}
+
+.equipe .text-center {
+    font-size: 1.2rem;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.presentation {
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.presentation div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.presentation div video {
+    margin: 2%;
+    border: solid #000 2px;
+}
+
+.text_videos {
+    font-size: 1.2rem;
+    margin: 0 3%;
+}
+
+/* PROJET */
+#projet {
+    height: 145vh;
+}
+
+#projet .container {
+    position: relative;
+    top: 35%;
+    transform: translateY(-40%);
+}
+
+.text_projet {
+    text-transform: uppercase;
+    color: #D73F77;
+    padding-bottom: 4%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.col-md p {
+    font-size: 1.2rem;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+#projet strong {
+    font-size: inherit;
+}
+
+.col-md video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.infos {
+    position: relative;
+    top: 15%;
+    padding: 0 5%;
+}
+
+.infos h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.infos img {
+    width: 55%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* JOUER */
+#jouer {
+    height: 100vh;
+    display: block;
+}
+
+#jouer h1 {
+    color: #D73F77;
+    text-transform: uppercase;
+    padding-top: 15%;
+}
+
+#jouer p {
+    font-size: 1.2rem;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+#jouer img[alt="Google Play"] {
+    position: relative;
+    width: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* COLORIAGES */
+#coloriages {
+    height: 100vh;
+    padding-top: 30%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("img/fleche.png");
+    transform: rotate(90deg);
+    width: 40px;
+    opacity: 100%;
+}
+
+.carousel-control-next-icon {
+    background-image: url("img/fleche.png");
+    transform: rotate(-90deg);
+    width: 40px;
+    opacity: 100%;
+}
+
+.carousel {
+    width: 40%;
+}
+
+.carousel-item img {
+    background-color: #FFF;
+}
+
+.carousel-indicators li {
+    background-color: #5dbbb1;
+}
+
+.carousel-indicators li.active {
+    background-color: #D73F77;
+}
+
+/* QUERIES */
+@media screen and (min-width: 365px) {
+    .accueil {
+        top: 0%;
+        position: relative;
+    }
+
+    .mockup img {
+        width: 50%;
+        transform: translateX(-20%);
+    }
+
+    .mockup .mobil {
+        width: 20%;
+    }
+
+    .mockup .horizon {
+        position: relative;
+        left: 25%;
+    }
+
+    .text {
+        padding-top: 25%;
+    }
+}
+
+@media screen and (min-width:440px) {
+    #projet .container {
+        transform: none;
+        top: 10%;
+    }
+
+    .col-md video {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:530px) {
+    .mockup img {
+        width: 40%;
+        transform: translateX(10%);
+    }
+
+    .mockup .mobil {
+        width: 15%;
+    }
+
+    .equipe .text-center {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .equipe img {
+        width: 80%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .infos {
+        top: 13%;
+    }
+
+
+
+}
+
+@media screen and (min-width:576px) {
+    .accueil {
+        padding-top: 20%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    .mockup img {
+        position: relative;
+        top: 20%;
+        width: 60%;
+        left: 15%;
+    }
+
+    .mockup .mobil {
+        width: 25%;
+    }
+
+    .text {
+        top: 50%;
+        transform: translateY(50%);
+        padding-top: 0;
+    }
+
+    .ballon {
+        width: 8%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+    }
+
+    .equipe img {
+        width: 100%;
+    }
+
+    .col-md p {
+        max-width: 700px;
+    }
+
+    .col-md video {
+        width: 80%;
+    }
+
+
+    .infos img {
+        width: 35%;
+    }
+
+    #jouer p {
+        padding-bottom: 0;
+    }
+
+    #jouer img[alt="Google Play"] {
+        width: 30%;
+    }
+
+    #jouer p {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .accueil {
+        padding-top: 10%;
+        max-width: none;
+        margin: initial;
+    }
+
+    .mockup img {
+        position: relative;
+        top: 20%;
+        width: 70%;
+        left: 15%;
+    }
+
+    .mockup .mobil {
+        width: 30%;
+        position: absolute;
+        left: 60%;
+    }
+
+    .mockup .horizon {
+        left: 10%;
+    }
+
+    .infos img {
+        width: 25%;
+    }
+
+    #jouer h1 {
+        padding-top: 5%;
+    }
+
+}
+
+@media screen and (min-width:760px) {
+    .text_accueil {
+        font-size: 2rem;
+    }
+
+    strong {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 2.5rem;
+    }
+
+    .ballon {
+        width: 5%;
+    }
+
+    .equipe .text-center {
+        font-size: 1.4rem;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+
+    #projet {
+        padding: 0;
+        height: 100vh;
+    }
+
+    #projet .container {
+        max-width: 800px;
+    }
+
+    .text_projet {
+        text-align: initial;
+    }
+
+    .col-md {
+        padding: 0 5%;
+    }
+
+    #jouer h1 {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (min-width:780px) {
+    #jouer img[alt="Google Play"] {
+        width: 20%;
+    }
+
+    #jouer p {
+        max-width: initial;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #manav {
+        margin-top: 2%;
+    }
+
+    .mockup img {
+        position: relative;
+        top: 30%;
+        width: 50%;
+        left: 15%;
+    }
+
+    .mockup .mobil {
+        width: 20%;
+    }
+
+    .mockup .horizon {
+        left: 15%;
+    }
+
+    .ballon {
+        width: 3.5%;
+        top: 75%;
+    }
+
+    .equipe img {
+        width: 80%;
+        position: relative;
+        top: 56%;
+    }
+
+    .infos img {
+        width: 15%;
+    }
+
+    #projet {
+        padding-top: 5%;
+    }
+
+    #projet .container {
+        top: 10%;
+    }
+
+    #jouer h1 {
+        padding-top: 10%;
+    }
+
+    #jouer img[alt="Google Play"] {
+        width: 15%;
+    }
+
+}
