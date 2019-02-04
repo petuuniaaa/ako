@@ -51,7 +51,7 @@ nav a {
 
 nav a svg {
     fill: #FFF;
-    width: 50px;
+    width: 40px;
 }
 
 .navbar-light .navbar-nav .nav-link:nth-last-child(-n+2) {
@@ -181,7 +181,7 @@ strong {
 
 /* PROJET */
 #projet {
-    height: 145vh;
+    height: 100vh;
 }
 
 #projet .container {
@@ -194,6 +194,7 @@ strong {
     text-transform: uppercase;
     color: #D73F77;
     padding-bottom: 4%;
+    padding-top: 30%;
     text-align: center;
     font-size: 2rem;
 }
@@ -217,25 +218,6 @@ strong {
     width: 70%;
 }
 
-.infos {
-    position: relative;
-    top: 15%;
-    padding: 0 5%;
-}
-
-.infos h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.infos img {
-    width: 55%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 /* JOUER */
 #jouer {
     height: 100vh;
@@ -245,7 +227,7 @@ strong {
 #jouer h1 {
     color: #D73F77;
     text-transform: uppercase;
-    padding-top: 15%;
+    padding-top: 80px;
 }
 
 #jouer p {
@@ -255,17 +237,53 @@ strong {
     padding-bottom: 5%;
 }
 
+.store {
+    text-align: center;
+}
+
+.store h2 {
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
 #jouer img[alt="Google Play"] {
-    position: relative;
-    width: 45%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 40%;
+}
+
+#jouer img[alt="App Store Apple"] {
+    width: 36%;
 }
 
 /* COLORIAGES */
 #coloriages {
     height: 100vh;
-    padding-top: 30%;
+    padding-top: 18%;
+}
+
+#coloriages p {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#coloriages p:first-child {
+    padding-top: 70px;
+}
+
+#coloriages svg {
+    width: 15%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: #D73F77;
+}
+
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
 }
 
 .carousel-control-prev-icon {
@@ -283,7 +301,7 @@ strong {
 }
 
 .carousel {
-    width: 40%;
+    width: 70%;
 }
 
 .carousel-item img {
@@ -296,6 +314,14 @@ strong {
 
 .carousel-indicators li.active {
     background-color: #D73F77;
+}
+
+/* FOOTER */
+footer {
+    font-family: 'Bubbler One', sans-serif;
+    background-color: #D73F77;
+    color: #FFF;
+    height: 60px;
 }
 
 /* QUERIES */
@@ -324,6 +350,8 @@ strong {
     }
 }
 
+
+
 @media screen and (min-width:440px) {
     #projet .container {
         transform: none;
@@ -332,6 +360,27 @@ strong {
 
     .col-md video {
         width: 70%;
+    }
+
+    #coloriages {
+        padding: 15%;
+        padding-top: 10%;
+    }
+
+    .carousel {
+        width: 50%;
+    }
+
+    #coloriages p:first-child {
+        padding-top: 80px;
+    }
+
+    #coloriages svg {
+        width: 10%;
+    }
+
+    .text_projet {
+        padding: 0;
     }
 }
 
@@ -358,12 +407,13 @@ strong {
         transform: translate(-50%, -50%);
     }
 
-    .infos {
-        top: 13%;
+    #jouer h1 {
+        padding-top: 130px;
     }
 
-
-
+    #coloriages {
+        padding: 0;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -411,21 +461,24 @@ strong {
         width: 80%;
     }
 
-
-    .infos img {
-        width: 35%;
-    }
-
     #jouer p {
         padding-bottom: 0;
     }
 
     #jouer img[alt="Google Play"] {
-        width: 30%;
+        width: 17%;
+    }
+
+    #jouer img[alt="App Store Apple"] {
+        width: 15%;
     }
 
     #jouer p {
         max-width: 500px;
+    }
+
+    #coloriages p {
+        max-width: initial;
     }
 }
 
@@ -453,12 +506,8 @@ strong {
         left: 10%;
     }
 
-    .infos img {
-        width: 25%;
-    }
-
-    #jouer h1 {
-        padding-top: 5%;
+    .carousel {
+        width: 40%;
     }
 
 }
@@ -487,7 +536,7 @@ strong {
 
     #projet {
         padding: 0;
-        height: 100vh;
+        height: 70vh;
     }
 
     #projet .container {
@@ -503,8 +552,9 @@ strong {
     }
 
     #jouer h1 {
-        padding-top: 10%;
+        padding-top: 0;
     }
+
 }
 
 @media screen and (min-width:780px) {
@@ -514,6 +564,20 @@ strong {
 
     #jouer p {
         max-width: initial;
+    }
+
+    .carousel {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .carousel {
+        padding-top: 0;
+    }
+
+    #coloriages svg {
+        width: 7%;
     }
 }
 
@@ -548,10 +612,6 @@ strong {
         top: 56%;
     }
 
-    .infos img {
-        width: 15%;
-    }
-
     #projet {
         padding-top: 5%;
     }
@@ -568,4 +628,34 @@ strong {
         width: 15%;
     }
 
+    #coloriages {
+        padding-top: 13%;
+    }
+
+    #coloriages p:first-child {
+        padding-top: 0;
+    }
+
+    #coloriages svg {
+        width: 5%;
+    }
+
+    .carousel {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #coloriages {
+        padding: 10%;
+    }
+
+    .carousel {
+        width: 30%;
+        padding-bottom: 2%;
+    }
+
+    #coloriages svg {
+        width: 3%;
+    }
 }
