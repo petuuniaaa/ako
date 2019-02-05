@@ -2,6 +2,9 @@ body {
     background-color: #d5e8d4;
     user-select: none;
     font-family: 'Bubbler One', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #accueil {
@@ -12,6 +15,10 @@ body {
     font-size: 2em;
 }
 
+.fixed-top {
+    padding: 0;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #FFF;
     opacity: 0.5;
@@ -20,12 +27,12 @@ body {
 
 .navbar-light {
     background-color: #41BABE;
-    padding-top: 2%;
 }
 
 a.nav-item.nav-link {
     margin: 0 2%;
 }
+
 
 a.nav-item.nav-link:nth-last-child(-n+2) {
     margin: 1%;
@@ -44,9 +51,12 @@ nav a {
 }
 
 .navbar-nav img {
-    width: 10%;
-    height: 10%;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.68);
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.38);
+    border-radius: 100px;
+    background-color: #FFF;
+    display: none;
 }
 
 nav a svg {
@@ -56,8 +66,6 @@ nav a svg {
 
 .navbar-light .navbar-nav .nav-link:nth-last-child(-n+2) {
     background: none;
-    position: relative;
-    top: -10px;
 }
 
 .navbar-light .navbar-nav .nav-link:nth-last-child(-n+2):hover {
@@ -220,7 +228,7 @@ strong {
 
 /* JOUER */
 #jouer {
-    height: 100vh;
+    height: 120vh;
     display: block;
 }
 
@@ -258,8 +266,9 @@ strong {
 
 /* COLORIAGES */
 #coloriages {
-    height: 100vh;
-    padding-top: 18%;
+    height: 110vh;
+    padding-top: 50px;
+    position: relative;
 }
 
 #coloriages p {
@@ -268,8 +277,13 @@ strong {
     margin: 0 auto;
 }
 
-#coloriages p:first-child {
-    padding-top: 70px;
+#coloriages h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+#coloriages p:first-child:not(footer p) {
+    /* padding-top: 70px; */
 }
 
 #coloriages svg {
@@ -318,10 +332,18 @@ strong {
 
 /* FOOTER */
 footer {
-    font-family: 'Bubbler One', sans-serif;
+    text-align: center;
     background-color: #D73F77;
     color: #FFF;
-    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 50px;
+}
+
+footer p {
+    padding-top: 10px;
 }
 
 /* QUERIES */
@@ -363,17 +385,13 @@ footer {
     }
 
     #coloriages {
-        padding: 15%;
-        padding-top: 10%;
+        height: 100vh;
     }
 
     .carousel {
         width: 50%;
     }
 
-    #coloriages p:first-child {
-        padding-top: 80px;
-    }
 
     #coloriages svg {
         width: 10%;
@@ -382,6 +400,7 @@ footer {
     .text_projet {
         padding: 0;
     }
+
 }
 
 @media screen and (min-width:530px) {
@@ -411,8 +430,13 @@ footer {
         padding-top: 130px;
     }
 
-    #coloriages {
-        padding: 0;
+
+    .carousel {
+        padding: 10px 0;
+    }
+
+    #coloriages svg {
+        width: 6%;
     }
 }
 
@@ -536,11 +560,14 @@ footer {
 
     #projet {
         padding: 0;
-        height: 70vh;
     }
 
     #projet .container {
         max-width: 800px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .text_projet {
@@ -549,6 +576,16 @@ footer {
 
     .col-md {
         padding: 0 5%;
+    }
+
+    #jouer {
+        height: 100vh;
+    }
+
+    #jouer .memory {
+        position: relative;
+        top: 50%;
+        transform: translateY(-45%);
     }
 
     #jouer h1 {
@@ -569,9 +606,14 @@ footer {
     .carousel {
         width: 30%;
     }
+
+    #coloriages {
+        height: 100vh;
+    }
 }
 
 @media screen and (min-width: 870px) {
+
     .carousel {
         padding-top: 0;
     }
@@ -582,8 +624,31 @@ footer {
 }
 
 @media screen and (min-width:992px) {
+
+
     #manav {
         margin-top: 2%;
+        height: 70px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav img {
+        display: initial;
+        position: relative;
+        top: -10px;
+    }
+
+    .navbar-light {
+        padding-top: 2%;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        height: 70px;
     }
 
     .mockup img {
@@ -612,16 +677,8 @@ footer {
         top: 56%;
     }
 
-    #projet {
-        padding-top: 5%;
-    }
-
-    #projet .container {
-        top: 10%;
-    }
-
     #jouer h1 {
-        padding-top: 10%;
+        padding-top: 40px;
     }
 
     #jouer img[alt="Google Play"] {
@@ -629,11 +686,8 @@ footer {
     }
 
     #coloriages {
-        padding-top: 13%;
-    }
-
-    #coloriages p:first-child {
-        padding-top: 0;
+        height: 110vh;
+        padding-top: 110px;
     }
 
     #coloriages svg {
@@ -641,21 +695,32 @@ footer {
     }
 
     .carousel {
-        width: 40%;
+        width: 30%;
+    }
+
+    .store h2 {
+        max-width: initial;
     }
 }
 
 @media screen and (min-width:1200px) {
+    #projet .container {
+        padding: 0;
+        margin: 0;
+    }
+
     #coloriages {
-        padding: 10%;
+        height: 100vh;
+        padding-top: 10%;
     }
 
     .carousel {
-        width: 30%;
+        width: 20%;
         padding-bottom: 2%;
     }
 
     #coloriages svg {
         width: 3%;
     }
+
 }
