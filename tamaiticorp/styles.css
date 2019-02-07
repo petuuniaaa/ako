@@ -1,5 +1,8 @@
 body {
     background-color: #d5e8d4;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     font-family: 'Bubbler One', sans-serif;
     min-height: 100%;
@@ -53,6 +56,7 @@ nav a {
 .navbar-nav img {
     width: 100px;
     height: 100px;
+    -webkit-box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.38);
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.38);
     border-radius: 100px;
     background-color: #FFF;
@@ -85,6 +89,7 @@ nav a svg:hover {
 .mockup img {
     width: 60%;
     top: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -107,7 +112,7 @@ nav a svg:hover {
     font-size: 1.5rem;
 }
 
-strong {
+#accueil h1 strong {
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 2rem;
@@ -121,24 +126,45 @@ strong {
     width: 10%;
     position: relative;
     left: 47%;
+    -webkit-transform: translateX(-47%);
     transform: translateX(-47%);
+    -webkit-animation: ballon 1s forwards infinite alternate;
     animation: ballon 1s forwards infinite alternate;
 }
 
-@keyframes ballon {
+@-webkit-keyframes ballon {
     from {
+        -webkit-transform: translateX(0px);
         transform: translateX(0px);
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
 
     to {
+        -webkit-transform: translateX(20px);
         transform: translateX(20px);
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+@keyframes ballon {
+    from {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+        -webkit-transform: translateY(20px);
         transform: translateY(20px);
     }
 }
 
 /* EQUIPE */
-
 #equipe {
     height: 100vh;
 }
@@ -146,6 +172,7 @@ strong {
 .equipe {
     position: relative;
     top: 56%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -162,6 +189,7 @@ strong {
     font-size: 1.2rem;
     top: 50%;
     position: relative;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -171,7 +199,10 @@ strong {
 }
 
 .presentation div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 850px;
     margin: 0 auto;
@@ -195,6 +226,7 @@ strong {
 #projet .container {
     position: relative;
     top: 35%;
+    -webkit-transform: translateY(-40%);
     transform: translateY(-40%);
 }
 
@@ -222,6 +254,7 @@ strong {
     position: relative;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 70%;
 }
@@ -249,20 +282,34 @@ strong {
     text-align: center;
 }
 
-.store h2 {
+.store p {
     max-width: 250px;
     margin: 0 auto;
     font-size: 1.3rem;
+}
+
+.store p strong {
     text-transform: uppercase;
+    color: #D73F77;
+}
+
+.store a {
+    cursor: none;
+    pointer-events: none;
 }
 
 #jouer img[alt="Google Play"] {
     width: 40%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 #jouer img[alt="App Store Apple"] {
     width: 36%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
+
 
 /* COLORIAGES */
 #coloriages {
@@ -280,18 +327,17 @@ strong {
 #coloriages h1 {
     text-transform: uppercase;
     font-size: 1.2rem;
-}
-
-#coloriages p:first-child:not(footer p) {
-    /* padding-top: 70px; */
+    color: #D73F77;
 }
 
 #coloriages svg {
     width: 15%;
     position: relative;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     fill: #D73F77;
+    cursor: pointer;
 }
 
 .carousel {
@@ -302,6 +348,7 @@ strong {
 
 .carousel-control-prev-icon {
     background-image: url("img/fleche.png");
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     width: 40px;
     opacity: 100%;
@@ -309,6 +356,7 @@ strong {
 
 .carousel-control-next-icon {
     background-image: url("img/fleche.png");
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     width: 40px;
     opacity: 100%;
@@ -330,6 +378,8 @@ strong {
     background-color: #D73F77;
 }
 
+
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -348,13 +398,10 @@ footer p {
 
 /* QUERIES */
 @media screen and (min-width: 365px) {
-    .accueil {
-        top: 0%;
-        position: relative;
-    }
 
     .mockup img {
         width: 50%;
+        -webkit-transform: translateX(-20%);
         transform: translateX(-20%);
     }
 
@@ -376,6 +423,7 @@ footer p {
 
 @media screen and (min-width:440px) {
     #projet .container {
+        -webkit-transform: none;
         transform: none;
         top: 10%;
     }
@@ -406,6 +454,7 @@ footer p {
 @media screen and (min-width:530px) {
     .mockup img {
         width: 40%;
+        -webkit-transform: translateX(10%);
         transform: translateX(10%);
     }
 
@@ -423,6 +472,7 @@ footer p {
         position: relative;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
@@ -461,6 +511,7 @@ footer p {
 
     .text {
         top: 50%;
+        -webkit-transform: translateY(50%);
         transform: translateY(50%);
         padding-top: 0;
     }
@@ -469,6 +520,7 @@ footer p {
         width: 8%;
         position: absolute;
         left: 50%;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         top: 70%;
     }
@@ -541,7 +593,7 @@ footer p {
         font-size: 2rem;
     }
 
-    strong {
+    .accueil h1 strong {
         text-transform: uppercase;
         letter-spacing: .2rem;
         font-size: 2.5rem;
@@ -555,6 +607,7 @@ footer p {
         font-size: 1.4rem;
         top: 50%;
         position: relative;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
@@ -567,6 +620,7 @@ footer p {
         position: relative;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
@@ -585,6 +639,7 @@ footer p {
     #jouer .memory {
         position: relative;
         top: 50%;
+        -webkit-transform: translateY(-45%);
         transform: translateY(-45%);
     }
 
@@ -624,8 +679,6 @@ footer p {
 }
 
 @media screen and (min-width:992px) {
-
-
     #manav {
         margin-top: 2%;
         height: 70px;
@@ -633,7 +686,11 @@ footer p {
 
     .navbar-nav {
         width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -673,8 +730,6 @@ footer p {
 
     .equipe img {
         width: 80%;
-        position: relative;
-        top: 56%;
     }
 
     #jouer h1 {
@@ -682,7 +737,11 @@ footer p {
     }
 
     #jouer img[alt="Google Play"] {
-        width: 15%;
+        width: 13%;
+    }
+
+    #jouer img[alt="App Store Apple"] {
+        width: 11%;
     }
 
     #coloriages {
@@ -704,6 +763,10 @@ footer p {
 }
 
 @media screen and (min-width:1200px) {
+    .ballon {
+        width: 3%;
+    }
+
     #projet .container {
         padding: 0;
         margin: 0;
@@ -722,5 +785,7 @@ footer p {
     #coloriages svg {
         width: 3%;
     }
+
+
 
 }
