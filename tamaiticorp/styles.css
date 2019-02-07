@@ -680,8 +680,7 @@ footer p {
 
 @media screen and (min-width:992px) {
     #manav {
-        margin-top: 2%;
-        height: 70px;
+        height: 80px;
     }
 
     .navbar-nav {
