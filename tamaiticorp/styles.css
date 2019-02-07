@@ -40,6 +40,10 @@ a.nav-item.nav-link {
 a.nav-item.nav-link:nth-last-child(-n+2) {
     margin: 1%;
 }
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FFF;
+    opacity: 1;
+}
 
 .navbar-light .navbar-nav .nav-link.active {
     background: url('img/ako.svg');
@@ -687,7 +691,7 @@ footer p {
 
     .couverture {
         width: 100%;
-        height: 5em;
+        height:5%;
         position: fixed;
         z-index:99;
         background-color: #d5e8d4;
