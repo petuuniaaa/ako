@@ -214,7 +214,9 @@ nav a svg:hover {
 }
 
 .presentation div video {
-    margin: 2%;
+    margin: 4%;
+    width: 30%;
+    height: 30%;
     border: solid #000 2px;
 }
 
