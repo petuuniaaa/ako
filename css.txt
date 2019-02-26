@@ -1,0 +1,159 @@
+header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+}
+
+header a,
+header img {
+    width: 40%;
+}
+
+img[alt=logo] {
+    width: 10%;
+    height: 10%;
+}
+
+img[alt=piece] {
+    height: 10%;
+    width: 10%;
+}
+
+img[alt=avatar] {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+
+h1 {
+    text-align: center;
+    color: #9373ab;
+    font-family: 'Bubbler One', sans-serif;
+    text-transform: uppercase;
+}
+
+section {
+    margin-top: 15%;
+}
+
+a button:hover {
+    cursor: pointer;
+}
+
+button {
+    background-color: #9373ab;
+    box-shadow: 0px 0px 41px -7px rgba(0, 0, 0, 0.75);
+    border: none;
+    color: #FFF;
+    font-family: 'Bubbler One';
+    font-size: 1.125em;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+.puzzle {
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.puzzle button,
+.memory button,
+.devine button {
+    width: 70px;
+    height: 70px;
+}
+
+.memory {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+.trouver {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+
+.devine {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+.online {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+
+@media screen and (min-width: 380px) {
+    .puzzle {
+        top: 55%;
+    }
+
+    .jeux {
+        margin-top: 5%;
+    }
+
+    .trouver {
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-top: 0;
+    }
+
+    button {
+        font-size: 1.400em;
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+        font-size: 1.2rem;
+    }
+
+    .puzzle button,
+    .memory button,
+    .devine button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .trouver {
+        left: 40%;
+    }
+
+    .devine {
+        left: 40%;
+    }
+
+    .online {
+        right: 30%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .puzzle {
+        left: 20%;
+    }
+
+    .memory {
+        left: 55%;
+    }
+
+    .online {
+        right: 40%;
+    }
+}

@@ -30,16 +30,12 @@ header nav a {
 }
 
 img[alt=logo] {
-  width: 25%;
-}
-
-img[alt=piece] {
-  width: 40%;
+  width: 20%;
 }
 
 img[alt=avatar] {
   border-radius: 50%;
-  width: 40%;
+  width: 30%;
 }
 
 header h1 {
@@ -47,7 +43,7 @@ header h1 {
   /* Ne pas oublier de mettre d'autre police */
   /* color: #9373ab; */
   /* color: #4B365E; */
-  color: #FFF;
+  color: #473A53;
   text-align: center;
   margin: 2% 0;
   text-transform: uppercase;
@@ -58,8 +54,8 @@ header h1 {
 }
 
 .plateau {
-  width: 350px;
-  height: 350px;
+  width: 360px;
+  height: 340px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -204,27 +200,40 @@ div .front-face img {
 }
 
 
-@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 545px) {
   header {
-    max-width: 50%;
+    max-width: 70%;
     margin: 0 auto;
   }
-
 }
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 725px) {
+  header nav a {
+    width: 40%;
+  }
 
   img[alt=piece],
   img[alt=avatar] {
-    width: 30%;
+    width: 20%;
   }
+}
 
-  header nav {
+@media screen and (min-width: 925px) {
+  nav {
     margin-bottom: 0;
   }
 
   header h1 {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  header nav {
+    margin-bottom: 0;
+  }
+
+  header nav a {
+    width: 30%;
   }
 }

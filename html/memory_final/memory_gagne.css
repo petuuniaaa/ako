@@ -1,0 +1,150 @@
+body {
+  background: #41BABE;
+  overflow: hidden;
+}
+
+header nav {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 2%;
+}
+
+header nav a {
+  width: 50%;
+}
+
+img[alt=logo] {
+  width: 20%;
+}
+
+img[alt=avatar] {
+  border-radius: 50%;
+  width: 30%;
+}
+
+header h1 {
+  font-family: 'Bubbler One';
+  /* Ne pas oublier de mettre d'autre police */
+  /* color: #9373ab; */
+  /* color: #4B365E; */
+  color: #473A53;
+  text-align: center;
+  margin: 2% 0;
+  text-transform: uppercase;
+  padding: 3% 0;
+}
+
+.main {
+  margin: 10px;
+}
+
+.main p {
+  color: #473A53;
+  text-transform: uppercase;
+  font-family: 'Bubbler One', cursive;
+  line-height: 35px;
+  font-size: 1.125rem;
+  opacity: 1;
+  text-align: center;
+}
+
+.footer .son {
+  background-image: url(../../pictures/svg/speaker.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #9373ab;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  left: 80%;
+}
+
+.ako {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 65%;
+  left: -15%;
+  transform: rotate(-20deg);
+}
+
+.animo {
+  width: 35%;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: rotate(20deg);
+}
+
+@media screen and (min-width: 430px) {
+  .ako {
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 545px) {
+  body {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .animo {
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ako {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 725px) {
+  header nav a {
+    width: 40%;
+  }
+
+  img[alt=avatar] {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .ako {
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+
+  body {
+    max-width: 50%;
+  }
+
+  header nav a {
+    width: 30%;
+  }
+
+  .ako {
+    left: 20%;
+    top: 50%;
+  }
+
+  .animo {
+    top: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 60%;
+  }
+
+  .ako {
+    left: 25%;
+  }
+}
