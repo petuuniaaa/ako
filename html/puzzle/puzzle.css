@@ -1,0 +1,44 @@
+body{
+    background-color: #41BABE;
+
+}
+body div{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+
+.plateau {
+    border: solid 2px black;
+    width: 50%;
+    height: 50vh;
+    /* background-image: url('pictures/animaux/cheval.svg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    
+}
+th{
+   background-color: rgb(180, 177, 177);
+   
+   width: 20%; 
+   height: 20%;
+}
+@media (max-width:400px){
+    .plateau{
+        width: 100%;
+    }
+
+}
+img{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 10%;
+}
+
+.fond{
+    opacity: 1;
+}
