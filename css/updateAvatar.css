@@ -1,0 +1,41 @@
+body {
+    background-color: #41BABE;
+    color: #fff;
+    font-family: 'Bubbler One', cursive;
+}
+
+header {
+    display: flex;
+}
+
+header img {
+    width: 40%;
+}
+
+p {
+    font-size: 1.225rem;
+    background-color: #9373ab;
+    padding: 4%;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+
+section img {
+    width: 30%;
+}
+
+.avatar {
+    border-radius: 100px;
+    width: 25%;
+}
+
+.return {
+    width: 40px;
+    background-color: #9373ab;
+    border-radius: 100%;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
