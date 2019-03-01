@@ -1,8 +1,17 @@
 const cards = document.querySelectorAll('.memory-card');
 
+
+function close() {
+  document.getElementById('completed').style.display = 'none';
+}
+document.getElementById('close-modal').addEventListener('click', close);
+document.getElementById('modal-close').addEventListener('click', close);
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+var tabCompleted = [false, false, false, false, false, false];
+var i = 0;
 
 function flipCard() {
   if (lockBoard) return;
@@ -25,6 +34,18 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
+
+  if (isMatch === true) {
+    tabCompleted[i] = true;
+    i++;
+    if (tabCompleted.every(
+        function (item) {
+          return item == true;
+        })) {
+      $('#completed').css('display', 'block');
+
+    }
+  }
 }
 
 function disableCards() {
@@ -49,6 +70,7 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
+
 
 (function shuffle() {
   cards.forEach(card => {
