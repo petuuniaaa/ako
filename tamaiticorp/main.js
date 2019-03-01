@@ -10,9 +10,13 @@ setTimeout(() => {
 setTimeout(() => {
     $('header').css({
         'opacity': '1',
+        'transform':'translateY(30px)',
         'transition': '1s ease'
     })
+    $('header').addClass('fixed-top');
+
 }, 800);
+
 
 var equipeimg = $('#equipe img');
 var equipetxt = $('#equipe p');
@@ -40,13 +44,13 @@ $(document).scroll(function () {
             'transition': '1.5s ease'
         })
     }
-    if (percent >= 25 && percent < 30) {
+    if (percent >= 30 && percent < 35) {
         $(coloriages).css({
             'opacity': '1',
             'transition': '1.5s ease'
         })
     }
-    if (percent >= 45 && percent < 55) {
+    if (percent >= 50 && percent < 55) {
         $(equipeimg).css({
             'opacity': '1',
             'transition': '1.5s ease'
@@ -58,6 +62,12 @@ $(document).scroll(function () {
     }
     if (percent >= 65 && percent < 75) {
         $(video).css({
+            'opacity': '1',
+            'transition': '1.5s ease'
+        })
+    }
+    if (percent >= 90 && percent < 100) {
+        $(projet).css({
             'opacity': '1',
             'transition': '1.5s ease'
         })
