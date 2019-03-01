@@ -25,6 +25,11 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
+  if (isMatch === true) {
+    var source = document.getElementById("toto");
+    source.src = "../../pictures/svg/checked.svg"
+    console.log(source);
+  }
 }
 
 function disableCards() {
@@ -43,6 +48,11 @@ function unflipCards() {
 
     resetBoard();
   }, 1000);
+
+  var obj = document.querySelector('.notactived');
+  obj.style['visibility'] = 'visible'
+
+  console.log('ici')
 }
 
 function resetBoard() {
