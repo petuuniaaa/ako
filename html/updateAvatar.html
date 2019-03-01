@@ -14,17 +14,27 @@
         <a href="/html/8compte.html"><img src="../pictures/svg/logo_ako.svg" alt="logo"></a>
         <!--Retour sur la page précèdente-->
         <p>Quelle photo de profil veux-tu ?</p>
-        <img src="../pictures/svg/AKOOOO.svg" alt="" class="ako">
     </header>
+    <img src="../pictures/svg/AKOOOO.svg" alt="" class="ako">
     <section>
-
-        <img src="../pictures/svg/avatarbeta.svg" class="avatar avatar1" alt="">
-        <img src="../pictures/svg/avatarbeta.svg" class="avatar avatar2" alt="">
-        <img src="../pictures/svg/avatarbeta.svg" class="avatar avatar3" alt="">
-        <img src="../pictures/svg/avatarbeta.svg" class="avatar avatar4" alt="">
-        <img src="../pictures/svg/avatarbeta.svg" class="avatar avatar5" alt="">
-        <a href="../html/8compte.html"><img src="../pictures/svg/reply.svg" alt="return" class="return"></a>
+        <img src="../pictures/avatars/AvatarClown.svg" class="avatar " alt="" onclick="redirectionVerifAvatar()">
+        <img src="../pictures/avatars/AvatarEtoiledeMer.svg" class="avatar" alt="" onclick="redirectionVerifAvatar()">
+        <img src="../pictures/avatars/AvatarFleur.svg" class="avatar" alt="" onclick="redirectionVerifAvatar()">
+        <img src="../pictures/avatars/AvatarNuage.svg" class="avatar " alt="" onclick="redirectionVerifAvatar()">
+        <img src="../pictures/avatars/AvatarPoire.svg" class="avatar " alt="" onclick="redirectionVerifAvatar()">
+        <img src="../pictures/avatars/AvatarPrincesse.svg" class="avatar " alt="" onclick="redirectionVerifAvatar()">
+        <div>
+            <img src="../pictures/svg/avatarbeta.svg" class="avatar" alt="" onclick="redirectionVerifAvatar()">
+            <img src="../pictures/svg/avatarbeta.svg" class="avatar" alt="" onclick="redirectionVerifAvatar()">
+            <img src="../pictures/svg/avatarbeta.svg" class="avatar" alt="" onclick="redirectionVerifAvatar()">
+        </div>
     </section>
+    <a href="../html/8compte.html"><img src="../pictures/svg/reply.svg" alt="return" class="return"></a>
 </body>
+<script>
+    function redirectionVerifAvatar() {
+        window.location.href = 'verifAvatar.html';
+    }
+</script>
 
 </html>

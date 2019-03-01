@@ -1,0 +1,60 @@
+body {
+    background-color: #41BABE;
+    color: #fff;
+    font-family: 'Bubbler One', cursive;
+    overflow-x: hidden;
+}
+
+header img {
+    width: 20%;
+}
+
+.avatar {
+    border-radius: 100px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10% 0;
+}
+
+.ako {
+    width: 30%;
+    position: absolute;
+    left: -10%;
+    top: 55%;
+    transform: rotate(20deg);
+}
+
+p {
+    position: relative;
+    font-size: 1.225rem;
+    background-color: #9373ab;
+    padding: 4%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto 15%;
+    width: 70%;
+    max-width: 400px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.checked {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    fill: rgb(114, 224, 80);
+}
+
+.return {
+    width: 45px;
+    background-color: #9373ab;
+    border-radius: 100%;
+    height: 45px;
+    padding: 5px;
+    cursor: pointer;
+}
