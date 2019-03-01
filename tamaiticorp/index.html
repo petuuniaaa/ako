@@ -408,12 +408,12 @@
         </footer>
     </section>
 
-    <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal" tabindex="-1" role="dialog" id="completed">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Félicitations !</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -421,7 +421,7 @@
                     <p>Vous avez gagné ! Il est maintenant l'heure de télécharger AKO !</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-secondary" id="close-modal" data-dismiss="modal">Fermer</button>
                 </div>
             </div>
         </div>
