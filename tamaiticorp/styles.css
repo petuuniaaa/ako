@@ -17,6 +17,7 @@ body {
 
 #manav {
     font-size: 2em;
+    
 }
 
 .fixed-top {
@@ -705,7 +706,7 @@ footer p {
 @media screen and (min-width:992px) {
     #manav {
         height: 80px;
-        margin-top: 2%;
+        
     }
 
     .couverture {
