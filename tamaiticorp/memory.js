@@ -1,5 +1,7 @@
 const cards = document.querySelectorAll('.memory-card');
 
+// $("#completed").fadeIn("slow");
+$('#completed').css('display', 'block');
 
 function close() {
   document.getElementById('completed').style.display = 'none';
@@ -42,7 +44,7 @@ function checkForMatch() {
         function (item) {
           return item == true;
         })) {
-      $('#completed').css('display', 'block');
+
 
     }
   }

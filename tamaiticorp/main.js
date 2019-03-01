@@ -1,5 +1,5 @@
 $('#accueil').css('opacity', '0');
-$('header').css('opacity', '0')
+
 
 setTimeout(() => {
     $('#accueil').css({
@@ -7,15 +7,22 @@ setTimeout(() => {
         'transition': '1s ease'
     })
 }, 500);
-setTimeout(() => {
-    $('header').css({
-        'opacity': '1',
-        'transform':'translateY(30px)',
-        'transition': '1s ease'
-    })
-    $('header').addClass('fixed-top');
 
-}, 800);
+if (window.matchMedia("(min-width: 992px)").matches) {
+    $('header').css('opacity', '0');
+    setTimeout(() => {
+        $('header').css({
+            'opacity': '1',
+            'transform': 'translateY(25px)',
+            'transition': '1s ease'
+        })
+        $('header').addClass('fixed-top');
+
+    }, 800);
+
+} else {
+
+}
 
 
 var equipeimg = $('#equipe img');
