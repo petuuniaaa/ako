@@ -21,10 +21,6 @@ body {
 
 }
 
-.fixed-top {
-    padding: 0;
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: #FFF;
     opacity: 0.5;
@@ -95,7 +91,8 @@ nav a svg:hover {
 
 .accueil {
     position: absolute;
-    top: 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mockup img {
@@ -138,6 +135,7 @@ nav a svg:hover {
     width: 10%;
     position: relative;
     left: 47%;
+    top: 80%;
     -webkit-transform: translateX(-47%);
     transform: translateX(-47%);
     -webkit-animation: ballon 1s forwards infinite alternate;
@@ -196,7 +194,7 @@ nav a svg:hover {
 
 .equipe img {
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 100px;
 }
 
 .text_equipe {
@@ -284,7 +282,7 @@ nav a svg:hover {
 /* JOUER */
 
 #jouer {
-    height: 120vh;
+    height: 100vh;
     display: block;
 }
 
@@ -374,16 +372,15 @@ nav a svg:hover {
     text-align: center;
 }
 
-.close {
-    float: right;
-
+.col-1 {
+    padding: 0;
 }
 
 /* COLORIAGES */
 
 #coloriages {
-    height: 110vh;
-    padding-top: 50px;
+    height: 100vh;
+    padding-top: 90px;
 }
 
 #coloriages p {
@@ -604,6 +601,12 @@ footer p {
         width: 280px;
     }
 
+    .memory {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     #jouer p {
         padding-bottom: 0;
     }
@@ -620,9 +623,9 @@ footer p {
         max-width: 500px;
     }
 
-    #coloriages {
+    /* #coloriages {
         padding-top: inherit;
-    }
+    } */
 
     #coloriages p {
         max-width: initial;
@@ -645,6 +648,12 @@ footer p {
         padding-top: 10%;
         max-width: none;
         margin: initial;
+    }
+
+    .accueil .row {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-30%);
     }
 
     .mockup img {
@@ -717,19 +726,12 @@ footer p {
         height: 100vh;
     }
 
-    #jouer .memory {
-        position: relative;
-        top: 50%;
-        -webkit-transform: translateY(-45%);
-        transform: translateY(-45%);
-    }
-
     #jouer h1 {
         padding-top: 0;
     }
 
     #coloriages {
-        padding-top: 40px;
+        padding-top: 140px;
     }
 }
 
@@ -765,6 +767,10 @@ footer p {
     #manav {
         height: 80px;
 
+    }
+
+    .fixed-top {
+        padding: 0;
     }
 
     .couverture {
@@ -836,8 +842,7 @@ footer p {
     }
 
     #coloriages {
-        height: 110vh;
-        padding-top: 110px;
+        padding-top: 160px;
     }
 
     #coloriages svg {
@@ -867,10 +872,7 @@ footer p {
         padding-top: 120px;
     }
 
-    #coloriages {
-        height: 100vh;
-        padding-top: 10%;
-    }
+
 
     .carousel {
         width: 20%;
