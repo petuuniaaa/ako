@@ -1,8 +1,27 @@
 const cards = document.querySelectorAll('.memory-card');
-
-
+ 
 function close() {
   document.getElementById('completed').style.display = 'none';
+}
+function disableCards() {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
+
+  resetBoard();
+}
+function replay(){
+  
+  document.getElementById('completed').style.display = 'none';
+  $(cards).css('transform','rotate(0deg)');
+
+  // J'avais pour idée de refresh un bout de la page juste le memory quoi comme ça tout recommencerai
+  //le code en dessous devrai faire ce refresh mais ça marche pas
+
+//   let container =$('img[alt="Memory Card"]');
+// let content = container.innerHTML;
+// container.innerHTML= content;
+ 
+
 }
 
 // Essai 
@@ -18,7 +37,7 @@ function close() {
 // }
 
 document.getElementById('modal-close').addEventListener('click', close);
-document.getElementById('modal-replay').addEventListener('click', close);
+// document.getElementById('modal-replay').addEventListener('click', replay);
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -62,12 +81,7 @@ function checkForMatch() {
   }
 }
 
-function disableCards() {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
 
-  resetBoard();
-}
 
 function unflipCards() {
   lockBoard = true;

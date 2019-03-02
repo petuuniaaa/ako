@@ -156,7 +156,7 @@
             <p class="text-center">Petit chanceux que vous êtes, Tamaïti Corp vous permet de jouer en exclusivité à un
                 de
                 ses jeux !</p>
-            <div class="plateau">
+            <div class="plateau" >
                 <div class="memory-card" data-framework="chat">
                     <div class="front-face">
                         <img src="pictures/animaux/chat.svg" alt="chat">
@@ -440,7 +440,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="modal-replay" data-dismiss="modal">Rejouer</button>
+                    <button type="button" class="btn btn-secondary" id="modal-replay" data-dismiss="modal"> <a href="javascript: replay()">Rejouer</a>  </button>
                 </div>
             </div>
         </div>
@@ -481,9 +481,9 @@
             return false;
         });
 
-        $('.carousel').carousel({
-            interval: 1000
-        })
+        // $('.carousel').carousel({
+        //     interval: 1000
+        // })
     </script>
     <script src="main.js"></script>
     <script src="memory.js"></script>
