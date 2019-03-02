@@ -15,7 +15,6 @@ function close() {
 
 //   // melange();
 //   console.log('ocucou');
-
 // }
 
 document.getElementById('modal-close').addEventListener('click', close);
@@ -56,14 +55,9 @@ function checkForMatch() {
         function (item) {
           return item == true;
         })) {
-<<<<<<< HEAD
           $("#completed").fadeIn("slow");
           $('#completed').css('display', 'block');
 
-=======
-      $("#completed").fadeIn("slow");
-      $('#completed').css('display', 'block');
->>>>>>> 23a7bc701e6b7e45d9e2b61579ddb32deac8b549
     }
   }
 }
