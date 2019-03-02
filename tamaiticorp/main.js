@@ -9,6 +9,8 @@ setTimeout(() => {
 }, 500);
 
 if (window.matchMedia("(min-width: 992px)").matches) {
+    $("#manav").removeClass("fixed-top");
+
     $('header').css('opacity', '0');
     setTimeout(() => {
         $('header').css({

@@ -4,8 +4,22 @@ const cards = document.querySelectorAll('.memory-card');
 function close() {
   document.getElementById('completed').style.display = 'none';
 }
-document.getElementById('close-modal').addEventListener('click', close);
+
+// Essai 
+
+// function replay() {
+//   if (document.getElementById('completed').style.direction == 'block') {
+//     cards.classList.remove("flip");
+//     document.getElementById('completed').style.display = 'none';
+//   }
+
+//   // melange();
+//   console.log('ocucou');
+
+// }
+
 document.getElementById('modal-close').addEventListener('click', close);
+document.getElementById('modal-replay').addEventListener('click', close);
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -42,9 +56,14 @@ function checkForMatch() {
         function (item) {
           return item == true;
         })) {
+<<<<<<< HEAD
           $("#completed").fadeIn("slow");
           $('#completed').css('display', 'block');
 
+=======
+      $("#completed").fadeIn("slow");
+      $('#completed').css('display', 'block');
+>>>>>>> 23a7bc701e6b7e45d9e2b61579ddb32deac8b549
     }
   }
 }
@@ -79,5 +98,12 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
+
+function melange() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));
