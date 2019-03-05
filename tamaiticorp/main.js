@@ -31,7 +31,7 @@ var equipeimg = $('#equipe img');
 var equipetxt = $('#equipe p');
 var video = $('.presentation');
 var projet = $('#projet');
-var jouer = $('canvas');
+var jouer = $('#projet');
 var coloriages = $('#coloriages');
 $(equipeimg).css('opacity', '0');
 $(equipetxt).css('opacity', '0');
