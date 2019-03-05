@@ -2,11 +2,12 @@ body {
     background-color: #41BABE;
     color: #fff;
     font-family: 'Bubbler One', cursive;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
 }
 
 header img {
-    width: 20%;
+    width: 15%;
 }
 
 .avatar {
@@ -57,4 +58,128 @@ p {
     height: 45px;
     padding: 5px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+    header img {
+        width: 10%;
+    }
+
+    .avatar {
+        width: 40%;
+        margin: 5% 0;
+    }
+
+    p {
+        margin-bottom: 10%;
+    }
+
+    .footer {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 495px) {
+    .avatar {
+        width: 35%;
+    }
+
+    p {
+        margin-bottom: 5%;
+    }
+
+    .footer {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    body {
+        max-width: 80%;
+        margin: 2% auto 0;
+    }
+
+    header img {
+        width: 10%;
+    }
+
+    .avatar {
+        width: 30%;
+        margin: 10% 0;
+    }
+
+    .ako {
+        width: 20%;
+        left: 10%;
+        top: 55%;
+    }
+
+    p {
+        width: 50%;
+        margin-bottom: 10%;
+    }
+
+    .footer {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:700px) {
+    body {
+        max-width: 75%;
+    }
+
+    .avatar {
+        margin: 5% 0;
+    }
+
+    p {
+        margin: 5% auto;
+    }
+}
+
+@media screen and (min-width:750px) {
+    header img {
+        width: 50px;
+    }
+
+    .avatar {
+        width: 150px;
+        margin: 20px 0;
+    }
+
+    .ako {
+        width: 130px;
+        left: 15%;
+        top: 50%;
+    }
+
+    p {
+        padding: 15px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:830px) {
+    .ako {
+        left: 20%;
+    }
+
+    .footer {
+        margin: 70px auto;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        max-width: 50%;
+    }
+
+    .ako {
+        left: 30%;
+        top: 55%;
+    }
 }

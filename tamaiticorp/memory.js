@@ -1,49 +1,28 @@
 const cards = document.querySelectorAll('.memory-card');
- 
-function close() {
-  document.getElementById('completed').style.display = 'none';
-}
-function disableCards() {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
-
-  resetBoard();
-}
-function replay(){
-  
-  document.getElementById('completed').style.display = 'none';
-  $(cards).css('transform','rotate(0deg)');
-
-  // J'avais pour idée de refresh un bout de la page juste le memory quoi comme ça tout recommencerai
-  //le code en dessous devrai faire ce refresh mais ça marche pas
-
-//   let container =$('img[alt="Memory Card"]');
-// let content = container.innerHTML;
-// container.innerHTML= content;
- 
-
-}
-
-// Essai 
-
-// function replay() {
-//   if (document.getElementById('completed').style.direction == 'block') {
-//     cards.classList.remove("flip");
-//     document.getElementById('completed').style.display = 'none';
-//   }
-
-//   // melange();
-//   console.log('ocucou');
-// }
-
-document.getElementById('modal-close').addEventListener('click', close);
-// document.getElementById('modal-replay').addEventListener('click', replay);
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 var tabCompleted = [false, false, false, false, false, false];
 var i = 0;
+
+function close() {
+  document.getElementById('completed').style.display = 'none';
+}
+
+function replay() {
+  document.getElementById('completed').style.display = 'none';
+
+  $('.memory-card').each(function () {
+    $(this).removeClass('flip');
+  })
+  refreshBoard();
+  melange();
+
+}
+
+document.getElementById('modal-close').addEventListener('click', close);
+document.getElementById('modal-replay').addEventListener('click', replay);
 
 function flipCard() {
   if (lockBoard) return;
@@ -67,6 +46,7 @@ function checkForMatch() {
 
   isMatch ? disableCards() : unflipCards();
 
+
   if (isMatch === true) {
     tabCompleted[i] = true;
     i++;
@@ -74,14 +54,18 @@ function checkForMatch() {
         function (item) {
           return item == true;
         })) {
-          $("#completed").fadeIn("slow");
-          $('#completed').css('display', 'block');
-
+      $("#completed").fadeIn("slow");
+      $('#completed').css('display', 'block');
     }
   }
 }
 
+function disableCards() {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
 
+  resetBoard();
+}
 
 function unflipCards() {
   lockBoard = true;
@@ -99,6 +83,14 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+function refreshBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+  tabCompleted = [false, false, false, false, false, false];
+  i = 0;
+
+  cards.forEach(card => card.addEventListener('click', flipCard));
+}
 
 (function shuffle() {
   cards.forEach(card => {

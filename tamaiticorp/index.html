@@ -156,7 +156,7 @@
             <p class="text-center">Petit chanceux que vous êtes, Tamaïti Corp vous permet de jouer en exclusivité à un
                 de
                 ses jeux !</p>
-            <div class="plateau" >
+            <div class="plateau">
                 <div class="memory-card" data-framework="chat">
                     <div class="front-face">
                         <img src="pictures/animaux/chat.svg" alt="chat">
@@ -440,7 +440,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="modal-replay" data-dismiss="modal"> <a href="javascript: replay()">Rejouer</a>  </button>
+                    <button type="button" class="btn btn-secondary" id="modal-replay" data-dismiss="modal">Rejouer</button>
                 </div>
             </div>
         </div>
@@ -450,8 +450,7 @@
 
     <!-- SCRIPTS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -469,7 +468,6 @@
             }, 'slow');
             return false;
         });
-
         $('a[href="#jouer"').click(function () {
             var the_id = $(this).attr("href");
             if (the_id === '#') {
@@ -480,10 +478,9 @@
             }, 'slow');
             return false;
         });
-
-        // $('.carousel').carousel({
-        //     interval: 1000
-        // })
+        $('.carousel').carousel({
+            interval: 1000
+        })
     </script>
     <script src="main.js"></script>
     <script src="memory.js"></script>

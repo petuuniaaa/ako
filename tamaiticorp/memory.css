@@ -80,33 +80,15 @@
   top: 80%;
 }
 
-/* .pays {
-  position: absolute;
-  top: 75%;
-  left: 15%;
-  color: #FFF;
-  font-size: 1.125em;
-  z-index: 99;
-  font-family: 'PT Sans', sans-serif;
-}
-.norvege {
-  left: 10%;
-} */
-
 .back-face {
   padding: 20px;
 }
 
 .memory-card .front-face img[alt="cheval"],
-.memory-card .front-face img[alt="girafe"],
-.memory-card .front-face img[alt="TourdePise"] {
+.memory-card .front-face img[alt="girafe"] {
   height: 60%;
 }
 
-.memory-card .front-face img[alt="BigBen"],
-.memory-card .front-face img[alt="tourEiffel"] {
-  height: 65%;
-}
 
 div .front-face img {
   width: 80%;
