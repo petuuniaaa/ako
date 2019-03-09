@@ -1,0 +1,245 @@
+body {
+    background: #41BABE;
+    overflow: hidden;
+}
+  
+/* HAUT DE PAGE NAV */
+header nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+}
+  
+  header nav a {
+    width: 20%;
+  }
+  
+  img[alt=logo] {
+    width: 60%;
+  }
+  
+  img[alt=avatar] {
+    border-radius: 50%;
+    width: 80%;
+  }
+  
+header h1 {
+    font-family: 'Bubbler One';
+    /* Ne pas oublier de mettre d'autre police */
+    /* color: #9373ab; */
+    /* color: #4B365E; */
+    color: #473A53;
+    text-align: center;
+    margin: 5% 0;
+    text-transform: uppercase;
+}
+
+/* POSITION BUTTON */
+
+
+a button:hover {
+    cursor: pointer;
+}
+
+.monuments {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.animaux {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.mythes {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+.drapeaux {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+
+
+button {
+    background-color: #9373ab;
+    box-shadow: 0px 0px 41px -7px rgba(0, 0, 0, 0.75);
+    border: none;
+    color: #FFF;
+    font-size: 1.125em;
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    text-transform: uppercase;
+    font-family: 'Bubbler One';
+}
+
+.retour {
+    background-color: inherit;
+    box-shadow: none;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+}
+
+  /* BULLE AKO TEXTE */
+.conversation {
+    display: flex;
+}
+  
+.circular-sb {
+    width: 90px;
+    height: 40px;
+    border: 1px solid #FFF;
+    border-radius: 70px;
+    text-align: center;
+    background-color: #9373ab;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    color: #FFF;
+    font-family: 'Bubbler One', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+  
+.circular-sb p {
+    position: relative;
+    top: 50%;
+    color: #FFF;
+    transform: translateY(-50%);
+    margin: 0;
+    text-transform: uppercase;
+}
+  
+.circle3 {
+    border: 1px solid #FFF;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 15%;
+    top: 20%;
+    background-color: #9373ab;
+}
+  
+.circle4 {
+    border: 1px solid #FFF;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+}
+  
+.conversation .ako {
+    width: 30%;
+    transform: rotate(5deg);
+    position: absolute;
+    left: -10%;
+    top: 85%;
+}
+
+    /* MEDIA QUERIES */
+@media screen and (min-width: 450px) {
+    .circular-sb {
+        left: 20%;
+      }
+
+      .monuments {
+          top: 30%;
+      }
+
+      .mythes {
+          top: 55%;
+      }
+}
+
+@media screen and (min-width: 500px) {
+    section {
+        margin-top: 5%;
+    }
+
+    .animaux {
+        left: 30%;
+    }
+
+    .monuments {
+        left: 60%;
+    }
+
+
+    .drapeaux {
+        left: 25%;
+    }
+}
+  
+  @media screen and (min-width: 545px) {
+      body {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+  
+      .conversation .ako {
+        width: 100px;
+      }
+
+    button {
+        font-size: 1.400em;
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .animaux {
+        left: 25%;
+    }
+
+    .monuments {
+        left: 50%;
+    }
+
+    .drapeaux {
+        left: 25%;
+    }
+
+    .mythes {
+        left: 50%;;
+    }
+
+    .conversation .ako {
+        left: 5%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .animaux,
+    .drapeaux {
+        left: 35%;
+    }
+
+    .circular-sb {
+        left: 30%;
+    }
+
+    .conversation .ako {
+        left: 20%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .conversation .ako {
+        left: 300px;
+    }
+}

@@ -120,14 +120,14 @@ button {
 }
 
   /* MEDIA QUERIES */
-  @media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
   
-    .conversation .ako {
+  .conversation .ako {
       width: 40%;
       top: 250px;
-    }
+  }
   
-    .circular-sb {
+  .circular-sb {
       left: 20%;
     }
   }
