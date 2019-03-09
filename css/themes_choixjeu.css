@@ -11,27 +11,37 @@ body {
     overflow-x: hidden;
 }
 
-header {
+header nav {
     display: flex;
     justify-items: center;
     justify-content: space-between;
     text-align: center;
     margin: 2%;
-}
-
-header a,
-header img {
+  }
+  
+  header nav a {
     width: 20%;
-}
-
-img[alt=logo] {
+  }
+  
+  img[alt=logo] {
     width: 50%;
-}
-
-img[alt=avatar] {
+  }
+  
+  img[alt=avatar] {
     border-radius: 50%;
     width: 70%;
-}
+  }
+  
+  header h1 {
+    font-family: 'Bubbler One';
+    /* Ne pas oublier de mettre d'autre police */
+    /* color: #9373ab; */
+    /* color: #4B365E; */
+    color: #473A53;
+    text-align: center;
+    margin: 2% 0;
+    text-transform: uppercase;
+  }
 
 
 section img[alt=pieuvre] {

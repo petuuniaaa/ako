@@ -1,8 +1,30 @@
 const cards = document.querySelectorAll('.memory-card');
 
+// $('#completed').css('display', 'block');
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+var tabCompleted = [false, false, false, false, false, false];
+var i = 0;
+
+function close() {
+  document.getElementById('completed').style.display = 'none';
+  window.location.href = 'memoryanimaux_gagne.html';
+}
+
+// function replay() {
+//   document.getElementById('completed').style.display = 'none';
+
+//   $('.memory-card').each(function () {
+//     $(this).removeClass('flip');
+//   })
+//   refreshBoard();
+//   melange();
+// }
+
+document.getElementById('modal-close').addEventListener('click', close);
+// document.getElementById('modal-replay').addEventListener('click', replay);
 
 function flipCard() {
   if (lockBoard) return;
@@ -16,7 +38,8 @@ function flipCard() {
 
     return;
   }
-
+  $('#son').css('visibility', 'visible');
+  document.getElementById('son').style.backgroundImage = "url('/pictures/svg/boutonson.svg')";
   secondCard = this;
   checkForMatch();
 }
@@ -26,10 +49,30 @@ function checkForMatch() {
 
   isMatch ? disableCards() : unflipCards();
   if (isMatch === true) {
-    var source = document.getElementById("toto");
-    source.src = "../../pictures/svg/checked.svg"
-    console.log(source);
+    var obj = document.querySelector('.notactived');
+    obj.style['visibility'] = 'visible';
+    var source = document.getElementById("condition");
+    source.src = "../../pictures/svg/succes.svg";
+    document.getElementById('text_condition').innerHTML = "Bravo, continues !";
   }
+
+  setTimeout(() => {
+    obj.style['visibility'] = 'hidden';
+    source.src = "../../pictures/svg/erreur.svg";
+  }, 1200);
+
+  if (isMatch === true) {
+    tabCompleted[i] = true;
+    i++;
+    if (tabCompleted.every(
+      function (item) {
+        return item == true;
+      })) {
+      $("#completed").fadeIn("slow");
+      $('#completed').css('display', 'block');
+    }
+  }
+
 }
 
 function disableCards() {
@@ -42,17 +85,17 @@ function disableCards() {
 function unflipCards() {
   lockBoard = true;
 
+  var obj = document.querySelector('.notactived');
+  obj.style['visibility'] = 'visible';
+  document.getElementById('text_condition').innerHTML = "Réessayes !";
+
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
 
+    obj.style['visibility'] = 'hidden';
     resetBoard();
   }, 1000);
-
-  var obj = document.querySelector('.notactived');
-  obj.style['visibility'] = 'visible'
-
-  console.log('ici')
 }
 
 function resetBoard() {
@@ -60,11 +103,27 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+// function refreshBoard() {
+//   [hasFlippedCard, lockBoard] = [false, false];
+//   [firstCard, secondCard] = [null, null];
+//   tabCompleted = [false, false, false, false, false, false];
+//   i = 0;
+
+//   cards.forEach(card => card.addEventListener('click', flipCard));
+// }
+
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   });
 })();
+
+function melange() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));

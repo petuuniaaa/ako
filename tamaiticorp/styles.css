@@ -11,14 +11,12 @@ body {
     overflow-x: hidden;
 }
 
-
 #accueil {
     height: 100vh;
 }
 
 #manav {
     font-size: 2em;
-
 }
 
 .fixed-top {
@@ -343,7 +341,6 @@ canvas {
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(87, 213, 218)), to(rgb(25, 150, 155)));
     background: linear-gradient(rgb(87, 213, 218), rgb(25, 150, 155));
     border: none;
-
 }
 
 .modal-header {
@@ -384,7 +381,6 @@ canvas {
 
 .close {
     float: right;
-
 }
 
 /* COLORIAGES */

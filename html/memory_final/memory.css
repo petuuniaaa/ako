@@ -15,6 +15,7 @@
 
 body {
   background: #41BABE;
+  overflow: hidden;
 }
 
 header nav {
@@ -26,16 +27,16 @@ header nav {
 }
 
 header nav a {
-  width: 50%;
+  width: 20%;
 }
 
 img[alt=logo] {
-  width: 20%;
+  width: 50%;
 }
 
 img[alt=avatar] {
   border-radius: 50%;
-  width: 30%;
+  width: 70%;
 }
 
 header h1 {
@@ -155,12 +156,11 @@ div .front-face img {
 }
 
 .footer .son {
-  background-image: url(../../pictures/svg/speaker.svg);
+  visibility: hidden;
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
   border: none;
-  background-color: #9373ab;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -169,7 +169,7 @@ div .front-face img {
   text-align: center;
 }
 
-.footer img {
+.footer img  {
   width: 40%;
 }
 
@@ -182,39 +182,232 @@ div .front-face img {
 
 .footer .return {
   width: 60px;
-  background-color: #9373ab;
-  border-radius: 100%;
   height: 60px;
-  padding: 10px;
   cursor: pointer;
 }
 
-.footer .notactived {
+.footer .notactived, 
+.footer .checked {
   visibility: hidden;
 }
+
+.footer .checked {
+  width:20%;
+}
+
+#completed{
+  display: none;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.modal-dialog {
+  position: relative;
+  top: 20%;
+  height: 300px;
+}
+
+.modal-header{
+  border-bottom: 0;
+}
+
+.modal-header .close {
+  position: relative;
+  left: 100px;
+  top: 40px;
+  background-color: #9373ab;
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 1;
+}
+
+.modal-body {
+  height: 200px;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+.conversation,
+.debut_jeu {
+  display: flex;
+}
+
+.circular-sb {
+  width: 230px;
+  height: 150px;
+  border: 1px solid #FFF;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #9373ab;
+  position: absolute;
+  top: 15%;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.circular-sb p {
+  position: relative;
+  top: 50%;
+  color: #FFF;
+  transform: translateY(-50%);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.circle3 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 85%;
+  top: 10%;
+  background-color: #9373ab;
+}
+
+.circle4 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10%;
+  left: 95%;
+}
+
+.conversation .ako {
+  width: 60%;
+  position: absolute;
+  left: 55%;
+  transform: rotate(10deg);
+  top: 50%;
+}
+
+.conversation .son {
+  width: 20%;
+  position: relative;
+  top: 55px;
+  left: -30px;
+  cursor: pointer;
+}
+
+.debut_jeu .circular-sb {
+  width: 250px;
+  height: 100px;
+  border: 1px solid #FFF;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #9373ab;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.debut_jeu .circle3 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 10%;
+  top: 30%;
+  background-color: #9373ab;
+}
+
+.debut_jeu .circle4 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 30%;
+  left: 5%;
+}
+
+.debut_jeu .ako {
+  width: 60%;
+  position: absolute;
+  left: -70px;
+  transform: rotate(10deg);
+  top: 50%;
+}
+
+.debut_jeu .son {
+  width: 20%;
+  position: relative;
+  top: -10px;
+  left: 15%;
+  cursor: pointer;
+}
+
+.modal-footer {
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.btn-secondary {
+  background-color: #9373ab;
+  width: 150px;
+  padding: 15px;
+  border: 0;
+  font-family: 'Bubbler One', cursive;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: .3rem;
+}
+
+.btn-secondary:hover {
+  background-color: #473A53;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 450px) {
   .plateau {
     margin-bottom: 10px;
+  }
+
+  .conversation .ako {
+    width: 40%;
+    top: 65%;
+  }
+
+  .circular-sb {
+    left: 20%;
   }
 }
 
 
 @media screen and (min-width: 545px) {
   header {
-    max-width: 70%;
+    max-width: 520px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 725px) {
   header nav a {
-    width: 40%;
+    width: 20%;
   }
 
-  img[alt=piece],
   img[alt=avatar] {
-    width: 20%;
+    width: 70px;
   }
 }
 
@@ -234,6 +427,6 @@ div .front-face img {
   }
 
   header nav a {
-    width: 30%;
+    width: 100px;
   }
 }

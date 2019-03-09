@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Memory Game</title>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" href="memory.css">
 </head>
 
@@ -121,14 +124,95 @@
     </div>
   </section>
   <section class="footer">
-    <button class="son notactive" type="image"></button>
-    <div class="condition notactived">
-      <img src="../../pictures/svg/error.svg" alt="" id="toto">
-      <p>Réessayes</p>
+    <button class="son" type="image" id="son"></button>
+    <div class="notactived">
+      <img src="../../pictures/svg/erreur.svg" alt="" id="condition">
+      <p id="text_condition"></p>
     </div>
-    <a href="../18jeux.html"><img src="../../pictures/svg/reply.svg" alt="return" class="return"></a>
-
+    <a href="/html/themes/animaux.html"><img src="../../pictures/svg/flecheretour.svg" alt="return" class="return"></a>
   </section>
+
+  <!-- MODAL DEBUT JEU -->
+
+  <div class="modal" tabindex="-1" role="dialog" id="modal_debut">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- <div class="modal-header">
+          <div class="col-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close">
+              <span aria-hidden="true">
+              </span>
+            </button>
+          </div>
+        </div> -->
+
+        <div class="modal-body">
+          <section class="debut_jeu">
+            <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+            <div class="circular-sb">
+              <p>Collecte les paires d'images correspondantes</p>
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+              <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+            </div>
+          </section>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">Jouer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL VICTOIRE AKO APPARAIT -->
+
+  <div class="modal" tabindex="-1" role="dialog" id="completed">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <section class="conversation">
+            <div class="circular-sb">
+              <p>Hey! Tu es trop fort, tu as complété le memory</p>
+              <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+            </div>
+            <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+          </section>
+        </div>
+        <div class="modal-header">
+          <div class="col-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modal-close">
+              <span aria-hidden="true">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="50px" height="50px" viewBox="0 0 268.832 268.832" xml:space="preserve">
+                  <g>
+                    <path
+                      d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5
+                   c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678
+                   c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z" />
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="modal_debut.js"></script>
   <script src="memory.js"></script>
 </body>
 

@@ -18,7 +18,6 @@ function replay() {
   })
   refreshBoard();
   melange();
-
 }
 
 document.getElementById('modal-close').addEventListener('click', close);
@@ -51,9 +50,9 @@ function checkForMatch() {
     tabCompleted[i] = true;
     i++;
     if (tabCompleted.every(
-        function (item) {
-          return item == true;
-        })) {
+      function (item) {
+        return item == true;
+      })) {
       $("#completed").fadeIn("slow");
       $('#completed').css('display', 'block');
     }

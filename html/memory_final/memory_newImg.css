@@ -1,0 +1,150 @@
+body {
+    background: #41BABE;
+    overflow: hidden;
+    height: 100vh;
+}
+  
+header nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+}
+  
+header nav a {
+    width: 20%;
+}
+  
+img[alt=logo] {
+    width: 55%;
+}
+  
+img[alt=avatar] {
+    border-radius: 50%;
+    width: 75%;
+}
+  
+header h1 {
+    font-family: 'Bubbler One';
+    /* Ne pas oublier de mettre d'autre police */
+    /* color: #9373ab; */
+    /* color: #4B365E; */
+    color: #473A53;
+    text-align: center;
+    margin: 5% 0;
+    text-transform: uppercase;
+}
+
+.conversation {
+  display: flex;
+}
+
+.circular-sb {
+  width: 200px;
+  height: 130px;
+  border: 1px solid #FFF;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #9373ab;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.circular-sb p {
+  position: relative;
+  top: 50%;
+  color: #FFF;
+  transform: translateY(-50%);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.circle3 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 75%;
+  top: 10%;
+  background-color: #9373ab;
+}
+
+.circle4 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10%;
+  left: 85%;
+}
+
+.conversation .ako {
+  width: 60%;
+  position: absolute;
+  left: 55%;
+  transform: rotate(-5deg);
+  top: 45%;
+  left: 55%;
+}
+
+.conversation .son {
+  width: 20%;
+  position: relative;
+  top: 55px;
+  left: -30px;
+  cursor: pointer;
+}
+
+button {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0;
+  background-color: #473A53;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+  /* MEDIA QUERIES */
+  @media screen and (min-width: 450px) {
+  
+    .conversation .ako {
+      width: 40%;
+      top: 65%;
+    }
+  
+    .circular-sb {
+      left: 20%;
+    }
+  }
+
+@media screen and (min-width: 545px) {
+    body {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    header nav a {
+      width: 20%;
+    }
+  
+    img[alt=avatar] {
+      width: 70px;
+    }
+}
