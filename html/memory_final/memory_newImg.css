@@ -124,7 +124,7 @@ button {
   
     .conversation .ako {
       width: 40%;
-      top: 65%;
+      top: 250px;
     }
   
     .circular-sb {
@@ -137,6 +137,14 @@ button {
       max-width: 500px;
       margin: 0 auto;
     }
+
+    .conversation .ako {
+      width: 200px;
+    }
+
+    .circular-sb {
+      left:30%;
+    }
 }
 
 @media screen and (min-width: 725px) {
@@ -147,4 +155,14 @@ button {
     img[alt=avatar] {
       width: 70px;
     }
+
+    .circular-sb {
+      left: 35%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .circular-sb {
+    left: 40%;
+  }
 }

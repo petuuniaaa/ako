@@ -24,7 +24,7 @@ header nav {
   }
   
   img[alt=logo] {
-    width: 50%;
+    width: 40%;
   }
   
   img[alt=avatar] {
@@ -127,10 +127,14 @@ button {
 }
 
 .puzzle button,
-.memory button,
-.devine button {
+.memory button {
     width: 70px;
     height: 70px;
+}
+
+.devine button {
+    width: 80px;
+    height: 80px;
 }
 
 .memory {
