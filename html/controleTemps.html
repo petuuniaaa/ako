@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/controleTemps.css">
+    <title>Controle du temps</title>
+</head>
+
+<body>
+    <header>
+        <img src="../pictures/svg/logo_ako.svg" alt="logo" class="logo" onclick="redirectionAccueil()">
+        <!--Retour sur la page précèdente-->
+        <div class="head">
+            <img src="/pictures/svg/001-locked.svg" alt="">
+            <p> <strong>Réglage du temps</strong> pour @pseudo</p>
+        </div>
+    </header>
+    <section class="main">
+        <p>Choisir une période de temps :</p>
+        <div class="temps">
+            <form action="">
+                <input type="time" name="usr_time" value="00:30">
+                <input type="submit" value="OK">
+            </form>
+        </div>
+        <p class="text">Après cette période de temps, tu ne pourras plus jouer avec Ako.</p>
+        <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+    </section>
+    <button class="retour" onclick="redirectionRetour()"><img src="/pictures/svg/flecheretour.svg" alt=""></button>
+
+    <!-- SCRIPT -->
+    <script>
+        function redirectionRetour() {
+            window.location.href = '8compte.html';
+        }
+
+        function redirectionAccueil() {
+            window.location.href = '15age.html';
+        }
+    </script>
+</body>
+
+</html>
