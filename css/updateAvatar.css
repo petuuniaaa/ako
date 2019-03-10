@@ -2,7 +2,7 @@ body {
     background-color: #41BABE;
     color: #fff;
     font-family: 'Bubbler One', cursive;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
@@ -49,7 +49,6 @@ section img {
 .return {
     border-radius: 100%;
     height: 50px;
-    padding: 10px;
     cursor: pointer;
     float: right;
     margin-right: 20%;
