@@ -1,6 +1,7 @@
 body {
   background-color: #41BABE !important;
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 /* HAUT DE PAGE NAV */
@@ -46,6 +47,7 @@ header h1 {
   top: 80%;
   left: 65%;
   border: 0;
+  border-radius: 80px;
 }
 
 .galerie button {
@@ -64,10 +66,10 @@ header h1 {
 .galerie button img {
   width: 100px;
   height: 70px;
-  position: relative;
-  left: 25%;
+  position: absolute;
+  left: 50%;
   top: 50%;
-  transform: translateX(-25%);
+  transform: translate(-50%, -50%);
 }
 
 .galerie button:hover,
@@ -84,9 +86,16 @@ header h1 {
 
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 400px) {
+  .galerie button {
+    width: 170px;
+    height: 120px;
+  }
+}
+
 @media screen and (min-width: 545px) {
   body {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto !important;
   }
 }
