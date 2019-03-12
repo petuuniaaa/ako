@@ -54,6 +54,10 @@ img[alt="modifier"] {
     font-size: 1.125rem;
 }
 
+.bloc img {
+    width: 15px;
+}
+
 @media (min-width: 380px) {
     img[alt="avatar"] {
         width: 30%;

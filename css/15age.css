@@ -6,6 +6,7 @@
 
 body {
     background-color: #41BABE;
+    overflow: hidden;
 }
 
 header {
@@ -21,22 +22,15 @@ header nav a {
 }
 
 img[alt=logo] {
-    width: 35%;
-}
-
-img[alt=piece] {
-    position: relative;
-    width: 10%;
-    height: 10%;
-    left: 15%;
+    width: 45%;
 }
 
 img[alt=avatar] {
     border-radius: 50%;
-    width: 35%;
+    width: 45%;
 }
 
-section {
+.main {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -68,18 +62,248 @@ a button:hover {
     cursor: pointer;
 }
 
+.suivant {
+    width: 70px;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+}
+
+.modal-header button {
+    box-shadow: none;
+    margin: 0%;
+}
+
+.ako {
+    width: 200px;
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: rotate(10deg);
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    height: 500px;
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+
+/* .modal {
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+
+/* .modal-dialog {
+    position: relative;
+    top: 20%;
+    height: 300px;
+} */
+
+/* .modal-header .close {
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+} */
+
+/* .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+} */
+
+/* .modal-body {
+    height: 200px;
+} */
+
+/* .modal-footer {
+    border-top: 0;
+} */
+
+.debut_jeu {
+    display: flex;
+}
+
+.circular-sb {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #FFF;
+    border-radius: 70px;
+    text-align: center;
+    background-color: #9373ab;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: #FFF;
+    font-family: 'Bubbler One', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.circular-sb p {
+    position: relative;
+    top: 50%;
+    color: #FFF;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 10px;
+}
+
+.circle3 {
+    border: 1px solid #FFF;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 10%;
+    top: 30%;
+    background-color: #9373ab;
+}
+
+.circle4 {
+    border: 1px solid #FFF;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30%;
+    left: 5%;
+}
+
+.fleche {
+    position: relative;
+    left: 40%;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:focus {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+#close {
+    position: relative;
+    left: 70%;
+}
+
+#modalAge {
+    display: none;
+}
+
+.choix_age {
+    display: flex;
+}
+
+.choix_age .circular-sb {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 70px;
+    text-align: center;
+    background-color: #9373ab;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    color: #FFF;
+    font-family: 'Bubbler One', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+.choix_age .circle3 {
+    border: 1px solid #FFF;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 10%;
+    top: -10px;
+    background-color: #9373ab;
+}
+
+.choix_age .circle4 {
+    border: 1px solid #FFF;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: -10px;
+    left: 5%;
+}
+
+.AKO {
+    width: 100px;
+    position: absolute;
+    top: 85%;
+    transform: rotate(10deg);
+}
+
+.arrow {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 600px) {
     body {
-        max-width: 50%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
     button {
         margin: 10% 0;
     }
+
+    .fleche {
+        left: 50%;
+    }
+
+    .arrow {
+        left: 20%;
+        top: 35%;
+    }
+
+    .arrow2 {
+        left: 20%;
+        top: 65%;
+    }
+
+    .choix_age .circular-sb {
+        left: 25%;
+    }
+
 }
 
 @media screen and (min-width: 750px) {
+    body {
+        max-width: 70%;
+    }
 
     section {
         display: flex;
@@ -94,11 +318,25 @@ a button:hover {
     header img {
         margin-top: 3%;
     }
+
+    .fleche {
+        left: 20%;
+    }
+
+    .arrow {
+        left: 30%;
+        top: 35%;
+    }
+
+    .arrow2 {
+        left: 30%;
+        top: 65%;
+    }
 }
 
 @media screen and (min-width:1030px) {
     body {
-        max-width: 45%;
+        max-width: 50%;
         margin: 0 auto;
     }
 
@@ -108,5 +346,19 @@ a button:hover {
 
     img[alt=avatar] {
         width: 50%;
+    }
+
+    .arrow {
+        left: 35%;
+        top: 35%;
+    }
+
+    .arrow2 {
+        left: 35%;
+        top: 65%;
+    }
+
+    .choix_age .circular-sb {
+        left: 30%;
     }
 }

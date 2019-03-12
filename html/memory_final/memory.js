@@ -13,18 +13,7 @@ function close() {
   window.location.href = 'memoryanimaux_gagne.html';
 }
 
-// function replay() {
-//   document.getElementById('completed').style.display = 'none';
-
-//   $('.memory-card').each(function () {
-//     $(this).removeClass('flip');
-//   })
-//   refreshBoard();
-//   melange();
-// }
-
 document.getElementById('modal-close').addEventListener('click', close);
-// document.getElementById('modal-replay').addEventListener('click', replay);
 
 function flipCard() {
   if (lockBoard) return;
@@ -65,9 +54,9 @@ function checkForMatch() {
     tabCompleted[i] = true;
     i++;
     if (tabCompleted.every(
-      function (item) {
-        return item == true;
-      })) {
+        function (item) {
+          return item == true;
+        })) {
       $("#completed").fadeIn("slow");
       $('#completed').css('display', 'block');
     }
@@ -103,27 +92,11 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-// function refreshBoard() {
-//   [hasFlippedCard, lockBoard] = [false, false];
-//   [firstCard, secondCard] = [null, null];
-//   tabCompleted = [false, false, false, false, false, false];
-//   i = 0;
-
-//   cards.forEach(card => card.addEventListener('click', flipCard));
-// }
-
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   });
 })();
-
-function melange() {
-  cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
-    card.style.order = randomPos;
-  });
-}
 
 cards.forEach(card => card.addEventListener('click', flipCard));

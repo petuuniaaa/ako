@@ -20,7 +20,10 @@
         </div>
     </header>
     <section class="main">
-        <p>Choisir une période de temps :</p>
+        <p>Heure actuelle :</p>
+        <p id="heure"></p>
+        <p>Choisir une heure de fin :</p>
+
         <div class="temps">
             <form action="">
                 <input type="time" name="usr_time" value="00:30">
@@ -33,6 +36,7 @@
     <button class="retour" onclick="redirectionRetour()"><img src="/pictures/svg/flecheretour.svg" alt=""></button>
 
     <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
         function redirectionRetour() {
             window.location.href = '8compte.html';
@@ -40,6 +44,18 @@
 
         function redirectionAccueil() {
             window.location.href = '15age.html';
+        }
+
+        setInterval(() => {
+            var heure = new Date().toLocaleTimeString();
+            document.getElementById("heure").innerHTML = heure;
+        }, 1000);
+
+        function verifHeure() {
+            var heureSelect = parseInt('<?php echo $_POST[usr_time]; ?>');
+            if (heure === heureSelect) {
+                console.log("coucou");
+            }
         }
     </script>
 </body>

@@ -20,11 +20,11 @@ header {
 
 header a,
 header img {
-    width: 40%;
+    width: 35%;
 }
 
 img[alt=logo] {
-    width: 30%;
+    width: 35%;
 }
 
 img[alt=avatar] {

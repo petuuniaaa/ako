@@ -74,7 +74,6 @@ header h1 {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-
 }
 
 .memory-card:active {
@@ -169,7 +168,7 @@ div .front-face img {
   text-align: center;
 }
 
-.footer img  {
+.footer img {
   width: 40%;
 }
 
@@ -186,16 +185,18 @@ div .front-face img {
   cursor: pointer;
 }
 
-.footer .notactived, 
+.footer .notactived,
 .footer .checked {
   visibility: hidden;
 }
 
 .footer .checked {
-  width:20%;
+  width: 20%;
 }
 
-#completed{
+/* MODAL */
+
+#completed {
   display: none;
 }
 
@@ -215,17 +216,20 @@ div .front-face img {
   height: 300px;
 }
 
-.modal-header{
+.modal-header {
   border-bottom: 0;
 }
 
 .modal-header .close {
-  position: relative;
-  left: 100px;
-  top: 40px;
-  background-color: #9373ab;
-  border-radius: 50%;
-  padding: 10px;
+  position: absolute;
+  left: 50%;
+  width: 70px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.close:not(:disabled):not(.disabled):hover {
   opacity: 1;
 }
 
@@ -394,6 +398,10 @@ div .front-face img {
 
   .debut_jeu .ako {
     width: 200px;
+  }
+
+  .modal-header .close {
+    left: 150px;
   }
 }
 
