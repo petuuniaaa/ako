@@ -87,16 +87,21 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $("#modalCompte").fadeIn("slow");
-        $("#modalCompte").css('display', 'block');
-
-        function close() {
-            document.getElementById('modalCompte').style.display = 'none';
-            $("#modalAge").fadeIn("slow");
-            $("#modalAge").css('display', 'block');
+        if (localStorage.getItem('age') == null) {
+            $("#modalCompte")
+                .fadeIn("slow")
+                .css('display', 'block');
+            localStorage.setItem('age', 'true');
         }
 
-        document.getElementById('close').addEventListener('click', close);
+        function close() {
+            $('#modalCompte').hide();
+            $("#modalAge")
+                .fadeIn("slow")
+                .css('display', 'block');
+        }
+
+        $('#close').on('click', close);
     </script>
 
 </body>

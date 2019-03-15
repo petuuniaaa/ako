@@ -17,22 +17,22 @@ header nav {
     justify-content: space-between;
     text-align: center;
     margin: 2%;
-  }
-  
-  header nav a {
+}
+
+header nav a {
     width: 20%;
-  }
-  
-  img[alt=logo] {
-    width: 40%;
-  }
-  
-  img[alt=avatar] {
+}
+
+img[alt=logo] {
+    width: 50%;
+}
+
+img[alt=avatar] {
     border-radius: 50%;
     width: 70%;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-family: 'Bubbler One';
     /* Ne pas oublier de mettre d'autre police */
     /* color: #9373ab; */
@@ -41,7 +41,7 @@ header nav {
     text-align: center;
     margin: 2% 0;
     text-transform: uppercase;
-  }
+}
 
 
 section img[alt=pieuvre] {
@@ -161,6 +161,8 @@ button {
     right: 10%;
 }
 
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 380px) {
     .circular-sb {
         left: 40%;
@@ -175,7 +177,7 @@ button {
 
 @media screen and (min-width: 500px) {
     body {
-        max-width: 60%;
+        max-width: 500px;
         margin: 0 auto;
     }
 

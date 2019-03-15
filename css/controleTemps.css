@@ -15,7 +15,7 @@ strong {
     text-transform: uppercase;
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 70px;
     cursor: pointer;
@@ -66,7 +66,7 @@ p {
     border-bottom-right-radius: 20px;
 } */
 
-input[type=time]{
+input[type=time] {
     width: 100px;
     height: 50px;
     background-color: #9373ab;
@@ -78,7 +78,8 @@ input[type=time]{
     text-align: center;
     border-radius: 10px;
 }
-input[type=submit]{
+
+input[type=submit] {
     border-radius: 50px;
     width: 50px;
     height: 50px;
@@ -113,7 +114,22 @@ input[type=submit]{
     background-color: transparent;
 }
 
-@media screen and (min-width: 490px){
+#modal {
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+#modal p {
+    color: #000;
+}
+
+@media screen and (min-width: 490px) {
     body {
         max-width: 450px;
         margin: 20px auto;
