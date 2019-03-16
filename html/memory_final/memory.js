@@ -29,6 +29,7 @@ function flipCard() {
   }
   $('#son').css('visibility', 'visible');
   document.getElementById('son').style.backgroundImage = "url('/pictures/svg/boutonson.svg')";
+  
   secondCard = this;
   checkForMatch();
 }
@@ -77,6 +78,8 @@ function unflipCards() {
   var obj = document.querySelector('.notactived');
   obj.style['visibility'] = 'visible';
   document.getElementById('text_condition').innerHTML = "Réessayes !";
+  var audio = new Audio('/sons/reessaye.wav');
+  audio.play();
 
   setTimeout(() => {
     firstCard.classList.remove('flip');
