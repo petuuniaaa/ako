@@ -6,6 +6,7 @@ body {
 
 img[alt=logo] {
     width: 40px;
+    cursor: pointer;
 }
 
 .bulle {

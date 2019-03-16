@@ -92,7 +92,7 @@ section img[alt=pieuvre] {
     margin: 0;
 }
 
-a button:hover {
+input:hover {
     cursor: pointer;
 }
 
@@ -120,6 +120,19 @@ a button:hover {
     left: 20%;
 }
 
+
+/* .main input {
+    background-color: #9373ab;
+    box-shadow: 0px 0px 41px -7px rgba(0, 0, 0, 0.75);
+    border: none;
+    color: #FFF;
+    font-size: 1.125em;
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    text-transform: uppercase;
+    font-family: 'Bubbler One';
+} */
 
 button {
     background-color: #9373ab;
@@ -166,6 +179,13 @@ button {
     section {
         margin-top: 0;
     }
+
+    /* .main input {
+        font-size: 1.400em;
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+    } */
 
     button {
         font-size: 1.400em;

@@ -1,13 +1,14 @@
 body {
-    background: #41BABE;
-    overflow: hidden;
-    height: 100vh;
+  background: #41BABE;
+  overflow: hidden;
+  height: 100vh;
 }
-  
+
 img[alt=logo] {
-    width: 40px;
+  width: 40px;
+  cursor: pointer;
 }
- 
+
 .bulle {
   display: flex;
 }
@@ -76,60 +77,63 @@ img[alt=logo] {
 }
 
 .boolean {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 300px;
-    z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 300px;
+  z-index: 2;
 }
 
 button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    background-color: #9373ab;
-    color: #FFF;
-    font-family: 'Bubbler One', cursive;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    border: 0;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #9373ab;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .retour {
+  width: 50px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  left: 65%;
+  border: 0;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .bulle .ako {
+    left: 35%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  img[alt=logo] {
     width: 50px;
-    height: 70px;
-    cursor: pointer;
-    position: absolute;
-    top: 85%;
-    left: 65%;
-    border: 0;
-    background-color: transparent;
+  }
+
+  .bulle .ako {
+    left: 40%;
+  }
 }
 
-@media screen and (min-width: 400px){
-    body {
-        max-width: 400px;
-        margin: 10px auto;
-    }
-}
-@media screen and (min-width: 500px){
-    .bulle .ako {
-        left: 35%;
-    }
-}
-@media screen and (min-width: 700px){
-    img[alt=logo] {
-        width: 50px;
-    }
-
-    .bulle .ako {
-        left: 40%;
-    }
-}
-@media screen and (min-width: 1200px){
-    .bulle .ako {
-        left: 550px;
-    }
+@media screen and (min-width: 1200px) {
+  .bulle .ako {
+    left: 550px;
+  }
 }
