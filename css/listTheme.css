@@ -145,6 +145,7 @@ button {
     height: 120px;
     text-transform: uppercase;
     font-family: 'Bubbler One';
+    cursor: pointer;
 }
 
 @media screen and (min-width: 500px) {

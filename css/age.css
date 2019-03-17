@@ -23,15 +23,13 @@ header img {
 }
 
 img[alt=logo] {
-    width: 15%;
-    height: 5%;
-
+    width: 50px;
 }
 
 img[alt=avatar] {
     border-radius: 50%;
-    width: 20%;
-    height: 20%;
+    width: 60px;
+    height: 60px;
 }
 
 .main {
@@ -100,40 +98,6 @@ a button:hover {
 .modal-header {
     border-bottom: 0;
 }
-
-
-/* .modal {
-    background-color: rgba(0, 0, 0, 0.7);
-} */
-
-
-/* .modal-dialog {
-    position: relative;
-    top: 20%;
-    height: 300px;
-} */
-
-/* .modal-header .close {
-    position: absolute;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-    padding: 0;
-    margin: 0;
-} */
-
-/* .close:not(:disabled):not(.disabled):hover {
-    opacity: 1;
-} */
-
-/* .modal-body {
-    height: 200px;
-} */
-
-/* .modal-footer {
-    border-top: 0;
-} */
 
 .debut_jeu {
     display: flex;
@@ -342,14 +306,6 @@ a button:hover {
     body {
         max-width: 50%;
         margin: 0 auto;
-    }
-
-    img[alt=logo] {
-        width: 50%;
-    }
-
-    img[alt=avatar] {
-        width: 50%;
     }
 
     .arrow {

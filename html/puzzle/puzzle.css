@@ -1,49 +1,79 @@
-body{
+body {
     background-color: #41BABE;
+    height: 100vh;
+    overflow: hidden;
 
 }
-body div{
-    max-width: 900px;
-    margin: 0 auto;
+
+header nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
 }
 
+header nav a {
+    width: 20%;
+}
 
+img[alt=logo] {
+    width: 40px;
+}
 
+img[alt=avatar] {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    font-family: 'Bubbler One', cursive;
+    /* Ne pas oublier de mettre d'autre police */
+    /* color: #9373ab; */
+    /* color: #4B365E; */
+    color: #473A53;
+    text-align: center;
+    margin: 2% 0;
+    text-transform: uppercase;
+}
 
 .plateau {
     border: solid 2px black;
-    width: 40%;
-    height: 48vh;
-    /* background-image: url('pictures/animaux/cheval.svg'); */
+    width: 250px;
+    height: 250px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
-   
-    
+    background-size: 90%;
+    margin: 0 auto;
 }
-h1{
-    color: purple;
-    text-align: center;
+
+th {
+    background-color: rgb(180, 177, 177);
+    width: 20%;
+    height: 20%;
 }
-th{
-   background-color: rgb(180, 177, 177);
-   
-   width: 20%; 
-   height: 20%;
+
+.boxImages {
+    position: relative;
+    height: 200px;
+    width: 200px;
 }
-@media (max-width:400px){
-    .plateau{
-        width: 100%;
+
+.imgRandom {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 22%;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 500px;
+        margin: 0 auto;
     }
 
-}
-img{
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    width: 6%;
-}
-
-.fond{
-    opacity: 1;
+    .boxImages {
+        margin-left: 30%;
+    }
 }
