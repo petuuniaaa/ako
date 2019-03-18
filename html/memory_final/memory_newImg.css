@@ -1,39 +1,41 @@
 body {
-    background: #41BABE;
-    overflow: hidden;
-    height: 100vh;
+  background: #41BABE;
+  overflow: hidden;
+  height: 100vh;
 }
-  
+
 header nav {
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    text-align: center;
-    margin: 2%;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 2%;
 }
-  
+
 header nav a {
-    width: 20%;
+  width: 20%;
 }
-  
-img[alt=logo] {
-    width: 55%;
+
+.logo {
+  width: 50px;
 }
-  
-img[alt=avatar] {
-    border-radius: 50%;
-    width: 75%;
+
+.avatarCompte {
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
 }
-  
+
+
 header h1 {
-    font-family: 'Bubbler One';
-    /* Ne pas oublier de mettre d'autre police */
-    /* color: #9373ab; */
-    /* color: #4B365E; */
-    color: #473A53;
-    text-align: center;
-    margin: 5% 0;
-    text-transform: uppercase;
+  font-family: 'Bubbler One';
+  /* Ne pas oublier de mettre d'autre police */
+  /* color: #9373ab; */
+  /* color: #4B365E; */
+  color: #473A53;
+  text-align: center;
+  margin: 5% 0;
+  text-transform: uppercase;
 }
 
 .conversation {
@@ -119,46 +121,53 @@ button {
   cursor: pointer;
 }
 
-  /* MEDIA QUERIES */
+.conversation a {
+  width: 50px;
+  position: relative;
+  left: 80%;
+  top: 80%;
+}
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 450px) {
-  
+
   .conversation .ako {
-      width: 40%;
-      top: 250px;
+    width: 40%;
+    top: 250px;
   }
-  
+
   .circular-sb {
-      left: 20%;
-    }
+    left: 20%;
   }
+}
 
 @media screen and (min-width: 545px) {
-    body {
-      max-width: 500px;
-      margin: 0 auto;
-    }
+  body {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-    .conversation .ako {
-      width: 200px;
-    }
+  .conversation .ako {
+    width: 200px;
+  }
 
-    .circular-sb {
-      left:30%;
-    }
+  .circular-sb {
+    left: 30%;
+  }
 }
 
 @media screen and (min-width: 725px) {
-    header nav a {
-      width: 20%;
-    }
-  
-    img[alt=avatar] {
-      width: 70px;
-    }
+  header nav a {
+    width: 20%;
+  }
 
-    .circular-sb {
-      left: 35%;
-    }
+  img[alt=avatar] {
+    width: 70px;
+  }
+
+  .circular-sb {
+    left: 35%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

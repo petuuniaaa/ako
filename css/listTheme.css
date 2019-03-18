@@ -15,22 +15,19 @@ header {
     justify-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: 2%;
+    margin: 4%;
 }
 
-header a,
-header img {
-    width: 35%;
+.logo {
+    width: 50px;
 }
 
-img[alt=logo] {
-    width: 30%;
-}
-
-img[alt=avatar] {
+.avatarCompte {
     border-radius: 50%;
-    width: 40%;
+    width: 60px;
+    height: 60px;
 }
+
 
 section {
     margin-top: 15%;
@@ -171,7 +168,7 @@ button {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     body {
         max-width: 500px;
         margin: 0 auto;
@@ -256,13 +253,5 @@ button {
 
     .mythes {
         left: 50%;
-    }
-
-    img[alt="logo"] {
-        width: 20%;
-    }
-
-    img[alt="avatar"] {
-        width: 30%;
     }
 }

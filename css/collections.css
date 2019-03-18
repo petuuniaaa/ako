@@ -1,8 +1,10 @@
 body {
     background: #41BABE;
     overflow: hidden;
+    margin: 0;
+    height: 100vh;
 }
-  
+
 /* HAUT DE PAGE NAV */
 header nav {
     display: flex;
@@ -11,20 +13,21 @@ header nav {
     text-align: center;
     margin: 2%;
 }
-  
-  header nav a {
+
+header nav a {
     width: 20%;
-  }
-  
-  img[alt=logo] {
-    width: 60%;
-  }
-  
-  img[alt=avatar] {
+}
+
+.logo {
+    width: 50px;
+}
+
+.avatarCompte {
     border-radius: 50%;
-    width: 80%;
-  }
-  
+    width: 60px;
+    height: 60px;
+}
+
 header h1 {
     font-family: 'Bubbler One';
     /* Ne pas oublier de mettre d'autre police */
@@ -92,11 +95,11 @@ button {
     left: 65%;
 }
 
-  /* BULLE AKO TEXTE */
+/* BULLE AKO TEXTE */
 .conversation {
     display: flex;
 }
-  
+
 .circular-sb {
     width: 90px;
     height: 40px;
@@ -112,7 +115,7 @@ button {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
-  
+
 .circular-sb p {
     position: relative;
     top: 50%;
@@ -121,7 +124,7 @@ button {
     margin: 0;
     text-transform: uppercase;
 }
-  
+
 .circle3 {
     border: 1px solid #FFF;
     position: relative;
@@ -132,7 +135,7 @@ button {
     top: 20%;
     background-color: #9373ab;
 }
-  
+
 .circle4 {
     border: 1px solid #FFF;
     position: relative;
@@ -142,7 +145,7 @@ button {
     top: 10%;
     left: 5%;
 }
-  
+
 .conversation .ako {
     width: 30%;
     transform: rotate(5deg);
@@ -151,19 +154,19 @@ button {
     top: 85%;
 }
 
-    /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 @media screen and (min-width: 450px) {
     .circular-sb {
         left: 20%;
-      }
+    }
 
-      .monuments {
-          top: 30%;
-      }
+    .monuments {
+        top: 30%;
+    }
 
-      .mythes {
-          top: 55%;
-      }
+    .mythes {
+        top: 55%;
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -184,16 +187,16 @@ button {
         left: 25%;
     }
 }
-  
-  @media screen and (min-width: 545px) {
-      body {
+
+@media screen and (min-width: 545px) {
+    body {
         max-width: 500px;
         margin: 0 auto;
-      }
-  
-      .conversation .ako {
+    }
+
+    .conversation .ako {
         width: 100px;
-      }
+    }
 
     button {
         font-size: 1.400em;
@@ -215,7 +218,8 @@ button {
     }
 
     .mythes {
-        left: 50%;;
+        left: 50%;
+        ;
     }
 
     .conversation .ako {
@@ -224,6 +228,7 @@ button {
 }
 
 @media screen and (min-width: 700px) {
+
     .animaux,
     .drapeaux {
         left: 35%;
@@ -238,7 +243,7 @@ button {
     }
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1200px) {
     .conversation .ako {
         left: 300px;
     }

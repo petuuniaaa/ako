@@ -17,13 +17,14 @@ header nav a {
   width: 20%;
 }
 
-img[alt=logo] {
-  width: 60%;
+.logo {
+  width: 50px;
 }
 
-img[alt=avatar] {
+.avatarCompte {
   border-radius: 50%;
-  width: 80%;
+  width: 60px;
+  height: 60px;
 }
 
 header h1 {
@@ -33,7 +34,7 @@ header h1 {
   /* color: #4B365E; */
   color: #473A53;
   text-align: center;
-  margin: 7% 0;
+  margin: 2% 0;
   text-transform: uppercase;
 }
 
@@ -54,16 +55,16 @@ header h1 {
   width: 130px;
   height: 100px;
   border-radius: 0;
-  background-color: #FFF;
+  background-color: transparent;
   border: 0;
   margin: 10%;
-  background-image: url('/pictures/animaux/chat.svg');
+  /* background-image: url('/pictures/collection/collection-animaux.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   position: relative;
 }
 
-.galerie button img {
+.galerie button .locked {
   width: 100px;
   height: 70px;
   position: absolute;
@@ -72,9 +73,18 @@ header h1 {
   transform: translate(-50%, -50%);
 }
 
+.galerie button .imgAnimaux {
+  filter: grayscale(1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
 .galerie button:hover,
 .galerie button:focus {
-  background-color: #FFF;
+  background-color: transparent;
   color: transparent;
 }
 
@@ -93,7 +103,7 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 545px) {
+@media screen and (min-width: 500px) {
   body {
     max-width: 500px;
     margin: 20px auto !important;

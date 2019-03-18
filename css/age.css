@@ -22,11 +22,11 @@ header img {
     width: 50%;
 }
 
-img[alt=logo] {
+.logo {
     width: 50px;
 }
 
-img[alt=avatar] {
+.avatarCompte {
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -238,9 +238,9 @@ a button:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     body {
-        max-width: 80%;
+        max-width: 500px;
         margin: 0 auto;
     }
 
@@ -281,10 +281,6 @@ a button:hover {
     button {
         padding: 15%;
         margin: 10%;
-    }
-
-    header img {
-        margin-top: 3%;
     }
 
     .fleche {

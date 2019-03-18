@@ -11,25 +11,29 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    margin: 4% 2%;
+}
+
 header nav {
     display: flex;
     justify-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: 2%;
 }
 
 header nav a {
     width: 20%;
 }
 
-img[alt=logo] {
-    width: 50%;
+.logo {
+    width: 50px;
 }
 
-img[alt=avatar] {
+.avatarCompte {
     border-radius: 50%;
-    width: 70%;
+    width: 60px;
+    height: 60px;
 }
 
 header h1 {
@@ -277,14 +281,6 @@ button {
 
     .memory {
         top: 65%;
-    }
-
-    img[alt=logo] {
-        width: 40%;
-    }
-
-    img[alt=avatar] {
-        width: 50%;
     }
 }
 
