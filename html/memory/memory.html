@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <title>Memory Game</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <link rel="stylesheet" href="memory.css">
 </head>
@@ -18,8 +18,9 @@
 <body>
   <header>
     <nav>
-      <a href="../../html/age.html"><img src="../../pictures/svg/logo_ako.svg" alt="logo"></a>
-      <a href="../../html/compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="avatar"></a>
+      <a href="../../html/age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+      <a href="../../html/compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte"
+          class="avatarCompte"></a>
     </nav>
     <h1>Memory</h1>
   </header>
@@ -129,19 +130,19 @@
     <button class="son" type="image" id="son"></button>
     <div class="notactived">
       <img src="../../pictures/svg/erreur.svg" alt="" id="condition">
-      <p id="text_condition"></p>
+      <p id="textCondition"></p>
     </div>
     <a href="/html/listTheme.html"><img src="../../pictures/svg/flecheretour.svg" alt="return" class="return"></a>
   </section>
 
   <!-- MODAL DEBUT JEU -->
 
-  <div class="modal" tabindex="-1" role="dialog" id="modal_debut">
+  <div class="modal" tabindex="-1" role="dialog" id="modalDebut">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-body">
-          <section class="debut_jeu">
+          <section class="debutJeu">
             <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
             <div class="circular-sb">
               <p>Collecte les paires d'images correspondantes</p>
@@ -151,7 +152,6 @@
             </div>
           </section>
         </div>
-
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">Jouer</button>
         </div>
@@ -166,7 +166,7 @@
       <div class="modal-content">
 
         <div class="modal-body">
-          <section class="conversation">
+          <section class="victoire">
             <div class="circular-sb">
               <p>Hey! Tu es trop fort, tu as complété le memory</p>
               <img src="/pictures/svg/boutonson.svg" alt="" class="son">
@@ -192,7 +192,8 @@
                   </style>
                 </defs>
                 <rect class="cls-1" x="4.68" y="6.22" width="20.48" height="16.42" />
-                <path class="cls-2" d="M2.2,7.39A14.88,14.88,0,1,0,22.57,2.11,14.88,14.88,0,0,0,2.2,7.39Zm3.87,9.44c.3-2.69.84-5,10.49-4.51a.57.57,0,0,0,.6-.57c0-1.17-.07-3.71-.09-4.61A.14.14,0,0,1,17.3,7l6.88,6.64a.78.78,0,0,1,0,1.1l-6.64,6.89a.13.13,0,0,1-.23-.09l-.08-4.85a.55.55,0,0,0-.48-.55C7.47,15.77,6.07,16.83,6.07,16.83Z"
+                <path class="cls-2"
+                  d="M2.2,7.39A14.88,14.88,0,1,0,22.57,2.11,14.88,14.88,0,0,0,2.2,7.39Zm3.87,9.44c.3-2.69.84-5,10.49-4.51a.57.57,0,0,0,.6-.57c0-1.17-.07-3.71-.09-4.61A.14.14,0,0,1,17.3,7l6.88,6.64a.78.78,0,0,1,0,1.1l-6.64,6.89a.13.13,0,0,1-.23-.09l-.08-4.85a.55.55,0,0,0-.48-.55C7.47,15.77,6.07,16.83,6.07,16.83Z"
                   transform="translate(-0.15 -0.05)" />
               </svg>
             </button>
@@ -204,11 +205,13 @@
 
   <!-- SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="modal_debut.js"></script>
+  <script src="modalDebut.js"></script>
   <script src="memory.js"></script>
 </body>
 

@@ -22,9 +22,32 @@ function modal() {
     var para = document.createElement("p");
 
     newDiv.appendChild(para);
-    var newContent = document.createTextNode("Le temps est imparti :(");
+    var newContent = document.createTextNode("Le temps de jeu est terminé");
 
     para.appendChild(newContent);
+
+    var form = document.createElement("form")
+    form.method = 'post';
+    newDiv.appendChild(form);
+
+    var label = document.createElement("label");
+    label.id = 'label'
+    form.appendChild(label);
+    var labelText = document.createTextNode("Entrez votre mot de passe :");
+    var saut = document.createElement("br");
+    form.appendChild(saut);
+
+    label.appendChild(labelText);
+
+    var inputPwd = document.createElement("input");
+    inputPwd.type = 'password';
+    form.appendChild(inputPwd);
+
+    var submit = document.createElement("input");
+    submit.type = 'submit';
+    submit.value = 'Continuer à jouer';
+    submit.id = 'relancer';
+    form.appendChild(submit);
 
     document.body.appendChild(newDiv);
 }
@@ -32,7 +55,6 @@ function modal() {
 function controleTemps() {
     if (localStorage.getItem('temps') <= Date.now()) {
         modal();
-        console.log('coucou');
         clearInterval(timer);
     }
 }

@@ -64,6 +64,8 @@ a button:hover {
     cursor: pointer;
 }
 
+/* MODAL */
+
 .suivant {
     width: 70px;
 }
@@ -84,7 +86,7 @@ a button:hover {
     width: 200px;
     position: absolute;
     left: -70px;
-    top: 50%;
+    top: 55%;
     transform: rotate(10deg);
 }
 
@@ -104,15 +106,15 @@ a button:hover {
 }
 
 .circular-sb {
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 180px;
     border: 1px solid #FFF;
     border-radius: 70px;
     text-align: center;
     background-color: #9373ab;
     position: absolute;
     top: 30%;
-    left: 15%;
+    left: 20%;
     color: #FFF;
     font-family: 'Bubbler One', cursive;
     font-size: 1.2rem;
@@ -120,11 +122,12 @@ a button:hover {
 }
 
 .circular-sb p {
+    max-width: 250px;
+    margin: 0 auto;
     position: relative;
     top: 50%;
     color: #FFF;
     transform: translateY(-50%);
-    margin: 0;
     padding: 10px;
 }
 
@@ -166,8 +169,9 @@ a button:hover {
 }
 
 #close {
-    position: relative;
-    left: 70%;
+    position: absolute;
+    left: 65%;
+    top: 60%;
 }
 
 #modalAge {
@@ -265,6 +269,20 @@ a button:hover {
     .choix_age .circular-sb {
         left: 25%;
     }
+
+    
+.circular-sb {
+    width: 300px;
+    height: 180px;
+    top: 30%;
+    left: 20%;
+}
+
+    
+#close {
+    left: 65%;
+    top: 55%;
+}
 
 }
 

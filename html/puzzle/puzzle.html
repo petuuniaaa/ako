@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="puzzle.css">
+
+
     <title>Puzzle</title>
 </head>
 
 <body onload="RandomPlace()">
     <header>
         <nav>
-            <a href="../../html/age.html"><img src="../../pictures/svg/logo_ako.svg" alt="logo"></a>
-            <a href="../../html/compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="avatar"></a>
+            <a href="../../html/age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+            <a href="../../html/compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte"
+                    class="avatarCompte"></a>
         </nav>
         <h1> Puzzle </h1>
     </header>
@@ -35,7 +41,7 @@
         </tr>
     </table>
 
-    <div onload="RandomPlace()" class="boxImages">
+    <div class="boxImages">
         <img id="img9" data-case="9" src="pieceCoccinelle/coccinellepuzzle9.svg" alt="" class="imgRandom">
         <img id="img6" data-case="6" src="pieceCoccinelle/coccinellepuzzle6.svg" alt="" class="imgRandom">
         <img id="img3" data-case="3" src="pieceCoccinelle/coccinellepuzzle3.svg" alt="" class="imgRandom">
@@ -47,9 +53,87 @@
         <img id="img2" data-case="2" src="pieceCoccinelle/coccinellepuzzle2.svg" alt="" class="imgRandom">
     </div>
 
+    <!-- MODAL DEBUT -->
+    <div class="modal" tabindex="-1" role="dialog" id="modalDebut">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <section class="debutJeu">
+                        <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+                        <div class="circular-sb">
+                            <p>Fais glisser les pièces de puzzle pour compléter l'image</p>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                            <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-debut" data-dismiss="modal"
+                        id="close">Jouer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CONTINUE COMME CA -->
+    <div class="modal" tabindex="-1" role="dialog" id="modalContinue">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <section class="continueJeu">
+                        <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+                        <div class="circular-sb">
+                            <p>Bravo, continues comme ça !</p>
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                            <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close"><img
+                            src="/pictures/svg/flecheretour2blanc.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL VICTOIRE AKO APPARAIT -->
+
+    <div class="modal" tabindex="-1" role="dialog" id="completed">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <section class="victoire">
+                        <div class="circular-sb">
+                            <p>C'est gagné, félicitations !</p>
+                            <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+                            <div class="circle3"></div>
+                            <div class="circle4"></div>
+                        </div>
+                        <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close" onclick=""><img
+                            src="/pictures/svg/flecheretour2blanc.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="puzzle.js"></script>
 </body>
 

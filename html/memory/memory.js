@@ -1,19 +1,39 @@
 const cards = document.querySelectorAll('.memory-card');
 
-// $('#completed').css('display', 'block');
-
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 var tabCompleted = [false, false, false, false, false, false];
 var i = 0;
 
+// SONS
+var success = new Audio('/sons/bravocontinue.wav');
+var reessaye = new Audio('/sons/reessaye.wav');
+
+
 function close() {
   document.getElementById('completed').style.display = 'none';
-  window.location.href = 'memoryanimaux_gagne.html';
+  window.location.href = '../jeuGagne.html';
+}
+
+function sonDesactivated() {
+
+  if (success.muted == true && reessaye.muted == true) {
+    success.muted = false;
+    reessaye.muted = false;
+    document.getElementById('son').style.backgroundImage = "url('/pictures/svg/boutonson.svg')";
+
+  } else {
+    success.muted = true;
+    reessaye.muted = true;
+    document.getElementById('son').style.backgroundImage = "url('/pictures/svg/boutonsonmuted.svg')";
+  }
+
 }
 
 document.getElementById('modal-close').addEventListener('click', close);
+document.getElementById('son').addEventListener('click', sonDesactivated);
+
 
 function flipCard() {
   if (lockBoard) return;
@@ -27,9 +47,7 @@ function flipCard() {
 
     return;
   }
-  $('#son').css('visibility', 'visible');
-  document.getElementById('son').style.backgroundImage = "url('/pictures/svg/boutonson.svg')";
-  
+
   secondCard = this;
   checkForMatch();
 }
@@ -43,7 +61,9 @@ function checkForMatch() {
     obj.style['visibility'] = 'visible';
     var source = document.getElementById("condition");
     source.src = "../../pictures/svg/succes.svg";
-    document.getElementById('text_condition').innerHTML = "Bravo, continues !";
+    document.getElementById('textCondition').innerHTML = "Bravo, continues !";
+
+    success.play();
   }
 
   setTimeout(() => {
@@ -55,9 +75,9 @@ function checkForMatch() {
     tabCompleted[i] = true;
     i++;
     if (tabCompleted.every(
-        function (item) {
-          return item == true;
-        })) {
+      function (item) {
+        return item == true;
+      })) {
       $("#completed").fadeIn("slow");
       $('#completed').css('display', 'block');
     }
@@ -77,9 +97,9 @@ function unflipCards() {
 
   var obj = document.querySelector('.notactived');
   obj.style['visibility'] = 'visible';
-  document.getElementById('text_condition').innerHTML = "Réessayes !";
-  var audio = new Audio('/sons/reessaye.wav');
-  audio.play();
+  document.getElementById('textCondition').innerHTML = "Réessayes !";
+
+  reessaye.play();
 
   setTimeout(() => {
     firstCard.classList.remove('flip');

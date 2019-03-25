@@ -123,9 +123,9 @@ button {
 
 .conversation a {
   width: 50px;
-  position: relative;
-  left: 80%;
-  top: 80%;
+  position: absolute;
+  left: 70%;
+  top: 85%;
 }
 
 /* MEDIA QUERIES */
@@ -138,6 +138,10 @@ button {
 
   .circular-sb {
     left: 20%;
+  }
+
+  .conversation a{
+    left: 60%;
   }
 }
 
@@ -173,5 +177,9 @@ button {
 @media screen and (min-width: 1200px) {
   .circular-sb {
     left: 40%;
+  }
+
+  .conversation a{
+    left: 55%;
   }
 }

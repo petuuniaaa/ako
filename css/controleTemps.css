@@ -115,18 +115,44 @@ input[type=submit] {
 }
 
 #modal {
-    background-color: #FFF;
+    background-color: #9373ab;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 300px;
     height: 300px;
     border-radius: 50px;
 }
 
 #modal p {
-    color: #000;
+    color: #FFF;
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+form {
+    margin: 20px 50px;
+}
+
+form label {
+    margin: 0 15px;
+}
+
+
+input[type=password] {
+    border-radius: 50px;
+    border: 0;
+    height: 45px;
+    width: 200px;
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+#relancer {
+    margin-top: 30px;
+    width: 200px;
+    background-color: #41BABE;
 }
 
 @media screen and (min-width: 490px) {

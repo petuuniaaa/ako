@@ -8,6 +8,8 @@ body {
     background-color: #41BABE;
     margin: 0;
     font-family: 'Bubbler One';
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -118,7 +120,7 @@ input:hover {
 }
 
 
-/* .main input {
+.main input {
     background-color: #9373ab;
     box-shadow: 0px 0px 41px -7px rgba(0, 0, 0, 0.75);
     border: none;
@@ -129,7 +131,7 @@ input:hover {
     height: 120px;
     text-transform: uppercase;
     font-family: 'Bubbler One';
-} */
+}
 
 button {
     background-color: #9373ab;
@@ -146,6 +148,11 @@ button {
 }
 
 @media screen and (min-width: 500px) {
+    body {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
     section {
         margin-top: 5%;
     }
@@ -164,19 +171,18 @@ button {
     }
 
     .drapeaux {
-        left: 10%;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    body {
-        max-width: 500px;
-        margin: 0 auto;
+        left: 25%;
     }
 
-    section {
-        margin-top: 0;
+    .conversation {
+        padding-top: 10%;
     }
+
+    .circular-sb {
+        left: 40%;
+        top: 15%;
+    }
+
 
     /* .main input {
         font-size: 1.400em;
@@ -192,21 +198,14 @@ button {
         height: 120px;
     }
 
+}
+
+@media screen and (min-width: 700px){
     .animaux {
         left: 35%;
     }
-
     .drapeaux {
         left: 30%;
-    }
-
-    .conversation {
-        padding-top: 10%;
-    }
-
-    .circular-sb {
-        left: 40%;
-        top: 15%;
     }
 }
 
@@ -231,6 +230,10 @@ button {
 
     .animaux {
         left: 40%;
+    }
+
+    .drapeaux {
+        left: 35%;
     }
 }
 
