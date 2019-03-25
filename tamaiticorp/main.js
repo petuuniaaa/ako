@@ -59,7 +59,16 @@ $(document).scroll(function () {
             'transition': '1.5s ease'
         })
     }
-    if (percent >= 50 && percent < 55) {
+   
+    if (percent >= 40 && percent < 50) {
+       
+        $(projet).css({
+            'opacity': '1',
+            'transition': '1.5s ease'
+        })
+    }
+  
+    if (percent >= 80 && percent < 90) {
         $(equipeimg).css({
             'opacity': '1',
             'transition': '1.5s ease'
@@ -69,20 +78,8 @@ $(document).scroll(function () {
             'transition': '2.5s ease'
         })
     }
-    if (percent >= 65 && percent < 75) {
+    if (percent >= 90 && percent < 100) {
         $(video).css({
-            'opacity': '1',
-            'transition': '1.5s ease'
-        })
-    }
-    if (percent >= 90 && percent < 100) {
-        $(projet).css({
-            'opacity': '1',
-            'transition': '1.5s ease'
-        })
-    }
-    if (percent >= 90 && percent < 100) {
-        $(projet).css({
             'opacity': '1',
             'transition': '1.5s ease'
         })
