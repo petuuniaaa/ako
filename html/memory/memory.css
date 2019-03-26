@@ -6,18 +6,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-/* @import url('https://fonts.googleapis.com/css?family=Bubbler+One'); */
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
 
-/* @font-face {
-  font-family: 'Bubbler One';
-  src: url(fonts/BubblerOne-Regular.ttf);
-} */
 
 body {
   background: #41BABE;
   overflow: hidden;
 }
-
 
 header {
   margin: 4% 2%;
@@ -197,6 +192,7 @@ div .front-face img {
 .footer .checked {
   width: 20%;
 }
+
 
 /* MODAL */
 

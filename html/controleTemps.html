@@ -12,11 +12,11 @@
 
 <body>
     <header>
-        <img src="../pictures/svg/logo_ako.svg" alt="logo" class="logo" onclick="redirectionAccueil()">
+        <img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo" onclick="redirectionAccueil()">
         <!--Retour sur la page précèdente-->
         <div class="head">
             <img src="../pictures/svg/locked.svg" alt="">
-            <p> <strong>Réglage du temps</strong> pour @pseudo</p>
+            <p><strong>Réglage du temps</strong> pour @pseudo</p>
         </div>
     </header>
     <section class="main">
@@ -25,37 +25,20 @@
         <p>Choisir une heure de fin :</p>
         <div class="temps">
             <form action="" id="submit">
-                <input type="time" id="time" name="usr_time" value="00:30" min="00:01" max="02:45">
+                <input type="time" id="time" name="usr_time" value="00:30" min="00:01" max="02:45" required>
                 <input type="submit" value="OK">
             </form>
         </div>
         <p class="text">Après cette période de temps, tu ne pourras plus jouer avec Ako.</p>
         <img src="../pictures/svg/AKOOOO.svg" alt="" class="ako">
     </section>
-    <button class="retour" onclick="redirectionRetour()"><img src="../pictures/svg/flecheretour.svg" alt=""></button>
+    <button class="retour" onclick="redirectionRetour()"><img src="../pictures/svg/flecheretour.svg"
+            alt="Retour à la page précédente"></button>
 
 
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="../js/timer.js"></script>
-    <script>
-        function redirectionRetour() {
-            window.location.href = 'compte.html';
-        }
-
-        function redirectionAccueil() {
-            window.location.href = 'age.html';
-        }
-
-        setInterval(() => {
-            var heure = new Date().toLocaleTimeString();
-            document.getElementById("heure").innerHTML = heure;
-        }, 1000);
-
-        // setTimeout(() => {
-        //     window.close();
-        // }, 5000);
-    </script>
 </body>
 
 </html>

@@ -53,7 +53,8 @@ function modal() {
 }
 
 function controleTemps() {
-    if (localStorage.getItem('temps') <= Date.now()) {
+
+    if (localStorage.getItem('temps') && localStorage.getItem('temps') <= Date.now()) {
         modal();
         clearInterval(timer);
     }
@@ -61,4 +62,17 @@ function controleTemps() {
 
 var timer = setInterval(() => {
     controleTemps();
+}, 1000);
+
+function redirectionRetour() {
+    window.location.href = 'compte.html';
+}
+
+function redirectionAccueil() {
+    window.location.href = 'age.html';
+}
+
+setInterval(() => {
+    var heure = new Date().toLocaleTimeString();
+    document.getElementById("heure").innerHTML = heure;
 }, 1000);

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,48 +22,38 @@
 <body>
   <header>
     <nav>
-      <a href="../../html/age.html"><img src="../../pictures/svg/logo_ako.svg" alt="logo"></a>
-      <a href="../../html/compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="avatar"></a>
+      <a href="../age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+      <a href="../compte.html"><img src="../../pictures/svg/avatarbeta.svg"  alt="Compte"
+          class="avatarCompte"></a>
     </nav>
     <h1>Memory</h1>
   </header>
 
-<?php
-  define('DB_HOST', 'mysql:host=localhost;dbname=philippetran_tamaiticorp');
-  define('DB_USER', 'philippetran_admin');
-  define('DB_PASSWORD', 'tamaiticorp');
-  $currentUser = null;
+  <?php
+    require_once('../outils/init.php');
+  ?>
 
-  function getDatabase() {
-    $pdo = new PDO(DB_HOST, DB_USER, DB_PASSWORD);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-    return $pdo;
-  }
-  $db = getDatabase();
-
-?>
   <section class="memory-game">
     <div class="plateau">
             
-<?php
-       
-    $animaux='animaux';
-    $drapeaux='drapeaux';
-    $monuments='monuments';
-    $mythologie='mythologie';
-    $db = getDatabase();
+    <?php     
+                    $animaux='animaux';
+         $drapeaux='drapeaux';
+         $monuments='monuments';
+         $mythologie='mythologie';
+        $db = getDatabase();
 
-    if (isset($_POST['animaux'])){
+            if ($_SESSION["animaux"]!=null){
         
   $req = $db ->query('SELECT * FROM Image_jeu WHERE theme = "'.$animaux.'"');
 }
-    else if (isset($_POST['monuments'])){
+    else if ($_SESSION["monuments"]!=null){
         $req = $db ->query('SELECT * FROM Image_jeu WHERE theme = "'.$monuments.'"');
     }
-          else if (isset($_POST['drapeaux'])){
+          else if ($_SESSION["drapeaux"]!=null){
         $req = $db ->query('SELECT * FROM Image_jeu WHERE theme = "'.$drapeaux.'"');
     }
-              else if (isset($_POST['mythologie'])){
+              else if ($_SESSION["mythes"]!=null){
         $req = $db ->query('SELECT * FROM Image_jeu WHERE theme = "'.$mythologie.'"');
     }
       
@@ -102,21 +96,30 @@
       </div>';
             }
         ?>
+</section>
+<section class="footer">
+    <button class="son" type="image" id="son"></button>
+    <div class="notactived">
+      <img src="../../pictures/svg/erreur.svg" alt="" id="condition">
+      <p id="textCondition"></p>
+    </div>
+    <a href="../listTheme.php"><img src="../../pictures/svg/flecheretour.svg" alt="return" class="return"></a>
+  </section>
 
   <!-- MODAL DEBUT JEU -->
 
-  <div class="modal" tabindex="-1" role="dialog" id="modal_debut">
+  <div class="modal" tabindex="-1" role="dialog" id="modalDebut">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
 
         <div class="modal-body">
-          <section class="debut_jeu">
-            <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+          <section class="debutJeu">
+            <img src="../../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
             <div class="circular-sb">
               <p>Collecte les paires d'images correspondantes</p>
               <div class="circle3"></div>
               <div class="circle4"></div>
-              <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+              <img src="../../pictures/svg/boutonson.svg" alt="Couper / remettre le son" class="son">
             </div>
           </section>
         </div>
@@ -135,14 +138,14 @@
       <div class="modal-content">
 
         <div class="modal-body">
-          <section class="conversation">
+          <section class="victoire">
             <div class="circular-sb">
               <p>Hey! Tu es trop fort, tu as complété le memory</p>
               <img src="/pictures/svg/boutonson.svg" alt="" class="son">
               <div class="circle3"></div>
               <div class="circle4"></div>
             </div>
-            <img src="/pictures/svg/AKOOOO.svg" alt="" class="ako">
+            <img src="../../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
           </section>
         </div>
         <div class="modal-header">
@@ -177,7 +180,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="modal_debut.js"></script>
+  <script src="modalDebut.js"></script>
   <script src="memory.js"></script>
 </body>
 
