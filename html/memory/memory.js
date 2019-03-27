@@ -7,8 +7,8 @@ var tabCompleted = [false, false, false, false, false, false];
 var i = 0;
 
 // SONS
-var success = new Audio('/sons/bravocontinue.wav');
-var reessaye = new Audio('/sons/reessaye.wav');
+var success = new Audio('/sons/son-appli/bravocontinue.wav');
+var reessaye = new Audio('/sons/son-appli/reessaye.wav');
 
 
 function close() {
