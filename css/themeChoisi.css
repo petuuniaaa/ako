@@ -145,6 +145,7 @@ button {
     position: absolute;
     top: 55%;
     left: 20%;
+    pointer-events: none;
 }
 
 .devine {
@@ -157,6 +158,13 @@ button {
     position: absolute;
     top: 70%;
     right: 10%;
+    pointer-events: none;
+}
+
+.trouver button,
+.online button{
+    filter: grayscale(1);
+    opacity: .7;
 }
 
 

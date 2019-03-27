@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/collectionsTheme.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,7 +20,9 @@
     <header>
         <nav>
             <a href="age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-            <a href="compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte" class="avatarCompte"></a>
+            <a href="compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte utilisateur"
+                    class="avatarCompte">
+            </a>
         </nav>
         <h1>Collection Animaux</h1>
     </header>
@@ -30,24 +33,27 @@
             <div class="row">
                 <div class="col-8">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        <img src="../pictures/collection/collection-animaux.svg" alt="" class="imgAnimaux">
-                        <img src="../pictures/svg/locked.svg" alt="" class="locked">
+                        <img src="../pictures/collection/collection-animaux.svg" alt="Image de la collection"
+                            class="imgAnimaux">
+                        <img src="../pictures/svg/locked.svg" alt="Image verrouillée" class="locked">
                     </button>
                 </div>
                 <div class="col-4"></div>
                 <div class="col-5"></div>
                 <div class="col-7">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        <img src="../pictures/collection/collection-animaux.svg" alt="" class="imgAnimaux">
-                        <img src="../pictures/svg/locked.svg" alt="" class="locked">
+                        <img src="../pictures/collection/collection-animaux.svg" alt="Image de la collection"
+                            class="imgAnimaux">
+                        <img src="../pictures/svg/locked.svg" alt="Image verrouillée" class="locked">
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <button class="retour" onclick="redirectionRetour()"><img src="../pictures/svg/flecheretour.svg" alt=""></button>
+    <a class="retour" href="collections.html"><img src="../pictures/svg/flecheretour.svg"
+            alt="Retour à la page précédente"></a>
 
-    <!-- MODAL  -->
+    <!-- MODAL DESCRIPTION IMAGE -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -69,7 +75,7 @@
         </div>
     </div>
 
-
+    <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -79,13 +85,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="/js/animation.js"></script>
-    <script>
-        function redirectionRetour() {
-            window.location.href = 'collections.html';
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>

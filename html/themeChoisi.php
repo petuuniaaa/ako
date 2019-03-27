@@ -13,16 +13,18 @@ $_SESSION["mythes"]=$_POST['mythes'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/themeChoisi.css">
-    <title>Theme 6-8 ans</title>
+    <title>Thème 6-8 ans</title>
 </head>
 
 <body id="animation">
     <header>
         <nav>
             <a href="age.html"><img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-            <a href="compte.html"><img src="../pictures/svg/avatarbeta.svg" alt="Compte"
+            <a href="compte.html"><img src="../pictures/svg/avatarbeta.svg" alt="Compte utilisateur"
                     class="avatarCompte"></a>
         </nav>
         <?php

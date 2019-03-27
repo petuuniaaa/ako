@@ -8,6 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/listTheme.css">
     <title>Thèmes 6-8 ans</title>
@@ -17,10 +19,10 @@ session_start();
 <body id="animation">
     <header>
         <a href="age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-        <a href="compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte" class="avatarCompte"></a>
+        <a href="compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte utilisateur" class="avatarCompte"></a>
     </header>
     <section class="conversation">
-        <img src="../pictures/svg/AKOOOO.svg" alt="pieuvre">
+        <img src="../pictures/svg/AKOOOO.svg" alt="Ako">
         <div class="circular-sb">
             <p>Choisis un thème !</p>
             <div class="circle3"></div>
@@ -34,11 +36,9 @@ session_start();
             <input type='submit' name='mythologie' value='mythologie' class="mythes" />
             <input type='submit' name='drapeaux' value='drapeaux' class="drapeaux" />
         </form>
-        <!-- <a href="themeChoisi.html" class="monuments"><button>Monuments</button></a>
-        <a href="themeChoisi.html" class="animaux"><button>Animaux</button></a>
-        <a href="themeChoisi.html" class="mythes"><button>Mythes et Héros</button></a>
-        <a href="themeChoisi.html" class="drapeaux"><button>Drapeaux</button></a> -->
     </section>
+
+    <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/js/animation.js"></script>
 </body>

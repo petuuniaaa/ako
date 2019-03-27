@@ -10,12 +10,13 @@ var i = 0;
 var success = new Audio('/sons/son-appli/bravocontinue.wav');
 var reessaye = new Audio('/sons/son-appli/reessaye.wav');
 
-
+// Fermer modal et redirection
 function close() {
   document.getElementById('completed').style.display = 'none';
   window.location.href = '../jeuGagne.php';
 }
 
+// Désactiver le son
 function sonDesactivated() {
 
   if (success.muted == true && reessaye.muted == true) {
@@ -31,10 +32,11 @@ function sonDesactivated() {
 
 }
 
+// Fermer modal
 document.getElementById('modal-close').addEventListener('click', close);
 document.getElementById('son').addEventListener('click', sonDesactivated);
 
-
+// Clic sur une carte -> flip
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -52,10 +54,13 @@ function flipCard() {
   checkForMatch();
 }
 
+// Vérifier si les cartes retournées sont les mêmes
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
+
+  // Afficher les options pour les sons et textes
   if (isMatch === true) {
     var obj = document.querySelector('.notactived');
     obj.style['visibility'] = 'visible';
@@ -71,6 +76,7 @@ function checkForMatch() {
     source.src = "../../pictures/svg/erreur.svg";
   }, 1200);
 
+  // Afficher le modal une fois gagner 
   if (isMatch === true) {
     tabCompleted[i] = true;
     i++;
@@ -82,9 +88,9 @@ function checkForMatch() {
       $('#completed').css('display', 'block');
     }
   }
-
 }
 
+// Retourner les cartes si les cartes ne sont les mêmes
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
@@ -110,11 +116,13 @@ function unflipCards() {
   }, 1000);
 }
 
+// Remettre le plateau à zéro
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
+// Mélanger les cartes
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);

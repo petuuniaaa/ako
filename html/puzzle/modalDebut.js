@@ -1,3 +1,5 @@
+// Faire afficher le modal une seule fois si il n'a pas été déjà lancé
+
 if (localStorage.getItem('puzzle') === "OK") {
     document.getElementById("modalDebut").style.display = 'none';
 } else {

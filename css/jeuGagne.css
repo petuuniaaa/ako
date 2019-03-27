@@ -16,20 +16,17 @@ header nav a {
   width: 20%;
 }
 
-img[alt=logo] {
+header .logo{
   width: 55%;
 }
 
-img[alt=avatar] {
+header .avatarCompte {
   border-radius: 50%;
   width: 75%;
 }
 
 header h1 {
-  font-family: 'Bubbler One';
-  /* Ne pas oublier de mettre d'autre police */
-  /* color: #9373ab; */
-  /* color: #4B365E; */
+  font-family: 'Bubbler One', cursive;
   color: #473A53;
   text-align: center;
   margin: 2% 0;
@@ -87,15 +84,14 @@ header h1 {
   cursor: pointer;
   position: relative;
   left: 60%;
-  top: 60%;
+  top: 115%;
 }
-
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 335px) {
   .suivant {
     left: 65%;
-    top: 75%;
+    top: 95%;
   }
 }
 
@@ -103,11 +99,6 @@ header h1 {
 @media screen and (min-width: 430px) {
   .ako {
     left: 0%;
-  }
-
-  .suivant {
-    left: 75%;
-    ;
   }
 }
 
@@ -132,8 +123,7 @@ header h1 {
   header nav a {
     width: 20%;
   }
-
-  img[alt=avatar] {
+.avatarCompte {
     width: 70px;
   }
 }
@@ -141,11 +131,6 @@ header h1 {
 @media screen and (min-width: 830px) {
   .ako {
     left: 15%;
-  }
-
-  .suivant {
-    width: 80px;
-    height: 80px;
   }
 }
 

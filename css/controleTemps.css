@@ -49,23 +49,6 @@ p {
     text-align: center;
 }
 
-/* .temps p {
-    display: inline;
-    background-color: #9373ab;   
-}
-
-.temps p:first-child{
-    padding: 10px 5px 10px 35px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.temps p:last-child{
-    padding: 10px 30px 10px 5px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-} */
-
 input[type=time] {
     width: 100px;
     height: 50px;
@@ -91,7 +74,6 @@ input[type=submit] {
     font-size: 1.2rem;
 }
 
-
 .text {
     max-width: 230px;
     margin: 0 auto;
@@ -104,8 +86,8 @@ input[type=submit] {
 }
 
 .retour {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     position: absolute;
     top: 80%;
@@ -138,7 +120,6 @@ form {
 form label {
     margin: 0 15px;
 }
-
 
 input[type=password] {
     border-radius: 50px;

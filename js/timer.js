@@ -64,14 +64,6 @@ var timer = setInterval(() => {
     controleTemps();
 }, 1000);
 
-function redirectionRetour() {
-    window.location.href = 'compte.html';
-}
-
-function redirectionAccueil() {
-    window.location.href = 'age.html';
-}
-
 setInterval(() => {
     var heure = new Date().toLocaleTimeString();
     document.getElementById("heure").innerHTML = heure;

@@ -1,385 +1,380 @@
 body {
     background-color: #41BABE;
     height: 100vh;
-    overflow: hidden;
-
+    /* overflow: hidden; */
 }
 
 header {
-    margin: 2%;
-  }
-  
-  header nav {
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    text-align: center;
-  }
-  
-  header nav a {
-    width: 20%;
-  }
-  
-  .logo {
-    width: 50px;
-  }
-  
-  .avatarCompte {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-  }
+  margin: 2%;
+}
+
+header nav {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header nav a {
+  width: 20%;
+}
+
+.logo {
+  width: 50px;
+}
+
+.avatarCompte {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
 
 header h1 {
-    font-family: 'Bubbler One', cursive;
-    /* Ne pas oublier de mettre d'autre police */
-    /* color: #9373ab; */
-    /* color: #4B365E; */
-    color: #473A53;
-    text-align: center;
-    margin: 2% 0;
-    text-transform: uppercase;
+  font-family: 'Bubbler One', cursive;
+  color: #473A53;
+  text-align: center;
+  margin: 2% 0;
+  text-transform: uppercase;
 }
 
 .plateau {
-    border: solid 2px black;
-    width: 250px;
-    height: 250px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90%;
-    margin: 0 auto;
+  border: solid 2px black;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  margin: 0 auto;
 }
 
 th {
-    background-color: rgb(180, 177, 177);
-    width: 20%;
-    height: 20%;
+  background-color: rgb(180, 177, 177);
+  width: 20%;
+  height: 20%;
 }
 
 .boxImages {
-    position: relative;
-    height: 200px;
-    width: 200px;
+  position: relative;
+  height: 200px;
+  width: 200px;
 }
-
 .imgRandom {
-    position: relative;
-    top: 100px;
-    left: 100px;
-    width: 22%;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 22%;
 }
 
 /* MODAL */
 
 .debutJeu,
 .victoire {
-    display: flex;
+  display: flex;
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .modal-content {
-    border: none;
-    border-radius: 0;
-    background-color: transparent;
-  }
-  
-  .modal-dialog {
-    position: relative;
-    top: 20%;
-    height: 300px;
-  }
-  
-  .modal-header {
-    border-bottom: 0;
-  }
-  
-  .modal-header .closeVictoire {
-    position: absolute;
-    left: 50%;
-    width: 70px;
-    opacity: 1;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .close:not(:disabled):not(.disabled):hover {
-    opacity: 1;
-  }
-  
-  .modal-body {
-    height: 200px;
-  }
-  
-  .modal-footer {
-    border-top: 0;
-  }
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-  .circular-sb p {
-    position: relative;
-    top: 50%;
-    color: #FFF;
-    transform: translateY(-50%);
-    margin: 0;
-    text-transform: uppercase;
-  }
+.modal-content {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
 
-  .modal-footer {
-    justify-content: center;
-    padding-top: 150px;
-  }
+.modal-dialog {
+  position: relative;
+  top: 20%;
+  height: 300px;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-header .closeVictoire {
+  position: absolute;
+  left: 50%;
+  width: 70px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.close:not(:disabled):not(.disabled):hover {
+  opacity: 1;
+}
+
+.modal-body {
+  height: 200px;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+.circular-sb p {
+  position: relative;
+  top: 50%;
+  color: #FFF;
+  transform: translateY(-50%);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.modal-footer {
+  justify-content: center;
+  padding-top: 150px;
+}
 
 
-  /* MODAL DEBUT JEU */
+/* MODAL DEBUT JEU */
 
 .debutJeu .circular-sb {
-    width: 80%;
-    height: 150px;
-    border: 1px solid #FFF;
-    border-radius: 70px;
-    text-align: center;
-    background-color: #9373ab;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    color: #FFF;
-    font-family: 'Bubbler One', cursive;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  width: 80%;
+  height: 150px;
+  border: 1px solid #FFF;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #9373ab;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .debutJeu .circle3 {
-    border: 2px solid #FFF;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    left: 10%;
-    top: 45%;
-    background-color: #9373ab;
+  border: 2px solid #FFF;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 10%;
+  top: 45%;
+  background-color: #9373ab;
 }
-  
+
 .debutJeu .circle4 {
-    border: 2px solid #FFF;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: 45%;
-    left: 5%;
+  border: 2px solid #FFF;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 45%;
+  left: 5%;
 }
   
 .debutJeu .ako {
-    width: 60%;
-    position: absolute;
-    left: -70px;
-    transform: rotate(10deg);
-    top: 60%;
+  width: 60%;
+  position: absolute;
+  left: -70px;
+  transform: rotate(10deg);
+  top: 60%;
 }
-  
+
 .debutJeu .son {
-    width: 50px;
-    position: relative;
-    top: 15px;
-    left: 15%;
-    cursor: pointer;
+  width: 50px;
+  position: relative;
+  top: 15px;
+  left: 15%;
+  cursor: pointer;
 }
 
 
 button.btn-debut {
-    background-color: #9373ab;
-    width: 150px;
-    padding: 15px;
-    border: 0;
-    font-family: 'Bubbler One', cursive;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    letter-spacing: .3rem;
-  }
-  
-  button.btn-debut:hover{
-    background-color: #473A53;
-  }
+  background-color: #9373ab;
+  width: 150px;
+  padding: 15px;
+  border: 0;
+  font-family: 'Bubbler One', cursive;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: .3rem;
+}
 
-  #close img {
-      width: 20%;
-  }
+button.btn-debut:hover{
+  background-color: #473A53;
+}
+
+#close img {
+    width: 20%;
+}
 
 
-  /* MODAL CONTINUE JEU */
+/* MODAL CONTINUE JEU */
 
 .continueJeu .circular-sb {
-    width: 80%;
-    height: 100px;
-    border: 1px solid #FFF;
-    border-radius: 70px;
-    text-align: center;
-    background-color: #9373ab;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    color: #FFF;
-    font-family: 'Bubbler One', cursive;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  width: 80%;
+  height: 100px;
+  border: 1px solid #FFF;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #9373ab;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .continueJeu .circle3 {
-    border: 2px solid #FFF;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    left: 10%;
-    top: 45%;
-    background-color: #9373ab;
+  border: 2px solid #FFF;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 10%;
+  top: 45%;
+  background-color: #9373ab;
 }
-  
+
 .continueJeu .circle4 {
-    border: 2px solid #FFF;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: 45%;
-    left: 5%;
+  border: 2px solid #FFF;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 45%;
+  left: 5%;
 }
-  
+
 .continueJeu .ako {
-    width: 170px;
-    position: absolute;
-    left: -40px;
-    transform: rotate(10deg);
-    top: 60%;
+  width: 170px;
+  position: absolute;
+  left: -40px;
+  transform: rotate(10deg);
+  top: 60%;
 }
-  
+
 .continueJeu .son {
-    width: 50px;
-    position: relative;
-    top: 10px;
-    left: 15%;
-    cursor: pointer;
+  width: 50px;
+  position: relative;
+  top: 10px;
+  left: 15%;
+  cursor: pointer;
 }
 
 #modalContinue .btn-secondary,
 #completed .btn-secondary {
-  background-color: transparent;
-  border: 0;
+background-color: transparent;
+border: 0;
 }
 
 #modalContinue .btn-secondary img,
 #completed .btn-secondary img {
-  width: 60px;
+width: 60px;
 }
 
 
 #modalContinue .modal-footer {
-  padding-top: 0;
+padding-top: 0;
 }
 
-  /* MODAL VICTOIRE */
+/* MODAL VICTOIRE */
 
-  .victoire .circular-sb {
-    width: 230px;
-    height: 100px;
-    border: 1px solid #FFF;
-    border-radius: 70px;
-    text-align: center;
-    background-color: #9373ab;
-    position: absolute;
-    top: 15%;
-    color: #FFF;
-    font-family: 'Bubbler One', cursive;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
+.victoire .circular-sb {
+  width: 230px;
+  height: 100px;
+  border: 1px solid #FFF;
+  border-radius: 70px;
+  text-align: center;
+  background-color: #9373ab;
+  position: absolute;
+  top: 15%;
+  color: #FFF;
+  font-family: 'Bubbler One', cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
 
-  .victoire .circle3 {
-    border: 2px solid #FFF;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    left: 85%;
-    top: 10%;
-    background-color: #9373ab;
-  }
-  
-  .victoire .circle4 {
-    border: 2px solid #FFF;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: 10%;
-    left: 95%;
-  }
-  
-  .victoire .ako {
-    width: 60%;
-    position: absolute;
-    left: 55%;
-    transform: rotate(10deg);
-    top: 50%;
-  }
-  
-  .victoire .son {
-    width: 20%;
-    position: relative;
-    top: 55px;
-    left: -30px;
-    cursor: pointer;
-  }
+.victoire .circle3 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 85%;
+  top: 10%;
+  background-color: #9373ab;
+}
 
-  #completed .modal-footer {
-    padding-top: 50px;
-    margin-right: 50px;
-  }
+.victoire .circle4 {
+  border: 2px solid #FFF;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10%;
+  left: 95%;
+}
+
+.victoire .ako {
+  width: 60%;
+  position: absolute;
+  left: 55%;
+  transform: rotate(10deg);
+  top: 50%;
+}
+
+.victoire .son {
+  width: 20%;
+  position: relative;
+  top: 55px;
+  left: -30px;
+  cursor: pointer;
+}
+
+#completed .modal-footer {
+  padding-top: 50px;
+  margin-right: 50px;
+}
 
 table {
-    border-collapse: unset;
+  border-collapse: unset;
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 450px) {
-  
-    .victoire .ako {
-        width: 40%;
-        top: 65%;
-      }
 
-    .debutJeu .circular-sb {
-      max-width: 70%;
+  .victoire .ako {
+      width: 40%;
+      top: 65%;
     }
 
-    .continueJeu .circular-sb {
-      max-width: 60%;
-    }
-      
-    .circular-sb {
-      left: 20%;
-    }
-  
-    .debutJeu .ako {
-      width: 200px;
-    }
-  
-    .modal-header .close {
-      left: 150px;
-    }
+  .debutJeu .circular-sb {
+    max-width: 70%;
   }
 
-@media screen and (min-width: 500px) {
-    body {
-        max-width: 500px;
-        margin: 0 auto;
-    }
+  .continueJeu .circular-sb {
+    max-width: 60%;
+  }
+    
+  .circular-sb {
+    left: 20%;
+  }
 
-    .boxImages {
-        margin-left: 30%;
-    }
+  .debutJeu .ako {
+    width: 200px;
+  }
+
+  .modal-header .close {
+    left: 150px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+  .boxImages {
+      margin-left: 30%;
+  }
 }

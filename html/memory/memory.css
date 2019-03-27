@@ -116,7 +116,6 @@ section h1 {
   color: #FFF;
   font-size: 1.125em;
   z-index: 99;
-  font-family: 'PT Sans', sans-serif;
 }
 .norvege {
   left: 10%;
@@ -126,8 +125,8 @@ section h1 {
   padding: 20px;
 }
 
-.memory-card .front-face img[alt="cheval"],
-.memory-card .front-face img[alt="girafe"],
+.memory-card .front-face img[alt="Cheval"],
+.memory-card .front-face img[alt="Girafe"],
 .memory-card .front-face img[alt="TourdePise"] {
   height: 60%;
 }

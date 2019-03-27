@@ -9,28 +9,27 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <title>Memory Game</title>
 
+  <!-- STYLE -->
+  <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-
   <link rel="stylesheet" href="memory.css">
+  <title>Memory Game</title>
 </head>
 
 <body>
   <header>
     <nav>
       <a href="../age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-      <a href="../compte.html"><img src="../../pictures/svg/avatarbeta.svg"  alt="Compte"
+      <a href="../compte.html"><img src="../../pictures/svg/avatarbeta.svg"  alt="Compte utilisateur"
           class="avatarCompte"></a>
     </nav>
     <h1>Memory</h1>
   </header>
 
   <?php
-    require_once('../outils/init.php');
+    require_once('../init.php');
   ?>
 
   <section class="memory-game">
@@ -100,10 +99,10 @@ session_start();
 <section class="footer">
     <button class="son" type="image" id="son"></button>
     <div class="notactived">
-      <img src="../../pictures/svg/erreur.svg" alt="" id="condition">
+      <img src="../../pictures/svg/erreur.svg" alt="Erreur" id="condition">
       <p id="textCondition"></p>
     </div>
-    <a href="../listTheme.php"><img src="../../pictures/svg/flecheretour.svg" alt="return" class="return"></a>
+    <a href="../listTheme.php"><img src="../../pictures/svg/flecheretour.svg" alt="Retour à la page précédente" class="return"></a>
   </section>
 
   <!-- MODAL DEBUT JEU -->
@@ -111,7 +110,6 @@ session_start();
   <div class="modal" tabindex="-1" role="dialog" id="modalDebut">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-
         <div class="modal-body">
           <section class="debutJeu">
             <img src="../../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
@@ -123,7 +121,6 @@ session_start();
             </div>
           </section>
         </div>
-
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">Jouer</button>
         </div>
@@ -136,12 +133,11 @@ session_start();
   <div class="modal" tabindex="-1" role="dialog" id="completed">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-
         <div class="modal-body">
           <section class="victoire">
             <div class="circular-sb">
               <p>Hey! Tu es trop fort, tu as complété le memory</p>
-              <img src="/pictures/svg/boutonson.svg" alt="" class="son">
+              <img src="/pictures/svg/boutonson.svg" alt="Mettre le son" class="son">
               <div class="circle3"></div>
               <div class="circle4"></div>
             </div>

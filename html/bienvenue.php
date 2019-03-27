@@ -9,6 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/bienvenue.css">
     <title>Bienvenue sur Ako</title>
@@ -24,7 +25,7 @@ session_start();
         <img src="/pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
     </section>
     <p class="text">Découvrir le jeu</p>
-    <a href="age.html"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante"></a>
+    <a href="age.html"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant"></a>
 </body>
 
 </html>

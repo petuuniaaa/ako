@@ -42,6 +42,7 @@ body {
     border-radius: 50%;
     left: 25%;
     background-color: #9373ab;
+    top: 30%;
   }
   
   .circle4 {
@@ -50,7 +51,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    top: 10%;
+    top: 40%;
     left: 20%;
   }
   
@@ -72,8 +73,6 @@ body {
   .suivant {
     width: 60px;
     height: 60px;
-    border: none;
-    background-color: #9373ab;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;

@@ -75,6 +75,12 @@ body {
     top: 87%;
 }
 
+.son {
+    width: 40px;
+    position: absolute;
+    top: 80%;
+}
+/* 
 form {
     position: absolute;
     top: 70%;
@@ -83,7 +89,7 @@ form {
     width: 100%;
     align-items: center;
 }
- 
+  */
 input {
     margin-bottom: 10px;
     width: 150px;

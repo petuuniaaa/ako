@@ -1,3 +1,5 @@
+// Faire afficher le modal une seule fois si il n'a pas été déjà lancé
+
 if (localStorage.getItem('puzzle') === "OK") {
   document.getElementById("modalDebut").style.display = 'none';
 } else {
@@ -13,10 +15,12 @@ if (localStorage.getItem('puzzle') === "OK") {
   document.getElementById('close').addEventListener('click', close);
 }
 
+// Afficher le modal suivant
 function next() {
   document.getElementById('modalContinue').style.display = 'none';
 }
 
+// Modal gagner 
 function gagne() {
   document.getElementById('completed').style.display = 'none';
   window.location.href = '../jeuGagne.html';
@@ -25,12 +29,12 @@ function gagne() {
 document.getElementById('modalContinue').addEventListener('click', next);
 document.getElementById('completed').addEventListener('click', gagne);
 
-
+// Placer les pièces aléatoirement dans un espace donné
 function RandomPlace() {
   var mintop = 0;
-  var maxtop = 50;
+  var maxtop = 100;
   var minleft = 0;
-  var maxleft = 80;
+  var maxleft = 200;
   tabdiv = document.getElementsByClassName('imgRandom');
   var i = 0;
   while (tabdiv[i++]) {
@@ -40,7 +44,7 @@ function RandomPlace() {
   }
 }
 
-
+// Puzzle
 $(function () {
 
   var ths = $('th');
@@ -79,7 +83,6 @@ $(function () {
           }
         }
 
-
         if (tabCompleted.every(
           function (item) {
             return item == true;
@@ -103,8 +106,4 @@ $(function () {
     img.draggable();
 
   })
-
-
-
-
 })
