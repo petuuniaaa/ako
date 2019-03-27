@@ -18,7 +18,7 @@ session_start();
     <title>Puzzle</title>
 </head>
 
-<body >
+<body onload="RandomPlace()">
 <?php
 echo '<p>';
 echo $_SESSION["animaux"];

@@ -1,6 +1,6 @@
 
 <?php
-define('DB_HOST', 'mysql:host=localhost;dbname=philippetran_tamaiticorp');
+define('DB_HOST', 'mysql:host=localhost;dbname=philippetran_tamaiticorp; charset=utf8');
   define('DB_USER', 'philippetran_admin');
   define('DB_PASSWORD', 'tamaiticorp');
   $currentUser = null;
