@@ -18,7 +18,7 @@ $_SESSION["mythes"]=$_POST['mythes'];
     <title>Theme 6-8 ans</title>
 </head>
 
-<body>
+<body id="animation">
     <header>
         <nav>
             <a href="age.html"><img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>

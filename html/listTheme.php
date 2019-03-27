@@ -14,7 +14,7 @@ session_start();
 
 </head>
 
-<body>
+<body id="animation">
     <header>
         <a href="age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
         <a href="compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte" class="avatarCompte"></a>
@@ -39,7 +39,8 @@ session_start();
         <a href="themeChoisi.html" class="mythes"><button>Mythes et Héros</button></a>
         <a href="themeChoisi.html" class="drapeaux"><button>Drapeaux</button></a> -->
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@ require_once('/outils/init.php');
     <title>Nouveau pseudo</title>
 </head>
 
-<body>
+<body id="animation">
     <section class="conversation">
         <img src="../pictures/svg/AKOOOO.svg" alt="" class="ako">
         <div class="circular-sb">
@@ -30,6 +30,8 @@ require_once('/outils/init.php');
         <input type="text" name="pseudo" placeholder="Ton pseudo">
         <input type="submit" value="OK">
     </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>

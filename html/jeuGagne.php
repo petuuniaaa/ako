@@ -1,3 +1,7 @@
+<?php
+session_start();
+require_once('init.php')
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,30 +9,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8"/>
   <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
   <title>Memory Game</title>
 
-  <link rel="stylesheet" href="../css/jeuGagne.css">
+  <link rel="stylesheet" href="jeuGagne.css">
 </head>
 
-<body id="animation">
+<body>
   <header>
     <nav>
-      <a href="age.html"><img src="../pictures/svg/logo_ako.svg" alt="logo"></a>
-      <a href="compte.html"><img src="../pictures/svg/avatarbeta.svg" alt="avatar"></a>
+      <a href="../../html/age.html"><img src="pictures/svg/logo_ako.svg" alt="logo"></a>
+      <a href="../../html/compte.html"><img src="pictures/svg/avatarbeta.svg" alt="avatar"></a>
     </nav>
     <h1>Memory</h1>
   </header>
-
+<!--description-->
   <section class="main">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius, molestias assumenda at optio illo
+    <?php
+  $db = getDatabase();
+      $req = $db ->query('SELECT * FROM Image_jeu WHERE theme = "animaux"');
+      $array = $req->fetchAll(PDO::FETCH_ASSOC);
+      shuffle($array);
+      $i = rand(1,9);
+    echo '<p>';
+        echo $array[$i]['description'];
+    echo '</p>';
+    ?>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius, molestias assumenda at optio illo
       dolorem soluta, tempore perferendis labore odio libero officiis dolores repellendus? Sunt omnis eveniet
-      accusantium odio.</p>
+      accusantium odio.</p> -->
   </section>
 
   <section class="footer">
-    <img src="../pictures/svg/Ako-coloree-intello.svg" alt="Ako" class="ako">
-    <img src="../pictures/animaux/panda.svg" alt="Panda" class="animo">
+    <img src="pictures/svg/Ako-coloree-intello.svg" alt="" class="ako">
+      
+<!--image gagner au hasard parmi le theme choisi -->
+
+    <?php
+    echo '<img src="';
+    echo $array[$i]['image_jeu'];
+    echo '" alt=" " class="animo">';
+    ?>
     <button class="son notactived" type="image"></button>
     <button class="suivant" onclick="redirectionImgCollection()">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -44,8 +66,7 @@
       </svg>
     </button>
   </section>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="/js/animation.js"></script>
+
   <script>
     function redirectionImgCollection() {
       window.location.href = 'jeuNewImg.html';

@@ -13,7 +13,7 @@ var reessaye = new Audio('/sons/son-appli/reessaye.wav');
 
 function close() {
   document.getElementById('completed').style.display = 'none';
-  window.location.href = '../jeuGagne.html';
+  window.location.href = '../jeuGagne.php';
 }
 
 function sonDesactivated() {

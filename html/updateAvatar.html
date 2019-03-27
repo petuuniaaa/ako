@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/updateAvatar.css">
 </head>
 
-<body>
+<body id="animation">
     <header>
         <a href="compte.html"><img src="../pictures/svg/logo_ako.svg" alt="logo"></a>
         <!--Retour sur la page précèdente-->
@@ -32,11 +32,14 @@
         </div>
     </section>
     <a href="compte.html"><img src="../pictures/svg/flecheretour.svg" alt="return" class="return"></a>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/js/animation.js"></script>
+    <script>
+            function redirectionVerifAvatar() {
+                window.location.href = 'verifAvatar.html';
+            }
+        </script>
 </body>
-<script>
-    function redirectionVerifAvatar() {
-        window.location.href = 'verifAvatar.html';
-    }
-</script>
+
 
 </html>
