@@ -41,7 +41,7 @@ body {
     height: 30px;
     border-radius: 50%;
     left: 15%;
-    top: 30%;
+    top: 45%;
     background-color: #9373ab;
 }
 
@@ -51,7 +51,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    top: 25%;
+    top: 45%;
     left: 5%;
 }
   
@@ -61,14 +61,6 @@ body {
     left: -20%;
     transform: rotate(10deg);
     top: 25%;
-}
-  
-.conversation .son {
-    width: 30%;
-    position: relative;
-    top: 55px;
-    left: 30px;
-    cursor: pointer;
 }
   
 .suivant {

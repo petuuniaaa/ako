@@ -29,25 +29,14 @@
   <section class="footer">
     <img src="../pictures/svg/Ako-coloree-intello.svg" alt="Ako" class="ako">
     <img src="../pictures/animaux/panda.svg" alt="Panda" class="animo">
-    <button class="son notactived" type="image"></button>
-    <button class="suivant" onclick="redirectionImgCollection()">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 30 30" xml:space="preserve">
-        <style type="text/css">
-          .st0 {
-            fill: #765593;
-          }
-        </style>
-        <path class="st0" d="M2.2,7.4C-2,14.5,0.4,23.6,7.5,27.8s16.2,1.8,20.4-5.3s1.8-16.2-5.3-20.4S6.4,0.3,2.2,7.4z M6.1,16.8
-       c0.3-2.7,0.8-5,10.5-4.5c0.3,0,0.6-0.2,0.6-0.6c0-1.2-0.1-3.7-0.1-4.6C17.1,7,17.2,7,17.3,7l6.9,6.6c0.3,0.3,0.3,0.8,0,1.1l-6.6,6.9
-       c-0.1,0.1-0.2,0-0.2-0.1l-0.1-4.8c0-0.3-0.2-0.5-0.5-0.6C7.5,15.8,6.1,16.8,6.1,16.8z" />
-      </svg>
-    </button>
+    <img src="../pictures/svg/boutonson.svg" alt="" onclick="son()" class="son">
+    <a href="jeuNewImg.html"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant"></a>
   </section>
 
   <script>
-    function redirectionImgCollection() {
-      window.location.href = 'jeuNewImg.html';
+    function son() {
+      var success = new Audio('/sons/son-appli/');
+      success.play();
     }
   </script>
 </body>
