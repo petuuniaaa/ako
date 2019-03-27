@@ -52,16 +52,11 @@ header h1 {
 
 .footer {
   height: 200px;
-  ;
 }
 
 .footer .son {
-  background-image: url(../../pictures/svg/boutonson.svg);
-  background-repeat: no-repeat;
   width: 50px;
   height: 50px;
-  border: none;
-  background-color: #9373ab;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
@@ -86,15 +81,13 @@ header h1 {
 }
 
 .suivant {
-  width: 70px;
-  height: 70px;
-  border: none;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
   left: 60%;
   top: 60%;
-  background-color: transparent;
 }
 
 

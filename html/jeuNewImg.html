@@ -22,19 +22,24 @@
     <section class="conversation">
         <div class="circular-sb">
             <p>Tu as une image de plus dans ta collection !</p>
-            <img src="../pictures/svg/boutonson.svg" alt="Couper/remettre le son" class="son">
+            <img src="../pictures/svg/boutonson.svg" alt="Couper/remettre le son" class="son" onclick="son()">
             <div class="circle3"></div>
             <div class="circle4"></div>
         </div>
         <img src="../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
         <button onclick="redirectionReplay()">Rejouer</button>
-        <a href="listTheme.html"><img src="../pictures/svg/flecheretour.svg" alt="Retour vers la liste de thèmes"></a>
+        <a href="listTheme.php"><img src="../pictures/svg/flecheretour.svg" alt="Retour vers la liste de thèmes"></a>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/js/animation.js"></script>
     <script>
         function redirectionReplay() {
             window.location.href = 'memory/memory.php';
+        }
+
+        function son() {
+            var success = new Audio('/sons/son-appli/image+Collection.wav');
+            success.play();
         }
     </script>
 </body>

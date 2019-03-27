@@ -39,8 +39,8 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  left: 55%;
-  top: 20%;
+  left: 60%;
+  top: 40%;
   background-color: #9373ab;
 }
 
@@ -50,8 +50,8 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  top: 25%;
-  left: 65%;
+  top: 40%;
+  left: 70%;
 }
 
 .conversation .ako {
@@ -62,26 +62,18 @@ body {
   top: 50%;
 }
 
-.conversation .son {
-  width: 15%;
-  position: relative;
-  top: 55px;
-  left: -30px;
-  cursor: pointer;
-}
-
 .suivant {
   width: 60px;
   height: 60px;
-  border: none;
-  background-color: #9373ab;
-  border-radius: 50%;
   cursor: pointer;
   position: absolute;
   left: 65%;
   top: 87%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> caedacaac0b5fab309b9307051ba7a742c6fd2ed
 
 @media screen and (min-width: 345px){
   .conversation .ako {
