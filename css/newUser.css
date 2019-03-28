@@ -19,7 +19,7 @@ body {
     left: 50%;
     top: 10%;
     color: #FFF;
-    font-family: 'Bubbler One', cursive;
+    font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -80,25 +80,35 @@ body {
     position: absolute;
     top: 80%;
 }
-/* 
+
+button {
+    border: none;
+    background-color: #9373ab;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: 'Bubbler One', sans-serif;
+    text-transform: uppercase;
+}
+
 form {
     position: absolute;
-    top: 70%;
+    top: 65%;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-  */
+ 
 input {
     margin-bottom: 10px;
     width: 150px;
-    margin-right: 20px;
     background-color: #9373ab;
     border-radius: 40px;
     padding: 10px;
     border: 0;
-    font-family: 'Bubbler One', cursive;
+    font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: #FFF;
@@ -112,6 +122,31 @@ input[type=submit]{
     width: 40px;
     height: 40px;
     background-color: #473A53;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Bubbler One', sans-serif;
+    text-transform: uppercase;
+    color: #473A53;
+    margin-bottom: 10px;
+}
+
+#boutons {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#boutons button {
+    margin-bottom: 20px;
+    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+    cursor: pointer;
 }
   
 @media screen and (min-width: 345px){

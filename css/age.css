@@ -109,7 +109,7 @@ a button:hover {
     top: 30%;
     left: 20%;
     color: #FFF;
-    font-family: 'Bubbler One', cursive;
+    font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -186,7 +186,7 @@ a button:hover {
     top: 80%;
     left: 15%;
     color: #FFF;
-    font-family: 'Bubbler One', cursive;
+    font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
 }

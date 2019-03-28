@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -14,21 +17,26 @@
 
 <body id="animation">
     <header>
-        <a href="compte.html"><img src="../pictures/svg/logo_ako.svg" alt="Accueil"></a>
+        <a href="compte.php"><img src="../pictures/svg/logo_ako.svg" alt="Accueil"></a>
     </header>
 
     <section>
-        <img src="../pictures/avatars/AvatarClown.svg" class="avatar" alt="Avatar Clown">
+    <img src="
+                  <?php
+                  echo $_GET['img'];
+                  $_SESSION["img"]=$_GET['img'];
+                  ?>
+                  " class="avatar " alt="Avatar" >
         <div class="dialogue">
             <p>Tu veux choisir cette image ?</p>
             <img src="../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
         </div>
     </section>
     <section class="footer">
-        <a href="compte.html">
+        <a href="update.php">
             <img src="../pictures/svg/succes.svg" alt="Oui" class="checked">
         </a>
-        <a href="compte.html">
+        <a href="compte.php">
             <img src="../pictures/svg/flecheretour.svg" alt="Non, retour" class="return">
         </a>
     </section>

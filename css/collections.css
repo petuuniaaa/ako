@@ -29,10 +29,7 @@ header nav a {
 }
 
 header h1 {
-    font-family: 'Bubbler One';
-    /* Ne pas oublier de mettre d'autre police */
-    /* color: #9373ab; */
-    /* color: #4B365E; */
+    font-family: 'Bubbler One', sans-serif;
     color: #473A53;
     text-align: center;
     margin: 5% 0;
@@ -81,7 +78,7 @@ button {
     width: 120px;
     height: 120px;
     text-transform: uppercase;
-    font-family: 'Bubbler One';
+    font-family: 'Bubbler One', sans-serif;
     cursor: pointer;
 }
 
@@ -112,7 +109,7 @@ button {
     top: 85%;
     left: 15%;
     color: #FFF;
-    font-family: 'Bubbler One', cursive;
+    font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
 }

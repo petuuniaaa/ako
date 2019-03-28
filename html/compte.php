@@ -1,3 +1,8 @@
+<?php
+require_once('init.php');
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,10 +23,29 @@
     </header>
     <section>
         <div class="head">
-            <a href="updateAvatar.html"><img src="../pictures/svg/avatarbeta.svg" alt="Avatar, cliquez pour modifier"
-                    class="avatarCompte">
-                <img src="../pictures/svg/crayonviolet.svg" alt="Modifier l'avatar" class="modifierCrayon"></a>
-            <p>@pseudo</p>
+        <?php
+           echo ' <a href="updateAvatar.php"><img src="';
+                        
+        
+                $db = getDatabase();
+                       $req = $db->prepare("SELECT avatar FROM Utilisateur WHERE id = '".$_SESSION['userId']."'");
+$req->execute();
+       $user = $req->fetchAll(PDO::FETCH_ASSOC);
+
+               if($user[0]['avatar']!=NULL){
+                   echo $user[0]['avatar'];
+               }
+                else{
+                        echo '../pictures/svg/avatarbeta.svg';
+                }
+                   
+               echo ' "alt="Avatar, cliquez pour modifier" class="avatarCompte">';
+                 
+              echo '<img src="../pictures/svg/crayonviolet.svg" alt="Modifier l\'avatar" class="modifierCrayon"></a>
+              ';
+                    ?> 
+          
+            <p><?=$_SESSION["pseudo"];?></p>
         </div>
         <div class="bloc">
             <button class="collection"><a href="collections.html">

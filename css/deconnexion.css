@@ -25,7 +25,7 @@ header img{
   left: 50%;
   transform: translateX(-50%);
   color: #FFF;
-  font-family: 'Bubbler One', cursive;
+  font-family: 'Bubbler One', sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
@@ -90,7 +90,7 @@ button {
   border-radius: 50px;
   background-color: #9373ab;
   color: #FFF;
-  font-family: 'Bubbler One', cursive;
+  font-family: 'Bubbler One', sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
   border: 0;

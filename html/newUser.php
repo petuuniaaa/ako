@@ -32,17 +32,20 @@
             <div class="circle4"></div>
         </div>
     </section>
+    <div id="boutons">
+        <button id="boutonInscription">Inscription</button>
+        <button id="boutonConnexion">Connexion</button>
+    </div>
 
-    <h1>Inscription</h1>
-    <form action="newUserForm.php" method="POST">
+    <form action="newUserForm.php" method="POST" style="display: none" id="inscription">
+        <h1>Inscription</h1>
         <input type="text" name="pseudo" placeholder="Ton pseudo">
         <input type="password" name="password" required placeholder="Mot de passe" minlength="8" maxlength="16">
         <input type="submit" value="OK">
     </form>
-    <br>
-    <br>
-    <h1>Connexion</h1>
-     <form action="userConnect.php" method="POST">
+
+    <form action="userConnect.php" method="POST" style="display: none" id="connexion">
+        <h1>Connexion</h1>
         <input type="text" name="pseudo" placeholder="Ton pseudo">
         <input type="password" name="password" required placeholder="Mot de passe" minlength="8" maxlength="16">
         <input type="submit" value="OK">
@@ -51,6 +54,7 @@
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/js/animation.js"></script>
+    <script src="/js/newUser.js"></script>
 </body>
 
 </html>
