@@ -12,6 +12,7 @@ session_start();
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/verifAvatar.css">
+    <link rel="icon" href="../pictures/favicon.ico">
     <title>Compte - Modification avatar</title>
 </head>
 
@@ -36,7 +37,7 @@ session_start();
         <a href="update.php">
             <img src="../pictures/svg/succes.svg" alt="Oui" class="checked">
         </a>
-        <a href="compte.php">
+        <a href="updateAvatar.php">
             <img src="../pictures/svg/flecheretour.svg" alt="Non, retour" class="return">
         </a>
     </section>

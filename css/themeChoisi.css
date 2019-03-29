@@ -1,8 +1,9 @@
 body {
     background-color: #41BABE;
     margin: 0;
-    font-family: 'Bubbler One';
-    overflow-x: hidden;
+    font-family: 'Bubbler One', sans-serif;
+    overflow: hidden;
+    height: 100vh;
 }
 
 header {

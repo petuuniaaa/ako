@@ -19,6 +19,7 @@
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/newUser.css">
+    <link rel="icon" href="../pictures/favicon.ico">
     <title>Nouveau pseudo</title>
 </head>
 
@@ -27,7 +28,6 @@
         <img src="../pictures/svg/AKOOOO.svg" alt="" class="ako">
         <div class="circular-sb">
             <p>Ecris ton pseudo !</p>
-            <img src="../pictures/svg/boutonson.svg" alt="" class="son">
             <div class="circle3"></div>
             <div class="circle4"></div>
         </div>
@@ -40,14 +40,14 @@
     <form action="newUserForm.php" method="POST" style="display: none" id="inscription">
         <h1>Inscription</h1>
         <input type="text" name="pseudo" placeholder="Ton pseudo">
-        <input type="password" name="password" required placeholder="Mot de passe" minlength="8" maxlength="16">
+        <input type="password" name="password" required placeholder="Mot de passe" maxlength="16">
         <input type="submit" value="OK">
     </form>
 
     <form action="userConnect.php" method="POST" style="display: none" id="connexion">
         <h1>Connexion</h1>
         <input type="text" name="pseudo" placeholder="Ton pseudo">
-        <input type="password" name="password" required placeholder="Mot de passe" minlength="8" maxlength="16">
+        <input type="password" name="password" required placeholder="Mot de passe" maxlength="16">
         <input type="submit" value="OK">
     </form>
 

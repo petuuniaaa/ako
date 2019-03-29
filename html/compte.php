@@ -15,6 +15,7 @@ session_start();
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/compte.css">
+    <link rel="icon" href="../pictures/favicon.ico">
 </head>
 
 <body id="animation">
@@ -48,7 +49,7 @@ $req->execute();
             <p><?=$_SESSION["pseudo"];?></p>
         </div>
         <div class="bloc">
-            <button class="collection"><a href="collections.html">
+            <button class="collection"><a href="collections.php">
                     Collections</a></button>
             <button class="timer">
                 <img src="../pictures/svg/locked.svg" alt="Verrouillé par un mot de passe">
@@ -56,7 +57,7 @@ $req->execute();
             </button>
             <button class="deconnexion">
                 <img src="../pictures/svg/unlocked.svg" alt="">
-                <a href="deconnexion.html">Déconnexion</a></button>
+                <a href="destroy.php">Déconnexion</a></button>
         </div>
     </section>
 

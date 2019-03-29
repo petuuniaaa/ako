@@ -1,7 +1,7 @@
 body {
     background-color: #41BABE;
     color: #fff;
-    font-family: 'Bubbler One', sans-serif;
+    font-family: 'Bubbler One', cursive;
     overflow: hidden;
     height: 100vh;
 }
@@ -55,7 +55,7 @@ input[type=time] {
     background-color: #9373ab;
     border: 0;
     color: #FFF;
-    font-family: 'Bubbler One', sans-serif;
+    font-family: 'Bubbler One', cursive;
     text-transform: uppercase;
     font-size: 1.2rem;
     text-align: center;
@@ -69,7 +69,7 @@ input[type=submit] {
     background-color: #473A53;
     border: 0;
     color: #FFF;
-    font-family: 'Bubbler One', sans-serif;
+    font-family: 'Bubbler One', cursive;
     text-transform: uppercase;
     font-size: 1.2rem;
 }

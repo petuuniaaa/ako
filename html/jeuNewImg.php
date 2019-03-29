@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/jeuNewImg.css">
+    <link rel="icon" href="../pictures/favicon.ico">
 
     <title>Nouvelle image !</title>
 </head>
@@ -14,10 +19,12 @@
 <body id="animation">
     <header>
         <nav>
-            <a href="age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-            <a href="compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte" class="avatarCompte"></a>
+            <a href="age.php"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+            <a href="compte.php"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte" class="avatarCompte"></a>
         </nav>
-        <h1>Memory</h1>
+        <h1><?=
+        $_SESSION["jeu"];
+        ?></h1>
     </header>
     <section class="conversation">
         <div class="circular-sb">
@@ -34,7 +41,11 @@
     <script src="/js/animation.js"></script>
     <script>
         function redirectionReplay() {
-            window.location.href = 'memory/memory.php';
+            window.location.href = '<?=
+        $_SESSION["jeu"];
+        ?>/<?=
+        $_SESSION["jeu"];
+        ?>.php';
         }
 
         function son() {

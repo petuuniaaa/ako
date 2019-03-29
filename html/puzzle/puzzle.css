@@ -1,7 +1,7 @@
 body {
     background-color: #41BABE;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 header {
@@ -55,15 +55,13 @@ th {
 
 .boxImages {
   position: relative;
-  height: 200px;
-  width: 200px;
 }
 .imgRandom {
-  position: relative;
-  top: 100px;
-  left: 100px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
   width: 22%;
-}
+} 
 
 /* MODAL */
 

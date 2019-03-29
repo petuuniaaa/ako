@@ -1,5 +1,7 @@
 <?php
+require_once('../init.php');
 session_start();
+$_SESSION["jeu"] = 'puzzle';
 ?>
 
 <!DOCTYPE html>
@@ -14,15 +16,22 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="puzzle.css">
+    <link rel="icon" href="../pictures/favicon.ico">
 
     <title>Puzzle</title>
 </head>
 
-<body onload="RandomPlace()">
+<body>
     <header>
         <nav>
-            <a href="../age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-            <a href="../compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte"
+            <a href="../age.php"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+            <?php
+                       $db = getDatabase();
+                       $req = $db->prepare("SELECT avatar FROM Utilisateur WHERE id = '".$_SESSION['userId']."'");
+$req->execute();
+       $user = $req->fetchAll(PDO::FETCH_ASSOC);
+    //    <?=$user[0]['avatar'];?>
+            <a href="../compte.html"><img src="<?=$user[0]['avatar'];?>" alt="Compte"
                     class="avatarCompte"></a>
         </nav>
         <h1> Puzzle </h1>
@@ -66,7 +75,7 @@ echo "<div class=\"boxImages\">";
 
 while ($data = $req->fetch())
 {
-    echo '<img class="imgRandom" alt="" id="img';
+    echo '<img class="imgRandom" alt="" id=img';
     echo $i;
     echo '" data-case="';
     echo $i;
@@ -91,13 +100,13 @@ echo "</div>";
                             <p>Fais glisser les pièces de puzzle pour compléter l'image</p>
                             <div class="circle3"></div>
                             <div class="circle4"></div>
-                            <img src="/pictures/svg/boutonson.svg" alt="Couper / remettre le son" class="son">
+                            <img src="/pictures/svg/boutonson.svg" alt="Couper / remettre le son" class="son" id="sonDebut">
                         </div>
                     </section>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn-debut" data-dismiss="modal"
-                        id="close">Jouer</button>
+                        id="jouer">Jouer</button>
                 </div>
             </div>
         </div>
@@ -114,13 +123,13 @@ echo "</div>";
                             <p>Bravo, continues comme ça !</p>
                             <div class="circle3"></div>
                             <div class="circle4"></div>
-                            <img src="../../pictures/svg/boutonson.svg" alt="Couper / remettre le son" class="son">
+                            <img src="../../pictures/svg/boutonson.svg" alt="Couper / remettre le son" class="son" id="sonContinue">
                         </div>
                     </section>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close"><img
-                            src="../../pictures/svg/flecheretour2blanc.svg" alt=""></button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="fermer"><img
+                            src="../../pictures/svg/flecheretour2blanc.svg" alt="Suivant"></button>
                 </div>
             </div>
         </div>
@@ -136,7 +145,7 @@ echo "</div>";
                     <section class="victoire">
                         <div class="circular-sb">
                             <p>C'est gagné, félicitations !</p>
-                            <img src="../../pictures/svg/boutonson.svg" alt="Ako" class="son">
+                            <img src="../../pictures/svg/boutonson.svg" alt="Ako" class="son" id="sonVictoire">
                             <div class="circle3"></div>
                             <div class="circle4"></div>
                         </div>
@@ -161,6 +170,7 @@ echo "</div>";
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="modalDebut.js"></script>
     <script src="puzzle.js"></script>
 </body>
 

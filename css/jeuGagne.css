@@ -70,7 +70,7 @@ header h1 {
 }
 
 .animo {
-  width: 35%;
+  width: 150px;
   position: absolute;
   top: 70%;
   left: 45%;
@@ -94,7 +94,6 @@ header h1 {
     top: 95%;
   }
 }
-
 
 @media screen and (min-width: 430px) {
   .ako {

@@ -1,4 +1,5 @@
 <?php
+require_once('init.php');
 session_start();
 $_SESSION["animaux"]=$_POST['animaux'];
 $_SESSION["monuments"]=$_POST['monuments'];
@@ -17,14 +18,22 @@ $_SESSION["mythes"]=$_POST['mythes'];
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/themeChoisi.css">
+    <link rel="icon" href="../pictures/favicon.ico">
     <title>Thème 6-8 ans</title>
 </head>
 
 <body id="animation">
     <header>
         <nav>
-            <a href="age.html"><img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-            <a href="compte.html"><img src="../pictures/svg/avatarbeta.svg" alt="Compte utilisateur"
+            <a href="age.php"><img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+            <?php
+                       $db = getDatabase();
+                       $req = $db->prepare("SELECT avatar FROM Utilisateur WHERE id = '".$_SESSION['userId']."'");
+$req->execute();
+       $user = $req->fetchAll(PDO::FETCH_ASSOC);
+    //    <?=$user[0]['avatar'];
+        ?>
+            <a href="compte.php"><img src="<?=$user[0]['avatar'];?>" alt="Compte utilisateur"
                     class="avatarCompte"></a>
         </nav>
         <?php

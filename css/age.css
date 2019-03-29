@@ -57,6 +57,14 @@ a button:hover {
     cursor: pointer;
 }
 
+.main a:last-child {
+    pointer-events: none;
+}
+
+.indisponible {
+    filter: grayscale(1);
+}
+
 /* MODAL */
 
 .suivant {

@@ -1,3 +1,7 @@
+<?php
+require_once('init.php');
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,6 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/age.css">
+    <link rel="icon" href="../pictures/favicon.ico">
 
     <title>Choix de l'âge</title>
 </head>
@@ -21,7 +26,14 @@
             <img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo">
         </a>
         <a href="/html/compte.php">
-            <img src="../pictures/svg/avatarbeta.svg" alt="Compte utilisateur" class="avatarCompte">
+        <?php
+                       $db = getDatabase();
+                       $req = $db->prepare("SELECT avatar FROM Utilisateur WHERE id = '".$_SESSION['userId']."'");
+$req->execute();
+       $user = $req->fetchAll(PDO::FETCH_ASSOC);
+    //    <?=$user[0]['avatar'];
+        ?>
+            <img src="<?=$user[0]['avatar'];?>" alt="Compte utilisateur" class="avatarCompte">
         </a>
     </header>
     <section class="main">
@@ -36,6 +48,7 @@
                 <div class="modal-body">
                     <section class="debutJeu">
                         <img src="../pictures/svg/share.svg" alt="" class="fleche">
+
                         <img src="../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
                         <div class="circular-sb">
                             <p>Ici, tu peux choisir ton avatar, voir ta collection d'images, régler le temps de jeu et

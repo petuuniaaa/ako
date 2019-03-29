@@ -131,3 +131,10 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+function sonVictoire() {
+  var sonVictoire = new Audio('/sons/son-appli/memoryGagne.wav');
+  sonVictoire.play();
+}
+
+document.getElementById('sonVictoire').addEventListener('click', sonVictoire);

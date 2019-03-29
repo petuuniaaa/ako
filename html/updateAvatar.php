@@ -13,12 +13,13 @@ session_start();
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/updateAvatar.css">
+    <link rel="icon" href="../pictures/favicon.ico">
     <title>Compte - Modification avatar</title>
 </head>
 
 <body id="animation">
     <header>
-        <a href="compte.html"><img src="../pictures/svg/logo_ako.svg" alt="Accueil"></a>
+        <a href="compte.php"><img src="../pictures/svg/logo_ako.svg" alt="Accueil"></a>
         <!--Retour sur la page précèdente-->
         <p>Quelle photo de profil veux-tu ?</p>
     </header>

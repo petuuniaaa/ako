@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
-@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
-
-
 body {
   background: #41BABE;
   overflow: hidden;
@@ -40,10 +35,7 @@ header nav a {
 }
 
 header h1 {
-  font-family: 'Bubbler One';
-  /* Ne pas oublier de mettre d'autre police */
-  /* color: #9373ab; */
-  /* color: #4B365E; */
+  font-family: 'Bubbler One', sans-serif;
   color: #473A53;
   text-align: center;
   margin: 2% 0;
@@ -109,30 +101,19 @@ section h1 {
   top: 80%;
 }
 
-/* .pays {
-  position: absolute;
-  top: 75%;
-  left: 15%;
-  color: #FFF;
-  font-size: 1.125em;
-  z-index: 99;
-}
-.norvege {
-  left: 10%;
-} */
-
 .back-face {
   padding: 20px;
 }
 
 .memory-card .front-face img[alt="Cheval"],
 .memory-card .front-face img[alt="Girafe"],
-.memory-card .front-face img[alt="TourdePise"] {
+.memory-card .front-face img[alt="Tour de Pise"],
+.memory-card .front-face img[alt="Statue de la Liberté"]{
   height: 60%;
 }
 
-.memory-card .front-face img[alt="BigBen"],
-.memory-card .front-face img[alt="tourEiffel"] {
+.memory-card .front-face img[alt="Big Ben"],
+.memory-card .front-face img[alt="Tour Eiffel"] {
   height: 65%;
 }
 

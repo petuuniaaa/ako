@@ -12,7 +12,7 @@ if (localStorage.getItem('puzzle') === "OK") {
     localStorage.setItem('puzzle', "OK");
   }
 
-  document.getElementById('close').addEventListener('click', close);
+  document.getElementById('jouer').addEventListener('click', close);
 }
 
 // Afficher le modal suivant
@@ -23,26 +23,27 @@ function next() {
 // Modal gagner 
 function gagne() {
   document.getElementById('completed').style.display = 'none';
-  window.location.href = '../jeuGagne.html';
+  window.location.href = '../jeuGagne.php';
 }
 
-document.getElementById('modalContinue').addEventListener('click', next);
-document.getElementById('completed').addEventListener('click', gagne);
+document.getElementById('fermer').addEventListener('click', next);
+document.getElementById('close').addEventListener('click', gagne);
 
 // Placer les pièces aléatoirement dans un espace donné
-function RandomPlace() {
-  var mintop = 0;
-  var maxtop = 100;
-  var minleft = 0;
-  var maxleft = 200;
-  tabdiv = document.getElementsByClassName('imgRandom');
-  var i = 0;
-  while (tabdiv[i++]) {
-    tabdiv[i - 1].style.top = mintop + Math.floor(Math.random() * (maxtop - mintop)) + 'px';
-    tabdiv[i - 1].style.left = minleft + Math.floor(Math.random() * (maxleft - minleft)) + 'px';
-    tabdiv[i - 1].style.zIndex = i;
-  }
-}
+// function RandomPlace() {
+//   var mintop = 0;
+//   var maxtop = -5;
+//   var minleft = 0;
+//   var maxleft = 50;
+//   tabdiv = document.getElementsByClassName('imgRandom');
+//   var i = 0;
+//   while (tabdiv[i++]) {
+//     tabdiv[i - 1].style.top = mintop + Math.floor(Math.random() * (maxtop - mintop)) + 'px';
+//     tabdiv[i - 1].style.left = minleft + Math.floor(Math.random() * (maxleft - minleft)) + 'px';
+//     tabdiv[i - 1].style.zIndex = i;
+//   }
+// }
+
 
 // Puzzle
 $(function () {
@@ -91,7 +92,7 @@ $(function () {
           setTimeout(() => {
             $("#completed").fadeIn("slow");
             $('#completed').css('display', 'block');
-          }, 2500);
+          }, 2000);
         }
       }
 
@@ -107,3 +108,17 @@ $(function () {
 
   })
 })
+
+function son() {
+  var sonContinue = new Audio('/sons/son-appli/bravocontinucommeca.wav');
+  sonContinue.play();
+}
+
+document.getElementById('sonContinue').addEventListener('click', son);
+
+function sonVictoire() {
+  var sonVictoire = new Audio('/sons/son-appli/cestgagnefelicitation.wav');
+  sonVictoire.play();
+}
+
+document.getElementById('sonVictoire').addEventListener('click', sonVictoire);

@@ -19,7 +19,7 @@ body {
     top: 25%;
     left: 50%;
     color: #FFF;
-    font-family: 'Bubbler One', sans-serif;
+    font-family: 'Bubbler One', cursive;
     font-size: 1.2rem;
     text-transform: uppercase;
   }
@@ -81,7 +81,7 @@ body {
   }
 
   .text {
-      font-family: 'Bubbler One', sans-serif;
+      font-family: 'Bubbler One', cursive;
       font-size: 1.3rem;
       text-transform: uppercase;
       color: #473A53;

@@ -25,7 +25,7 @@ session_start();
         <img src="/pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
     </section>
     <p class="text">Découvrir le jeu</p>
-    <a href="age.html"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant"></a>
+    <a href="age.php"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant"></a>
 </body>
 
 </html>

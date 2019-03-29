@@ -1,3 +1,8 @@
+<?php
+require_once('init.php');
+session_start();
+$_SESSION["jeu"] = 'devineImage';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +22,14 @@
 <body>
     <header>
         <nav>
-            <a href="../html/age.html"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
-            <a href="../html/compte.html"><img src="../../pictures/svg/avatarbeta.svg" alt="Compte utilisateur"
+            <a href="../age.php><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
+            <?php
+                       $db = getDatabase();
+                       $req = $db->prepare("SELECT avatar FROM Utilisateur WHERE id = '".$_SESSION['userId']."'");
+$req->execute();
+       $user = $req->fetchAll(PDO::FETCH_ASSOC);
+    //    <?=$user[0]['avatar'];?>
+            <a href="../html/compte.html"><img src="<?=$user[0]['avatar'];?>" alt="Compte utilisateur"
                     class="avatarCompte"></a>
         </nav>
         <h1>Devine image</h1>
@@ -46,23 +57,19 @@
 
     <div class="boutons">
         <div class="boxRep">
-            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"
-                    id="cheval"></button>
+            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"></button>
             <button id="bonneReponse" class="proposition">Cheval</button>
         </div>
         <div class="boxRep">
-            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"
-                    id="elephant"></button>
+            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"></button>
             <button class="proposition">Elephant</button>
         </div>
         <div class="boxRep">
-            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"
-                    id="souris"></button>
+            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"></button>
             <button class="proposition">Souris</button>
         </div>
         <div class="boxRep">
-            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"
-                    id="singe"></button>
+            <button class="boutonSon"><img src="../../pictures/svg/boutonson.svg" alt="Mettre le son"></button>
             <button class="proposition">Singe</button>
         </div>
     </div>
@@ -104,8 +111,7 @@
                     <section class="victoire">
                         <div class="circular-sb">
                             <p>Excellent tu as trouvé !</p>
-                            <img src="../../pictures/svg/boutonson.svg" alt="Mettre le son" class="son"
-                                id="sonVictoire">
+                            <img src="../../pictures/svg/boutonson.svg" alt="Mettre le son" class="son">
                             <div class="circle3"></div>
                             <div class="circle4"></div>
                         </div>

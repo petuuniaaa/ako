@@ -1,6 +1,6 @@
 var th = $('th');
 var bonneReponse = $('#bonneReponse');
-var mauvaisereponse = $('button').not($("#bonneReponse")).not($(".flecheRetour")).not($(".close"));
+var mauvaisereponse = $('button').not($("#bonneReponse")).not($(".flecheRetour")).not($(".close")).not($(".boutonSon"));
 var proposition = $('.boxRep');
 var imgId = $('th#' + $('th').attr('id'));
 $('body').css('opacity', '0');
@@ -38,6 +38,8 @@ bonneReponse.click(function () {
         'background': 'none', 'pointer-events': 'none'
     });
     $('.plateau').css({ 'background-color': 'yellowgreen', 'transition': '1s ease' });
+    var oui = new Audio('/sons/son-appli/oui.wav');
+    oui.play();
 
     setTimeout(function () {
         $("#completed").fadeIn("slow");
@@ -53,6 +55,9 @@ mauvaisereponse.click(function () {
     $('th').css({
         'pointer-events': ''
     });
+
+    var non = new Audio('/sons/son-appli/non.wav');
+    non.play();
     // setTimeout(function () {
     //     alert('Mauvaise réponse continue !');
     // }, 300);
@@ -60,8 +65,45 @@ mauvaisereponse.click(function () {
 
 function close() {
     document.getElementById('completed').style.display = 'none';
-    window.location.href = '../jeuGagne.html';
+    window.location.href = '../jeuGagne.php';
 }
 
 
 document.getElementById('modal-close').addEventListener('click', close);
+
+// SON
+function son() {
+    var son = new Audio('/sons/son-appli/excellenttuastrouve.wav');
+    son.play();
+}
+
+document.getElementById('sonVictoire').addEventListener('click', son);
+
+
+function chevalSon() {
+    var cheval = new Audio('/sons/son-animaux/cheval.wav');
+    cheval.play();
+}
+
+document.getElementById('cheval').addEventListener('click', chevalSon);
+
+function elephantSon() {
+    var son = new Audio('/sons/son-animaux/elephant.wav');
+    son.play();
+}
+
+document.getElementById('elephant').addEventListener('click', elephantSon);
+
+function singeSon() {
+    var singeSon = new Audio('/sons/son-animaux/singe.wav');
+    singeSon.play();
+}
+
+document.getElementById('singe').addEventListener('click', singeSon);
+
+function sourisSon() {
+    var sourisSon = new Audio('/sons/son-animaux/souris.wav');
+    sourisSon.play();
+}
+
+document.getElementById('souris').addEventListener('click', sourisSon);
