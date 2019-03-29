@@ -7,6 +7,8 @@ body {
 }
 
 .conversation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   
@@ -30,7 +32,8 @@ body {
     position: relative;
     top: 50%;
     color: #FFF;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     margin: 0;
     text-transform: uppercase;
     line-height: 1.5rem;
@@ -61,7 +64,8 @@ body {
     width: 70%;
     position: absolute;
     left: -20%;
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
     top: 25%;
 }
   
@@ -97,10 +101,17 @@ button {
 form {
     position: absolute;
     top: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
  
 input {
@@ -112,6 +123,18 @@ input {
     border: 0;
     font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
+    color: #FFF;
+}
+
+input::-webkit-input-placeholder{
+    color: #FFF;
+}
+
+input:-ms-input-placeholder{
+    color: #FFF;
+}
+
+input::-ms-input-placeholder{
     color: #FFF;
 }
 
@@ -135,18 +158,25 @@ h1 {
 }
 
 #boutons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 150px;
     position: relative;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #boutons button {
     margin-bottom: 20px;
-    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+            box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
     cursor: pointer;
 }
   

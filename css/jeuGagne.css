@@ -6,9 +6,13 @@ body {
 }
 
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   margin: 2%;
 }
@@ -67,7 +71,8 @@ header h1 {
   position: absolute;
   top: 65%;
   left: -20%;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .animo {
@@ -75,7 +80,8 @@ header h1 {
   position: absolute;
   top: 70%;
   left: 45%;
-  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .suivant {

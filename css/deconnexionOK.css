@@ -11,6 +11,8 @@ header img {
 }
 
 .bulle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -24,19 +26,22 @@ header img {
     position: absolute;
     top: 25%;
     left: 20%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     color: #FFF;
     font-family: 'Bubbler One', cursive;
     font-size: 1.2rem;
     text-transform: uppercase;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
 }
 
 .circular-sb p {
     position: relative;
     top: 50%;
     color: #FFF;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     margin: 0;
     text-transform: uppercase;
     line-height: 1.8rem;

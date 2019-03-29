@@ -58,6 +58,9 @@ session_start();
 </script>";
         echo '</html>';
  ?>
+
+ <!-- SCRIPT -->
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
  <script src="/js/animation.js"></script>
  </body>
  </html>

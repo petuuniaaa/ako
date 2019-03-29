@@ -6,9 +6,13 @@ body {
 }
 
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   margin: 2%;
 }
@@ -40,6 +44,8 @@ header h1 {
 }
 
 .conversation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -63,7 +69,8 @@ header h1 {
   position: relative;
   top: 50%;
   color: #FFF;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin: 0;
   text-transform: uppercase;
 }
@@ -93,7 +100,8 @@ header h1 {
   width: 60%;
   position: absolute;
   left: 55%;
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
   top: 45%;
   left: 55%;
 }
@@ -110,7 +118,8 @@ button {
   position: absolute;
   top: 85%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: 0;
   background-color: #473A53;
   color: #FFF;

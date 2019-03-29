@@ -29,13 +29,21 @@ header img {
 
 .modifierCrayon{
     width: 4%;
-    transform: rotate(-150deg);
+    -webkit-transform: rotate(-150deg);
+            transform: rotate(-150deg);
 }
 
 .bloc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
 }
 
@@ -47,7 +55,8 @@ header img {
     cursor: pointer;
     border-radius: 20px 20px;
     width: 250px;
-    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+            box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
 }
 
 

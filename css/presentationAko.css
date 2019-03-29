@@ -6,6 +6,8 @@ body {
 }
 
 .conversation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -28,7 +30,8 @@ body {
   position: relative;
   top: 50%;
   color: #FFF;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin: 0;
   text-transform: uppercase;
   line-height: 1.5rem;
@@ -59,7 +62,8 @@ body {
   width: 70%;
   position: absolute;
   left: 40%;
-  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
   top: 50%;
 }
 
@@ -88,7 +92,8 @@ body {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
   }
 
   .conversation .ako {
