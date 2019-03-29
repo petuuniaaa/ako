@@ -7,6 +7,8 @@ body {
 }
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -29,12 +31,16 @@ p {
     position: absolute;
     right: -5%;
     top: 10%;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
 }
 
 section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 90%;
     margin: 10% auto 0 auto;
 }

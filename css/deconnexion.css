@@ -11,6 +11,8 @@ header img{
 }
 
 .bulle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -24,7 +26,8 @@ header img{
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   color: #FFF;
   font-family: 'Bubbler One', cursive;
   font-size: 1.2rem;
@@ -35,7 +38,8 @@ header img{
   position: relative;
   top: 50%;
   color: #FFF;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin: 0;
   text-transform: uppercase;
   line-height: 1.8rem;
@@ -79,8 +83,12 @@ header img{
 
 .boolean {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 300px;
   z-index: 2;
 }
@@ -95,7 +103,8 @@ button {
   font-size: 1.3rem;
   text-transform: uppercase;
   border: 0;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 

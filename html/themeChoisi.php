@@ -68,7 +68,10 @@ echo '</h1>';
         <a href="devineImage/devineImage.html" class="devine"><button>Devine image</button></a>
         <a href="" class="online"><button>Quizz en ligne</button></a>
     </section>
-    <script src="/js/animation.js"></script>
+
+<!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/animation.js"></script>
 </body>
 
 </html>

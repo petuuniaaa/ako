@@ -6,6 +6,8 @@ body {
   }
   
   .conversation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   
@@ -20,7 +22,7 @@ body {
     top: 25%;
     left: 50%;
     color: #FFF;
-    font-family: 'Bubbler One', cursive;
+    font-family: 'Bubbler One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
   }
@@ -29,7 +31,8 @@ body {
     position: relative;
     top: 50%;
     color: #FFF;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     margin: 0;
     text-transform: uppercase;
     line-height: 1.5rem;

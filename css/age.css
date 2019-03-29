@@ -5,9 +5,13 @@ body {
 }
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-items: center;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
     margin: 4%;
 }
@@ -27,12 +31,18 @@ header img {
 }
 
 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     margin-top: 5%;
 }
 
@@ -42,7 +52,8 @@ button {
     margin: 20% 0;
     border-radius: 20px;
     background-color: #9373ab;
-    box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+            box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
     border: none;
 }
 
@@ -63,7 +74,8 @@ a button:hover {
 }
 
 .indisponible {
-    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
 }
 
 /* MODAL */
@@ -80,7 +92,8 @@ a button:hover {
 }
 
 .modal-header button {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     margin: 0%;
 }
 
@@ -89,7 +102,8 @@ a button:hover {
     position: absolute;
     left: -70px;
     top: 55%;
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
 }
 
 .modal-content {
@@ -104,6 +118,8 @@ a button:hover {
 }
 
 .debutJeu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -129,7 +145,8 @@ a button:hover {
     position: relative;
     top: 50%;
     color: #FFF;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     padding: 10px;
 }
 
@@ -181,6 +198,8 @@ a button:hover {
 }
 
 .choix_age {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -226,7 +245,8 @@ a button:hover {
     width: 100px;
     position: absolute;
     top: 85%;
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
 }
 
 .arrow {
@@ -294,8 +314,13 @@ a button:hover {
     }
 
     section {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     button {

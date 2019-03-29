@@ -16,7 +16,8 @@ header img {
     width: 50%;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     margin: 10% 0;
 }
 
@@ -25,7 +26,8 @@ header img {
     position: absolute;
     left: -10%;
     top: 55%;
-    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
 }
 
 p {
@@ -41,8 +43,11 @@ p {
 }
 
 .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .checked {

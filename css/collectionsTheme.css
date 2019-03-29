@@ -7,9 +7,13 @@ body {
 
 /* HAUT DE PAGE NAV */
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   margin: 2%;
 }
@@ -41,7 +45,8 @@ header h1 {
 
 .retour {
   background-color: inherit;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -71,15 +76,18 @@ header h1 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .galerie button .imgAnimaux {
-  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -91,7 +99,8 @@ header h1 {
 
 .btn:focus,
 .btn-primary:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 

@@ -72,7 +72,10 @@ $req->execute();
       <img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant">
     </a>
   </section>
-  <script src="/js/animation.js"></script>
+
+  <!-- SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="../js/animation.js"></script>
 </body>
 
 </html>
