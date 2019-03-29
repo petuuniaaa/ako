@@ -26,13 +26,21 @@ $_SESSION["jeu"] = 'puzzle';
         <nav>
             <a href="../age.php"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
             <?php
+        echo '<a href="../compte.php"><img src="';
                        $db = getDatabase();
                        $req = $db->prepare("SELECT avatar FROM Utilisateur WHERE id = '".$_SESSION['userId']."'");
 $req->execute();
-       $user = $req->fetchAll(PDO::FETCH_ASSOC);
-    //    <?=$user[0]['avatar'];?>
-            <a href="../compte.html"><img src="<?=$user[0]['avatar'];?>" alt="Compte"
-                    class="avatarCompte"></a>
+       $user2 = $req->fetchAll(PDO::FETCH_ASSOC);
+      if($user2[0]['avatar']!=NULL){
+                   echo $user2[0]['avatar'];
+               }
+                else{
+                        echo '../../pictures/svg/avatarbeta.svg';
+                }
+                   
+               echo ' "alt="Compte utilisateur" class="avatarCompte">';
+        echo '</a>';
+        ?>
         </nav>
         <h1> Puzzle </h1>
     </header>
