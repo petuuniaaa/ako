@@ -18,7 +18,7 @@ session_start();
     <link rel="icon" href="../pictures/favicon.ico">
 </head>
 
-<body id="animation">
+<body>
     <header>
         <a href="listTheme.php"><img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
     </header>

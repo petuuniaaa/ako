@@ -15,7 +15,7 @@ session_start();
     <title>Bienvenue sur Ako</title>
 </head>
 
-<body id="animation"> 
+<body> 
     <section class="conversation">
         <div class="circular-sb">
             <p>Bienvenue <?php echo $_SESSION["pseudo"];?></p>

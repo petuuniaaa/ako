@@ -20,7 +20,7 @@ session_start();
     <title>Choix de l'âge</title>
 </head>
 
-<body id="animation">
+<body>
     <header>
         <a href="">
             <img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo">

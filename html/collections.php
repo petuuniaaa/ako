@@ -18,7 +18,7 @@ require_once('init.php');
 
 </head>
 
-<body id="animation">
+<body>
     <header>
         <nav>
             <a href="age.php"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>

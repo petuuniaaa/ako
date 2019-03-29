@@ -172,6 +172,7 @@ echo "</div>";
         crossorigin="anonymous"></script>
         <script src="jquery.ui.touch-punch.min.js"></script>
         <script src="modalDebut.js"></script>
+        <script src="/js/animation.js"></script>
     <script src="puzzle.js"></script>
 </body>
 
