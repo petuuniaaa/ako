@@ -3,6 +3,7 @@ body {
     color: #fff;
     font-family: 'Bubbler One', cursive;
     overflow-x: hidden;
+    opacity: 0;
 }
 
 header {

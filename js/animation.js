@@ -1,6 +1,5 @@
-$('#animation').css('opacity','0');
 setTimeout(() => {
-    $('#animation').css({
+    $('body').css({
         'opacity': '1',
         'transition': '1s ease'
     })

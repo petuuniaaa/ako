@@ -68,6 +68,7 @@ echo '</h1>';
         <a href="devineImage/devineImage.html" class="devine"><button>Devine image</button></a>
         <a href="" class="online"><button>Quizz en ligne</button></a>
     </section>
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>

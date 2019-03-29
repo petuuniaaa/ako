@@ -2,6 +2,8 @@ body {
     overflow: hidden;
     height: 100vh;
     background-color: #41babe;
+    opacity: 0;
+    
 }
 
 .conversation {

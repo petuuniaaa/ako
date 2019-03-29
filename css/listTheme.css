@@ -4,6 +4,7 @@ body {
     font-family: 'Bubbler One';
     height: 100vh;
     overflow: hidden;
+    opacity: 0;
 }
 
 header {

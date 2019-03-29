@@ -26,6 +26,7 @@ session_start();
     </section>
     <p class="text">Découvrir le jeu</p>
     <a href="age.php"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant"></a>
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>

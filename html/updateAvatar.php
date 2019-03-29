@@ -58,5 +58,6 @@ session_start();
 </script>";
         echo '</html>';
  ?>
+ <script src="/js/animation.js"></script>
  </body>
  </html>
