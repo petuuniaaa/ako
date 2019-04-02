@@ -319,7 +319,7 @@ canvas {
     color: #D73F77;
 }
 
-.store a {
+.store .indisponible {
     cursor: none;
     pointer-events: none;
 }
