@@ -44,11 +44,16 @@ header h1 {
     text-transform: uppercase;
 }
 
-
-section img[alt=pieuvre] {
+section img[alt=Ako] {
     position: relative;
-    width: 40%;
-    left: 65%;
+    width: 230px;
+    left: 50%;
+}
+
+.conversation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .circular-sb {
@@ -92,12 +97,6 @@ section img[alt=pieuvre] {
     border-radius: 50%;
     top: 40%;
     left: 80%;
-}
-
-.conversation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 h1 {
@@ -195,6 +194,10 @@ button {
         margin: 0 auto;
     }
 
+    section img[alt=Ako] {
+        width: 200px;
+    }
+
     .circular-sb {
         left: 40%;
     }
@@ -237,9 +240,6 @@ button {
 
 
 @media screen and (min-width: 800px) {
-    section img[alt=pieuvre] {
-        left: 55%;
-    }
 
     .online {
         left: 55%;
@@ -261,10 +261,6 @@ button {
 
     .conversation {
         height: 200px;
-    }
-
-    section img[alt=pieuvre] {
-        width: 25%;
     }
 }
 
@@ -294,7 +290,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1001px) {
+/* @media screen and (min-width: 1001px) {
     .circular-sb {
         top: 35%;
     }
@@ -302,4 +298,4 @@ button {
     .trouver {
         top: 60%;
     }
-}
+} */

@@ -53,7 +53,7 @@ echo '</h1>';
     </header>
 
     <section class="conversation">
-        <img src="../pictures/svg/AKOOOO.svg" alt="pieuvre">
+        <img src="../pictures/svg/AKOOOO.svg" alt="Ako">
         <div class="circular-sb">
             <p>Choisis ton mini jeu</p>
             <div class="circle3"></div>

@@ -1,6 +1,6 @@
 var th = $('th');
 var bonneReponse = $('#bonneReponse');
-var mauvaisereponse = $('button').not($("#bonneReponse")).not($(".flecheRetour")).not($(".close")).not($(".boutonSon"));
+var mauvaisereponse = $('button').not($("#bonneReponse")).not($(".flecheRetour")).not($(".close")).not($(".boutonSon")).not($("#close"));
 var proposition = $('.boxRep');
 var imgId = $('th#' + $('th').attr('id'));
 $('body').css('opacity', '0');
@@ -9,7 +9,7 @@ setTimeout(function () {
 })
 
 proposition.css({
-    'opacity': '0'
+    'display': 'none'
 });
 
 th.click(function () {
@@ -20,7 +20,7 @@ th.click(function () {
     });
 
     proposition.css({
-        'opacity': '1',
+        'display': 'block',
         'transition': '1s ease'
     });
 

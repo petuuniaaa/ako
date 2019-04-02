@@ -47,7 +47,7 @@ $_SESSION["mythes"]=$_POST['mythes'];
                   $_SESSION['cate'] = $mythologie;
               }
 ?>
-<body>
+<body id="animation">
     <header>
         <nav>
             <a href="age.php"><img src="../../pictures/svg/logo_ako.svg" alt="Accueil" class="logo"></a>
@@ -143,7 +143,8 @@ $img->execute();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- <script src="/js/animation.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/js/animation.js"></script>
 </body>
 
 </html>
