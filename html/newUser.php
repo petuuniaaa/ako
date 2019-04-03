@@ -51,6 +51,10 @@
         <input type="submit" value="OK">
     </form>
 
+    <button type="image" id="retour" class="retour"><img src="../pictures/svg/flecheretour.svg" alt="Retour"></button>
+    
+    
+
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/js/animation.js"></script>

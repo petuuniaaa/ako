@@ -9,7 +9,6 @@ var i = 0;
 // SONS
 var success = new Audio('/sons/son-appli/bravocontinue.wav');
 var reessaye = new Audio('/sons/son-appli/reessaye.wav');
-
 // Fermer modal et redirection
 function close() {
   document.getElementById('completed').style.display = 'none';

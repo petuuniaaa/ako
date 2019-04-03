@@ -8,6 +8,7 @@ body {
   background: #41BABE;
   overflow: hidden;
   opacity: 0;
+  height: 100vh;
 }
 
 header {
@@ -129,9 +130,9 @@ div .front-face img {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-end;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .footer .son {
@@ -149,19 +150,19 @@ div .front-face img {
 }
 
 .footer img {
-  width: 40%;
+  width: 60px;
 }
 
 .footer p {
   color: #FFF;
-  font-family: 'Bubbler One', cursive;
+  font-family: 'Bubbler One', sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
 
 .footer .return {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
 }
 
