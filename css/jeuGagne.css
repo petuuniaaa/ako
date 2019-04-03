@@ -84,6 +84,19 @@ header h1 {
           transform: rotate(20deg);
 }
 
+@keyframes zoom {
+  from {
+    width: 60px;
+  }
+  50% {
+    width: 80px;
+  }
+
+  to {
+    width: 60px;
+  }
+}
+
 .suivant {
   width: 60px;
   height: 60px;
@@ -92,6 +105,7 @@ header h1 {
   position: relative;
   left: 60%;
   top: 115%;
+  animation: infinite zoom ease 3s;
 }
 
 /* MEDIA QUERIES */

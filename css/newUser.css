@@ -180,6 +180,12 @@ h1 {
     cursor: pointer;
 }
 
+#boutons button:hover,
+#boutons button:active {
+    background-color: #473A53;
+}
+
+
 .retour {
     background-color: transparent;
     border: none;

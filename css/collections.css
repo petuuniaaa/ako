@@ -88,6 +88,10 @@ input {
     cursor: pointer;
 }
 
+input:active, input:focus, input:hover {
+    background-color: #473A53;
+}
+
 .retour {
     background-color: inherit;
     -webkit-box-shadow: none;

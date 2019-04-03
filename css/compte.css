@@ -72,6 +72,13 @@ header img {
     width: 15px;
 }
 
+
+button:active, button:focus, button:hover {
+    background-color: #473A53;
+}
+
+/* MEDIA QUERIES */
+
 @media (min-width: 380px) {
     .avatarCompte {
         width: 130px;

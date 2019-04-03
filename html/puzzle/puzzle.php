@@ -12,6 +12,23 @@ $_SESSION["jeu"] = 'puzzle';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- SEO -->
+    <meta name="keywords"
+        content="Tamaïti Corp, Ako, AKO, application mobile android ios, application AKO, play store, app store, culture générale, amuser, apprendre, pieuvre, enfant, violet, bleu, enfants, animaux, mythologie, drapeaux, monuments, memory, puzzle, devine image, quizz en ligne, trouver c'est gagné">
+    <meta name="description"
+        content="Tamaïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+
+    <meta property="og:title" content="Ako Game : Puzzle" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akogame.tamaiticorp.fr/html/puzzle/puzzle.php" />
+    <meta property="og:image" content="https://akogame.tamaiticorp.fr/pictures/ako.png" />
+    <meta property="og:description"
+        content="Tamïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Ako Game">
+
+
+    <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -171,7 +188,7 @@ echo "</div>";
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

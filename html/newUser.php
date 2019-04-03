@@ -16,11 +16,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- SEO -->
+    <meta name="keywords"
+        content="Tamaïti Corp, Ako, AKO, application mobile android ios, application AKO, play store, app store, culture générale, amuser, apprendre, pieuvre, enfant, violet, bleu, enfants, connexion, inscription">
+    <meta name="description"
+        content="Tamaïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant ! Inscris toi et connecte toi !">
+
+    <meta property="og:title" content="Ako Game : Connection / Inscription à Ako" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akogame.tamaiticorp.fr/html/newUser.php" />
+    <meta property="og:image" content="https://akogame.tamaiticorp.fr/pictures/ako.png" />
+    <meta property="og:description"
+        content="Tamïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant ! Inscris toi et connecte toi !">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Ako Game">
+
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/newUser.css">
     <link rel="icon" href="../pictures/favicon.ico">
-    <title>Nouveau pseudo</title>
+    <title>Connexion / Inscription à Ako</title>
 </head>
 
 <body id="animation">
@@ -55,7 +70,7 @@
     
 
     <!-- SCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/js/animation.js"></script>
     <script src="/js/newUser.js"></script>
 </body>

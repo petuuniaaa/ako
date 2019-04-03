@@ -69,6 +69,11 @@ a button:hover {
     cursor: pointer;
 }
 
+.main button:hover,
+.main button:active {
+    background-color: #473A53;
+}
+
 .main a:last-child {
     pointer-events: none;
 }
@@ -79,9 +84,25 @@ a button:hover {
 }
 
 /* MODAL */
+@keyframes zoom {
+    from {
+      width: 60px;
+      height: 60px;
+    }
+    50% {
+      width: 70px;
+      height: 70px;
+    }
+  
+    to {
+      width: 60px;
+      height: 60px;
+    }
+  }
 
 .suivant {
     width: 70px;
+    animation: infinite zoom ease 3s;
 }
 
 .btn-secondary,
@@ -177,6 +198,8 @@ a button:hover {
     width: 70px;
 }
 
+
+
 .btn-secondary:not(:disabled):not(.disabled):active {
     background-color: transparent;
     border-color: transparent;
@@ -186,6 +209,7 @@ a button:hover {
     border-radius: 50px;
     height: 100px;
     width: 100px;
+    box-shadow: inherit;
 }
 
 #close {

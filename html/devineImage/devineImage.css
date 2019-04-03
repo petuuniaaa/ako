@@ -103,8 +103,27 @@ border-collapse: inherit;
 
 /* MODAL */
 
+@keyframes zoom {
+  from {
+    width: 60px;
+    height: 60px;
+  }
+  50% {
+    width: 70px;
+    height: 70px;
+  }
+
+  to {
+    width: 60px;
+    height: 60px;
+  }
+}
 #completed {
   display: none;
+}
+
+.close {
+  animation: infinite zoom ease 3s;
 }
 
 .modal {
@@ -284,7 +303,9 @@ border-collapse: inherit;
   letter-spacing: .3rem;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:focus{
   background-color: #473A53;
 }
 

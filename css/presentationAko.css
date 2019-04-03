@@ -74,6 +74,23 @@ body {
   position: absolute;
   left: 65%;
   top: 87%;
+  animation: infinite zoom ease 3s;
+}
+
+@keyframes zoom {
+  from {
+    width: 60px;
+    height: 60px;
+  }
+  50% {
+    width: 70px;
+    height: 70px;
+  }
+
+  to {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 345px){

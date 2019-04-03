@@ -10,6 +10,21 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- SEO -->
+    <meta name="keywords"
+        content="Tamaïti Corp, Ako, AKO, application mobile android ios, application AKO, play store, app store, culture générale, amuser, apprendre, pieuvre, enfant, violet, bleu, enfants, animaux, mythologie, drapeaux, monuments">
+    <meta name="description"
+        content="Tamaïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+
+    <meta property="og:title" content="Ako Game : Thèmes 6-8 ans" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akogame.tamaiticorp.fr/html/listTheme.php" />
+    <meta property="og:image" content="https://akogame.tamaiticorp.fr/pictures/ako.png" />
+    <meta property="og:description"
+        content="Tamïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Ako Game">
+
     <!-- STYLE -->
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/listTheme.css">
@@ -48,7 +63,7 @@ $req->execute();
     </section>
 
     <!-- SCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/js/animation.js"></script>
 </body>
 

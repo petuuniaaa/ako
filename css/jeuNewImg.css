@@ -114,13 +114,18 @@ button {
   border: 0;
   background-color: #473A53;
   color: #FFF;
-  font-family: 'Bubbler One', cursive;
+  font-family: 'Bubbler One', sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
   border-radius: 50px;
   padding: 15px;
   cursor: pointer;
   margin-top: 10px;
+  box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+}
+
+button:active, button:focus, button:hover {
+  background-color: #9373ab;
 }
 
 .boutons {
@@ -134,6 +139,7 @@ button {
   position: absolute;
   top: 72%;
   left: 25%;
+  
 }
 
 .conversation a {

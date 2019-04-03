@@ -11,6 +11,21 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 
+    <!-- SEO -->
+    <meta name="keywords"
+        content="Tamaïti Corp, Ako, AKO, application mobile android ios, application AKO, play store, app store, culture générale, amuser, apprendre, pieuvre, enfant, violet, bleu, enfants, age, avatar, compte">
+    <meta name="description"
+        content="Tamaïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+
+    <meta property="og:title" content="Ako Game : Choix de l'âge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akogame.tamaiticorp.fr/html/age.php" />
+    <meta property="og:image" content="https://akogame.tamaiticorp.fr/pictures/ako.png" />
+    <meta property="og:description"
+        content="Tamïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Ako Game">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -98,7 +113,7 @@ $req->execute();
     </div>
 
     <!-- SCRIPT -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

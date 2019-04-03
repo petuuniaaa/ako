@@ -11,11 +11,26 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="UTF-8"/>
 
+  <!-- SEO -->
+  <meta name="keywords"
+        content="Tamaïti Corp, Ako, AKO, application mobile android ios, application AKO, play store, app store, culture générale, amuser, apprendre, pieuvre, enfant, violet, bleu, enfants, animaux, mythologie, drapeaux, monuments, memory, puzzle, devine image, quizz en ligne, trouver c'est gagné, mini-jeu, jeu">
+    <meta name="description"
+        content="Tamaïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+
+    <meta property="og:title" content="Ako Game : jeu gagné" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akogame.tamaiticorp.fr/html/jeuGagne.php" />
+    <meta property="og:image" content="https://akogame.tamaiticorp.fr/pictures/ako.png" />
+    <meta property="og:description"
+        content="Tamïti Corp : nouvelle application mobile AKO pour enfants. Acquérir de la culture générale tout en s'amusant !">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Ako Game">
+
   <!-- STYLE -->
   <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
   <link rel="stylesheet" href="../css/jeuGagne.css">
   <link rel="icon" href="../pictures/favicon.ico">
-  <title>Memory Game</title>
+  <title>Jeu gagné !</title>
 </head>
 
 <body>
@@ -74,7 +89,7 @@ $req->execute();
   </section>
 
   <!-- SCRIPT -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="../js/animation.js"></script>
 </body>
 

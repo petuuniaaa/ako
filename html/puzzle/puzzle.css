@@ -65,6 +65,18 @@ th {
 } 
 
 /* MODAL */
+@keyframes zoom {
+  from {
+    width: 60px;
+  }
+  50% {
+    width: 80px;
+  }
+
+  to {
+    width: 60px;
+  }
+}
 
 .debutJeu,
 .victoire {
@@ -198,10 +210,6 @@ button.btn-debut:hover{
   background-color: #473A53;
 }
 
-#close img {
-    width: 20%;
-}
-
 
 /* MODAL CONTINUE JEU */
 
@@ -256,6 +264,10 @@ button.btn-debut:hover{
   top: 10px;
   left: 15%;
   cursor: pointer;
+}
+
+#fermer {
+  animation: infinite zoom ease 3s;
 }
 
 #modalContinue .btn-secondary,
@@ -335,6 +347,11 @@ padding-top: 0;
 
 table {
   border-collapse: unset;
+}
+
+#close img {
+  width: 20%;
+  animation: infinite zoom ease 3s;
 }
 
 /* MEDIA QUERIES */

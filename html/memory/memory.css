@@ -96,8 +96,7 @@ section h1 {
   color: #FFF;
   z-index: 99;
   font-size: 95%;
-  font-family: 'Bubbler One';
-  /* font-family: 'PT Sans', sans-serif; */
+  font-family: 'Bubbler One', sans-serif;
   text-align: center;
   position: relative;
   top: 80%;
@@ -178,6 +177,22 @@ div .front-face img {
 
 /* MODAL */
 
+@keyframes zoom {
+  from {
+    width: 60px;
+    height: 60px;
+  }
+  50% {
+    width: 70px;
+    height: 70px;
+  }
+
+  to {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 #completed {
   display: none;
 }
@@ -209,6 +224,10 @@ div .front-face img {
   opacity: 1;
   padding: 0;
   margin: 0;
+}
+
+.close {
+  animation: infinite zoom ease 3s;
 }
 
 .close:not(:disabled):not(.disabled):hover {
@@ -358,7 +377,7 @@ div .front-face img {
   letter-spacing: .3rem;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled):active {
   background-color: #473A53;
 }
 
