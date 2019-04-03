@@ -87,7 +87,7 @@ body {
     top: 80%;
 }
 
-button {
+button:not(.retour) {
     border: none;
     background-color: #9373ab;
     color: #FFF;
@@ -179,6 +179,21 @@ h1 {
             box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
     cursor: pointer;
 }
+
+.retour {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    display: none;
+}
+
+button.retour img{
+    width: 50px;
+}
+
   
 @media screen and (min-width: 345px){
 .conversation .ako {
@@ -205,6 +220,10 @@ h1 {
 
     form {
         width: 600px;
+    }
+
+    .retour {
+        left: 65%;
     }
 }
 @media screen and (min-width: 1200px){

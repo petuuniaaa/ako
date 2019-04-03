@@ -22,7 +22,7 @@ session_start();
 
 <body>
     <header>
-        <a href="">
+        <a href="#">
             <img src="../pictures/svg/logo_ako.svg" alt="Accueil" class="logo">
         </a>
         <a href="/html/compte.php">

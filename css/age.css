@@ -174,6 +174,7 @@ a button:hover {
 .fleche {
     position: relative;
     left: 40%;
+    width: 70px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active {
@@ -275,7 +276,7 @@ a button:hover {
     }
 
     .fleche {
-        left: 50%;
+        left: 60%;
     }
 
     .arrow {
@@ -326,10 +327,6 @@ a button:hover {
     button {
         padding: 15%;
         margin: 10%;
-    }
-
-    .fleche {
-        left: 20%;
     }
 
     .arrow {

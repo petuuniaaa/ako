@@ -83,7 +83,7 @@ echo "<div class=\"boxImages\">";
 
 while ($data = $req->fetch())
 {
-    echo '<img class="imgRandom" alt="" id=img';
+    echo '<img class="imgRandom" alt="" id="img"';
     echo $i;
     echo '" data-case="';
     echo $i;
