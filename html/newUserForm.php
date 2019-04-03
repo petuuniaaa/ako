@@ -24,18 +24,20 @@
      }
      if (empty($errors)) {
        $stmt = $db->prepare("INSERT INTO Utilisateur (pseudo, password) VALUES (:pseudo, :password)");
-         $_SESSION["pseudo"]=$_POST['pseudo'];
+     
        $idfet = $db->prepare("SELECT * FROM Utilisateur WHERE id = :id LIMIT 1");
        $user = $idfet->fetch();
-       $_SESSION['userId'] = $user['id'];
+
        try {
          $stmt->execute($attributes);
+         $_SESSION["pseudo"]=$_POST['pseudo'];
+         $_SESSION['userId'] = $user['id'];
        } catch (PDOException $e) {
          array_push($errors, $e->getMessage());
        }
      }
      if (empty($errors)) {
-       header("Location: ./bienvenue.php");
+       header("Location: ./ReconnectUser.php");
      } else {
        header("Location: ./newUser.php?" . http_build_query(array('errors' => $errors)));
      }

@@ -74,63 +74,44 @@ body {
   cursor: pointer;
 }
 
-.suivant {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.conversation .son {
+  width: 25%;
+  position: relative;
+  top: 30px;
+  left: 30px;
   cursor: pointer;
-  position: absolute;
-  top: 87%;
-  left: 62%;
 }
 
 .text {
-    font-family: 'Bubbler One', cursive;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: #473A53;
-    font-weight: 800;
-    position: absolute;
-<<<<<<< HEAD
-    left: 10%;
-    top: 40%;
-  }
-  
-  .conversation .son {
-    width: 25%;
-    position: relative;
-    top: 30px;
-    left: 30px;
-    cursor: pointer;
-  }
-  
-  .text {
-      font-family: 'Bubbler One', cursive;
-      font-size: 1.3rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #FFF;
-      font-weight: 800;
-      position: absolute;
-      top: 87%;
-      left: 10%;
-      padding: 10px;
-      background-color: #9373ab; 
-      transition: 0.5s ease;
-      border-radius:0px 20px;
-  }
-  .text:hover{
-    border-radius:20px 0px;
-    color: #473A53;
-=======
-    top: 87%;
-    left: 10%;
+  font-family: 'Bubbler One', sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  font-weight: 800;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 200px;
+  padding: 10px;
+  background-color: #9373ab; 
+  -webkit-transition: 0.5s ease; 
+  transition: 0.5s ease;
+  border-radius:0px 20px;
+  -webkit-box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+          box-shadow: 7px 11px 25px -8px rgba(0, 0, 0, 0.67);
+}
+.text:hover{
+  border-radius:20px 0px;
+  color: #473A53;
 }
 
 @media screen and (min-width: 345px){
   .conversation .ako {
     width: 200px;
->>>>>>> 2616656c8766a2996e386687990a6930be76744d
   }
 }
 
@@ -149,18 +130,10 @@ body {
   .conversation .ako {
       left: 30%;
   }
-
-  .text {
-      left: 40%;
-  }
 }
 
 @media screen and (min-width: 1200px){
   .conversation .ako {
       left: 40%;
-  }
-
-  .text {
-      left: 50%;
   }
 }

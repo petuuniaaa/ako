@@ -53,11 +53,11 @@ $req->execute();
                     Collections</a></button>
             <button class="timer">
                 <img src="../pictures/svg/locked.svg" alt="Verrouillé par un mot de passe">
-                <a href="controleTemps.html">Réglage du temps</a>
+                <a href="controleTemps.php">Réglage du temps</a>
             </button>
             <button class="deconnexion">
                 <img src="../pictures/svg/unlocked.svg" alt="">
-                <a href="destroy.php">Déconnexion</a></button>
+                <a href="deconnexion.html">Déconnexion</a></button>
         </div>
     </section>
 

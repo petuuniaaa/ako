@@ -28,13 +28,16 @@ session_start();
     </header>
     <section class="conversation">
         <div class="circular-sb">
-            <p>Tu as une image de plus dans ta <span> <a href="collections.php">collection</a></span> !</p>
+            <p>Tu as une image de plus dans ta collection !</p>
             <img src="../pictures/svg/boutonson.svg" alt="Couper/remettre le son" class="son" onclick="son()">
             <div class="circle3"></div>
             <div class="circle4"></div>
         </div>
         <img src="../pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
-        <button onclick="redirectionReplay()">Rejouer</button>
+        <div class="boutons">
+            <button onclick="redirectionReplay()">Rejouer</button>
+            <button onclick="redirectionCollection()">Collection</button>
+        </div>
         <a href="listTheme.php"><img src="../pictures/svg/flecheretour.svg" alt="Retour vers la liste de thèmes"></a>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -46,6 +49,10 @@ session_start();
         ?>/<?=
         $_SESSION["jeu"];
         ?>.php';
+        }
+
+        function redirectionCollection(params) {
+            window.location.href = 'collections.php';
         }
 
         function son() {
