@@ -28,7 +28,7 @@ session_start();
     </header>
     <section class="conversation">
         <div class="circular-sb">
-            <p>Tu as une image de plus dans ta collection !</p>
+            <p>Tu as une image de plus dans ta <span> <a href="collections.php">collection</a></span> !</p>
             <img src="../pictures/svg/boutonson.svg" alt="Couper/remettre le son" class="son" onclick="son()">
             <div class="circle3"></div>
             <div class="circle4"></div>

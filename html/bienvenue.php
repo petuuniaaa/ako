@@ -26,8 +26,8 @@ session_start();
         </div>
         <img src="/pictures/svg/AKOOOO.svg" alt="Ako" class="ako">
     </section>
-    <p class="text">Découvrir le jeu</p>
-    <a href="age.php"><img src="../pictures/svg/flechesuivant.svg" alt="Page suivante" class="suivant"></a>
+    <a href="age.php" class="text">Découvrir le jeu</a>
+
 
     <!-- SCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

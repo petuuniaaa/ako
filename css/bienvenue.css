@@ -74,25 +74,24 @@ body {
     cursor: pointer;
   }
   
-  .suivant {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    left: 65%;
-    top: 87%;
-  }
-
   .text {
       font-family: 'Bubbler One', cursive;
       font-size: 1.3rem;
+      text-decoration: none;
       text-transform: uppercase;
-      color: #473A53;
+      color: #FFF;
       font-weight: 800;
       position: absolute;
       top: 87%;
       left: 10%;
+      padding: 10px;
+      background-color: #9373ab; 
+      transition: 0.5s ease;
+      border-radius:0px 20px;
+  }
+  .text:hover{
+    border-radius:20px 0px;
+    color: #473A53;
   }
   
   @media screen and (min-width: 345px){
